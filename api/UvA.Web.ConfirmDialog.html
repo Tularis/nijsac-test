@@ -1,0 +1,579 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class ConfirmDialog
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class ConfirmDialog
+   ">
+    <meta name="generator" content="docfx 2.40.12.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="UvA.Web.ConfirmDialog">
+  
+  
+  <h1 id="UvA_Web_ConfirmDialog" data-uid="UvA.Web.ConfirmDialog" class="text-break">Class ConfirmDialog
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="UvA.Web.Element.html">Element</a></div>
+    <div class="level2"><a class="xref" href="UvA.Web.ContainerElement.html">ContainerElement</a></div>
+    <div class="level3"><a class="xref" href="UvA.Web.BlockElement.html">BlockElement</a></div>
+    <div class="level4"><a class="xref" href="UvA.Web.ModalDialog.html">ModalDialog</a></div>
+    <div class="level5"><span class="xref">ConfirmDialog</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="UvA.Web.JS.IClientObject.html">IClientObject</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="UvA.Web.ModalDialog.html#UvA_Web_ModalDialog_DialogHeaderStyle">ModalDialog.DialogHeaderStyle</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.ModalDialog.html#UvA_Web_ModalDialog_DialogStyle">ModalDialog.DialogStyle</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.ModalDialog.html#UvA_Web_ModalDialog_OverlayStyle">ModalDialog.OverlayStyle</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.ModalDialog.html#UvA_Web_ModalDialog_DialogButtonGroupStyle">ModalDialog.DialogButtonGroupStyle</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.ModalDialog.html#UvA_Web_ModalDialog_HideStyle">ModalDialog.HideStyle</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.ModalDialog.html#UvA_Web_ModalDialog_ShowStyle">ModalDialog.ShowStyle</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.ModalDialog.html#UvA_Web_ModalDialog_Closed">ModalDialog.Closed</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.ModalDialog.html#UvA_Web_ModalDialog_FocusTarget">ModalDialog.FocusTarget</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.ModalDialog.html#UvA_Web_ModalDialog_DialogElement">ModalDialog.DialogElement</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.ModalDialog.html#UvA_Web_ModalDialog_Show">ModalDialog.Show()</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.ModalDialog.html#UvA_Web_ModalDialog_Hide">ModalDialog.Hide()</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.ModalDialog.html#UvA_Web_ModalDialog_Close">ModalDialog.Close()</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.ModalDialog.html#UvA_Web_ModalDialog_CreateDialog_System_String___UvA_Web_Element_UvA_Web_Button_UvA_Web_Length_System_Boolean_">ModalDialog.CreateDialog(String[], Element, Button, Length, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.ModalDialog.html#UvA_Web_ModalDialog_Info_System_String_UvA_Web_Element_System_Boolean_UvA_Web_Length_">ModalDialog.Info(String, Element, Boolean, Length)</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.ModalDialog.html#UvA_Web_ModalDialog_Info_System_String_System_String_UvA_Web_Element_System_Boolean_UvA_Web_Length_">ModalDialog.Info(String, String, Element, Boolean, Length)</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.BlockElement.html#UvA_Web_BlockElement_TagName">BlockElement.TagName</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.BlockElement.html#UvA_Web_BlockElement_FormatMultilineString_System_String_UvA_Web_Style_">BlockElement.FormatMultilineString(String, Style)</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.ContainerElement.html#UvA_Web_ContainerElement_Children">ContainerElement.Children</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.ContainerElement.html#UvA_Web_ContainerElement_ReplaceID">ContainerElement.ReplaceID</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.ContainerElement.html#UvA_Web_ContainerElement_ChildrenIsHidden">ContainerElement.ChildrenIsHidden</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.ContainerElement.html#UvA_Web_ContainerElement_Render">ContainerElement.Render()</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.ContainerElement.html#UvA_Web_ContainerElement_RenderChildren">ContainerElement.RenderChildren()</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.ContainerElement.html#UvA_Web_ContainerElement_PostRenderJSChildren">ContainerElement.PostRenderJSChildren()</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.ContainerElement.html#UvA_Web_ContainerElement_PostRenderJS">ContainerElement.PostRenderJS()</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_EnglishCulture">Element.EnglishCulture</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_DutchCulture">Element.DutchCulture</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_ID">Element.ID</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_GetClientName">Element.GetClientName()</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_Name">Element.Name</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_Parent">Element.Parent</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_Style">Element.Style</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_StyleFunction">Element.StyleFunction</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_Tag">Element.Tag</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_PopupText">Element.PopupText</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_Page">Element.Page</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_DisableContextMenu">Element.DisableContextMenu</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_PopupDisplayTop">Element.PopupDisplayTop</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_NoPrint">Element.NoPrint</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_KillOverflowOnPrint">Element.KillOverflowOnPrint</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_IsHidden">Element.IsHidden</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_HideFunction">Element.HideFunction</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_ShouldHide">Element.ShouldHide()</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_OnClick">Element.OnClick</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_ClientOnClick">Element.ClientOnClick</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_ClientOnClickFunction">Element.ClientOnClickFunction</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_OnContextMenu">Element.OnContextMenu</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_OnMouseDown">Element.OnMouseDown</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_ClientOnMouseDown">Element.ClientOnMouseDown</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_OnMouseUp">Element.OnMouseUp</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_MouseOverCommand">Element.MouseOverCommand</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_MouseOutCommand">Element.MouseOutCommand</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_KeyDownCommand">Element.KeyDownCommand</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_StopPropagation">Element.StopPropagation</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_ConfirmTextBeforeEvent">Element.ConfirmTextBeforeEvent</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_EnterTarget">Element.EnterTarget</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_NameParent">Element.NameParent</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_PopupElement">Element.PopupElement</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_ClientStyle">Element.ClientStyle</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_Font">Element.Font</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_Tooltip">Element.Tooltip</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_OpeningTag">Element.OpeningTag()</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_ClosingTag">Element.ClosingTag()</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_GetTagStart">Element.GetTagStart()</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_GetPopupCode">Element.GetPopupCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_ConfirmationID">Element.ConfirmationID</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_Attributes">Element.Attributes</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_SubclassAttributes">Element.SubclassAttributes</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_FormatVerbalText_System_String_">Element.FormatVerbalText(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_FormatText_System_String_">Element.FormatText(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_LookupText_System_String_System_Boolean_">Element.LookupText(String, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_FormatText_System_String___">Element.FormatText(String[])</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_FormatDate_System_Nullable_System_DateTime__System_String_System_String_">Element.FormatDate(Nullable&lt;DateTime&gt;, String, String)</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_FormatDate_System_DateTime_System_String_">Element.FormatDate(DateTime, String)</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_Localize_System_String___">Element.Localize(String[])</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_Execute_UvA_Web_JS_Command_">Element.Execute(Command)</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_Focus">Element.Focus()</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_SelectAll">Element.SelectAll()</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_IsHiddenByParent">Element.IsHiddenByParent</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_WrapIf_System_Boolean_System_Func_UvA_Web_Element_UvA_Web_Element__UvA_Web_Element_">Element.WrapIf(Boolean, Func&lt;Element, Element&gt;, Element)</a>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="UvA.Web.html">UvA.Web</a></h6>
+  <h6><strong>Assembly</strong>: UvA.Web.dll</h6>
+  <h5 id="UvA_Web_ConfirmDialog_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class ConfirmDialog : ModalDialog, IClientObject</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UvA-FNWI/DataNose/new/master/apiSpec/new?filename=UvA_Web_ConfirmDialog__ctor_System_String_System_Action_.md&amp;value=---%0Auid%3A%20UvA.Web.ConfirmDialog.%23ctor(System.String%2CSystem.Action)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UvA-FNWI/DataNose/blob/master/UvA.Web/Dialogs/ConfirmDialog.cs/#L8">View Source</a>
+  </span>
+  <a id="UvA_Web_ConfirmDialog__ctor_" data-uid="UvA.Web.ConfirmDialog.#ctor*"></a>
+  <h4 id="UvA_Web_ConfirmDialog__ctor_System_String_System_Action_" data-uid="UvA.Web.ConfirmDialog.#ctor(System.String,System.Action)">ConfirmDialog(String, Action)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ConfirmDialog(string text, Action yesAction)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">text</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Action</span></td>
+        <td><span class="parametername">yesAction</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UvA-FNWI/DataNose/new/master/apiSpec/new?filename=UvA_Web_ConfirmDialog__ctor_System_String_System_String_System_Action_System_Collections_Generic_IReadOnlyCollection_UvA_Web_Button__System_Action_.md&amp;value=---%0Auid%3A%20UvA.Web.ConfirmDialog.%23ctor(System.String%2CSystem.String%2CSystem.Action%2CSystem.Collections.Generic.IReadOnlyCollection%7BUvA.Web.Button%7D%2CSystem.Action)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UvA-FNWI/DataNose/blob/master/UvA.Web/Dialogs/ConfirmDialog.cs/#L13">View Source</a>
+  </span>
+  <a id="UvA_Web_ConfirmDialog__ctor_" data-uid="UvA.Web.ConfirmDialog.#ctor*"></a>
+  <h4 id="UvA_Web_ConfirmDialog__ctor_System_String_System_String_System_Action_System_Collections_Generic_IReadOnlyCollection_UvA_Web_Button__System_Action_" data-uid="UvA.Web.ConfirmDialog.#ctor(System.String,System.String,System.Action,System.Collections.Generic.IReadOnlyCollection{UvA.Web.Button},System.Action)">ConfirmDialog(String, String, Action, IReadOnlyCollection&lt;Button&gt;, Action)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ConfirmDialog(string text0, string text1, Action yesAction, IReadOnlyCollection&lt;Button&gt; extraOptions = null, Action noAction = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">text0</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">text1</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Action</span></td>
+        <td><span class="parametername">yesAction</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IReadOnlyCollection</span>&lt;<a class="xref" href="UvA.Web.Button.html">Button</a>&gt;</td>
+        <td><span class="parametername">extraOptions</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Action</span></td>
+        <td><span class="parametername">noAction</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UvA-FNWI/DataNose/new/master/apiSpec/new?filename=UvA_Web_ConfirmDialog__ctor_UvA_Web_Element_System_Action_System_Boolean__UvA_Web_Element_.md&amp;value=---%0Auid%3A%20UvA.Web.ConfirmDialog.%23ctor(UvA.Web.Element%2CSystem.Action%7BSystem.Boolean%7D%2CUvA.Web.Element)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UvA-FNWI/DataNose/blob/master/UvA.Web/Dialogs/ConfirmDialog.cs/#L43">View Source</a>
+  </span>
+  <a id="UvA_Web_ConfirmDialog__ctor_" data-uid="UvA.Web.ConfirmDialog.#ctor*"></a>
+  <h4 id="UvA_Web_ConfirmDialog__ctor_UvA_Web_Element_System_Action_System_Boolean__UvA_Web_Element_" data-uid="UvA.Web.ConfirmDialog.#ctor(UvA.Web.Element,System.Action{System.Boolean},UvA.Web.Element)">ConfirmDialog(Element, Action&lt;Boolean&gt;, Element)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ConfirmDialog(Element prompt, Action&lt;bool&gt; yesAction, Element option)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UvA.Web.Element.html">Element</a></td>
+        <td><span class="parametername">prompt</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Action</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
+        <td><span class="parametername">yesAction</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UvA.Web.Element.html">Element</a></td>
+        <td><span class="parametername">option</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="UvA.Web.JS.IClientObject.html">IClientObject</a>
+  </div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="UvA.Web.WebExtensions.html#UvA_Web_WebExtensions_WithStyle__1___0_UvA_Web_Style_">WebExtensions.WithStyle&lt;T&gt;(T, Style)</a>
+  </div>
+  <div>
+      <a class="xref" href="UvA.Web.JS.ClientExtensions.html#UvA_Web_JS_ClientExtensions_GetClientStyle_UvA_Web_Element_">ClientExtensions.GetClientStyle(Element)</a>
+  </div>
+  <div>
+      <a class="xref" href="UvA.Utilities.DataExtensions.html#UvA_Utilities_DataExtensions_IsIn__1___0___0_">DataExtensions.IsIn&lt;T&gt;(T, T)</a>
+  </div>
+  <div>
+      <a class="xref" href="UvA.Utilities.DataExtensions.html#UvA_Utilities_DataExtensions_IsIn__1___0___0___0_">DataExtensions.IsIn&lt;T&gt;(T, T, T)</a>
+  </div>
+  <div>
+      <a class="xref" href="UvA.Utilities.DataExtensions.html#UvA_Utilities_DataExtensions_IsIn__1___0___0___0___0_">DataExtensions.IsIn&lt;T&gt;(T, T, T, T)</a>
+  </div>
+  <div>
+      <a class="xref" href="UvA.Utilities.DataExtensions.html#UvA_Utilities_DataExtensions_IsIn__1___0___0___0___0___0_">DataExtensions.IsIn&lt;T&gt;(T, T, T, T, T)</a>
+  </div>
+  <div>
+      <a class="xref" href="UvA.Utilities.DataExtensions.html#UvA_Utilities_DataExtensions_IsIn__1___0___0___0___0___0___0_">DataExtensions.IsIn&lt;T&gt;(T, T, T, T, T, T)</a>
+  </div>
+  <div>
+      <a class="xref" href="UvA.Utilities.DataExtensions.html#UvA_Utilities_DataExtensions_IsIn__1___0___0___">DataExtensions.IsIn&lt;T&gt;(T, T[])</a>
+  </div>
+  <div>
+      <a class="xref" href="UvA.Utilities.DataExtensions.html#UvA_Utilities_DataExtensions_IsNotIn__1___0___0_">DataExtensions.IsNotIn&lt;T&gt;(T, T)</a>
+  </div>
+  <div>
+      <a class="xref" href="UvA.Utilities.DataExtensions.html#UvA_Utilities_DataExtensions_IsNotIn__1___0___0___0_">DataExtensions.IsNotIn&lt;T&gt;(T, T, T)</a>
+  </div>
+  <div>
+      <a class="xref" href="UvA.Utilities.DataExtensions.html#UvA_Utilities_DataExtensions_IsNotIn__1___0___0___0___0_">DataExtensions.IsNotIn&lt;T&gt;(T, T, T, T)</a>
+  </div>
+  <div>
+      <a class="xref" href="UvA.Utilities.DataExtensions.html#UvA_Utilities_DataExtensions_IsNotIn__1___0___0___0___0___0_">DataExtensions.IsNotIn&lt;T&gt;(T, T, T, T, T)</a>
+  </div>
+  <div>
+      <a class="xref" href="UvA.Utilities.DataExtensions.html#UvA_Utilities_DataExtensions_IsNotIn__1___0___0___0___0___0___0_">DataExtensions.IsNotIn&lt;T&gt;(T, T, T, T, T, T)</a>
+  </div>
+  <div>
+      <a class="xref" href="UvA.Utilities.DataExtensions.html#UvA_Utilities_DataExtensions_IsNotIn__1___0___0___">DataExtensions.IsNotIn&lt;T&gt;(T, T[])</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/UvA-FNWI/DataNose/new/master/apiSpec/new?filename=UvA_Web_ConfirmDialog.md&amp;value=---%0Auid%3A%20UvA.Web.ConfirmDialog%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/UvA-FNWI/DataNose/blob/master/UvA.Web/Dialogs/ConfirmDialog.cs/#L6" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

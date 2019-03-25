@@ -1,0 +1,1015 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class DataView&lt;T&gt;
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class DataView&lt;T&gt;
+   ">
+    <meta name="generator" content="docfx 2.40.12.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="UvA.Web.DataView`1">
+  
+  
+  <h1 id="UvA_Web_DataView_1" data-uid="UvA.Web.DataView`1" class="text-break">Class DataView&lt;T&gt;
+  </h1>
+  <div class="markdown level0 summary"><p>Renders of a collection of elements as HTML</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="UvA.Web.Element.html">Element</a></div>
+    <div class="level2"><a class="xref" href="UvA.Web.ContainerElement.html">ContainerElement</a></div>
+    <div class="level3"><span class="xref">DataView&lt;T&gt;</span></div>
+      <div class="level4"><a class="xref" href="UvA.Web.NavigationMenu.html">NavigationMenu</a></div>
+      <div class="level4"><a class="xref" href="UvA.Web.TableView-1.html">TableView&lt;T&gt;</a></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="UvA.Web.JS.IClientObject.html">IClientObject</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="UvA.Web.ContainerElement.html#UvA_Web_ContainerElement_Children">ContainerElement.Children</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.ContainerElement.html#UvA_Web_ContainerElement_ReplaceID">ContainerElement.ReplaceID</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.ContainerElement.html#UvA_Web_ContainerElement_ChildrenIsHidden">ContainerElement.ChildrenIsHidden</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.ContainerElement.html#UvA_Web_ContainerElement_Render">ContainerElement.Render()</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.ContainerElement.html#UvA_Web_ContainerElement_RenderChildren">ContainerElement.RenderChildren()</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.ContainerElement.html#UvA_Web_ContainerElement_PostRenderJSChildren">ContainerElement.PostRenderJSChildren()</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.ContainerElement.html#UvA_Web_ContainerElement_PostRenderJS">ContainerElement.PostRenderJS()</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_EnglishCulture">Element.EnglishCulture</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_DutchCulture">Element.DutchCulture</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_ID">Element.ID</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_GetClientName">Element.GetClientName()</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_Name">Element.Name</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_Parent">Element.Parent</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_Style">Element.Style</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_StyleFunction">Element.StyleFunction</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_Tag">Element.Tag</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_PopupText">Element.PopupText</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_Page">Element.Page</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_DisableContextMenu">Element.DisableContextMenu</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_PopupDisplayTop">Element.PopupDisplayTop</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_NoPrint">Element.NoPrint</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_KillOverflowOnPrint">Element.KillOverflowOnPrint</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_IsHidden">Element.IsHidden</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_HideFunction">Element.HideFunction</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_ShouldHide">Element.ShouldHide()</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_OnClick">Element.OnClick</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_ClientOnClick">Element.ClientOnClick</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_ClientOnClickFunction">Element.ClientOnClickFunction</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_OnContextMenu">Element.OnContextMenu</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_OnMouseDown">Element.OnMouseDown</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_ClientOnMouseDown">Element.ClientOnMouseDown</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_OnMouseUp">Element.OnMouseUp</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_MouseOverCommand">Element.MouseOverCommand</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_MouseOutCommand">Element.MouseOutCommand</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_KeyDownCommand">Element.KeyDownCommand</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_StopPropagation">Element.StopPropagation</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_ConfirmTextBeforeEvent">Element.ConfirmTextBeforeEvent</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_EnterTarget">Element.EnterTarget</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_NameParent">Element.NameParent</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_PopupElement">Element.PopupElement</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_ClientStyle">Element.ClientStyle</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_Font">Element.Font</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_Tooltip">Element.Tooltip</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_OpeningTag">Element.OpeningTag()</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_ClosingTag">Element.ClosingTag()</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_GetTagStart">Element.GetTagStart()</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_GetPopupCode">Element.GetPopupCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_ConfirmationID">Element.ConfirmationID</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_Attributes">Element.Attributes</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_SubclassAttributes">Element.SubclassAttributes</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_FormatVerbalText_System_String_">Element.FormatVerbalText(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_FormatText_System_String_">Element.FormatText(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_LookupText_System_String_System_Boolean_">Element.LookupText(String, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_FormatText_System_String___">Element.FormatText(String[])</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_FormatDate_System_Nullable_System_DateTime__System_String_System_String_">Element.FormatDate(Nullable&lt;DateTime&gt;, String, String)</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_FormatDate_System_DateTime_System_String_">Element.FormatDate(DateTime, String)</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_Localize_System_String___">Element.Localize(String[])</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_Execute_UvA_Web_JS_Command_">Element.Execute(Command)</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_Focus">Element.Focus()</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_SelectAll">Element.SelectAll()</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_IsHiddenByParent">Element.IsHiddenByParent</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_WrapIf_System_Boolean_System_Func_UvA_Web_Element_UvA_Web_Element__UvA_Web_Element_">Element.WrapIf(Boolean, Func&lt;Element, Element&gt;, Element)</a>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="UvA.Web.html">UvA.Web</a></h6>
+  <h6><strong>Assembly</strong>: UvA.Web.dll</h6>
+  <h5 id="UvA_Web_DataView_1_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class DataView&lt;T&gt; : ContainerElement, IClientObject</code></pre>
+  </div>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UvA-FNWI/DataNose/new/master/apiSpec/new?filename=UvA_Web_DataView_1__ctor_UvA_Web_ContainerElement_System_Func__0_UvA_Web_Element__.md&amp;value=---%0Auid%3A%20UvA.Web.DataView%601.%23ctor(UvA.Web.ContainerElement%2CSystem.Func%7B%600%2CUvA.Web.Element%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UvA-FNWI/DataNose/blob/master/UvA.Web/Controls/Data/DataView.cs/#L57">View Source</a>
+  </span>
+  <a id="UvA_Web_DataView_1__ctor_" data-uid="UvA.Web.DataView`1.#ctor*"></a>
+  <h4 id="UvA_Web_DataView_1__ctor_UvA_Web_ContainerElement_System_Func__0_UvA_Web_Element__" data-uid="UvA.Web.DataView`1.#ctor(UvA.Web.ContainerElement,System.Func{`0,UvA.Web.Element})">DataView(ContainerElement, Func&lt;T, Element&gt;)</h4>
+  <div class="markdown level1 summary"><p>Creates a new DataView</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DataView(ContainerElement container, Func&lt;T, Element&gt; displayFunction)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UvA.Web.ContainerElement.html">ContainerElement</a></td>
+        <td><span class="parametername">container</span></td>
+        <td><p>Container element to use, typically a BlockElement</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Func</span>&lt;T, <a class="xref" href="UvA.Web.Element.html">Element</a>&gt;</td>
+        <td><span class="parametername">displayFunction</span></td>
+        <td><p>Function that specifies how each object should be rendered</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UvA-FNWI/DataNose/new/master/apiSpec/new?filename=UvA_Web_DataView_1_FixedDataSource.md&amp;value=---%0Auid%3A%20UvA.Web.DataView%601.FixedDataSource%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UvA-FNWI/DataNose/blob/master/UvA.Web/Controls/Data/DataView.cs/#L45">View Source</a>
+  </span>
+  <h4 id="UvA_Web_DataView_1_FixedDataSource" data-uid="UvA.Web.DataView`1.FixedDataSource">FixedDataSource</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected T[] FixedDataSource</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>T[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UvA-FNWI/DataNose/new/master/apiSpec/new?filename=UvA_Web_DataView_1_ReverseSort.md&amp;value=---%0Auid%3A%20UvA.Web.DataView%601.ReverseSort%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UvA-FNWI/DataNose/blob/master/UvA.Web/Controls/Data/DataView.cs/#L25">View Source</a>
+  </span>
+  <h4 id="UvA_Web_DataView_1_ReverseSort" data-uid="UvA.Web.DataView`1.ReverseSort">ReverseSort</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool ReverseSort</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UvA-FNWI/DataNose/new/master/apiSpec/new?filename=UvA_Web_DataView_1_SortFunction.md&amp;value=---%0Auid%3A%20UvA.Web.DataView%601.SortFunction%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UvA-FNWI/DataNose/blob/master/UvA.Web/Controls/Data/DataView.cs/#L24">View Source</a>
+  </span>
+  <h4 id="UvA_Web_DataView_1_SortFunction" data-uid="UvA.Web.DataView`1.SortFunction">SortFunction</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Func&lt;T, IComparable&gt; SortFunction</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Func</span>&lt;T, <span class="xref">System.IComparable</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UvA-FNWI/DataNose/new/master/apiSpec/new?filename=UvA_Web_DataView_1_Container.md&amp;value=---%0Auid%3A%20UvA.Web.DataView%601.Container%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UvA-FNWI/DataNose/blob/master/UvA.Web/Controls/Data/DataView.cs/#L27">View Source</a>
+  </span>
+  <a id="UvA_Web_DataView_1_Container_" data-uid="UvA.Web.DataView`1.Container*"></a>
+  <h4 id="UvA_Web_DataView_1_Container" data-uid="UvA.Web.DataView`1.Container">Container</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ContainerElement Container { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UvA.Web.ContainerElement.html">ContainerElement</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UvA-FNWI/DataNose/new/master/apiSpec/new?filename=UvA_Web_DataView_1_DataSource.md&amp;value=---%0Auid%3A%20UvA.Web.DataView%601.DataSource%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UvA-FNWI/DataNose/blob/master/UvA.Web/Controls/Data/DataView.cs/#L33">View Source</a>
+  </span>
+  <a id="UvA_Web_DataView_1_DataSource_" data-uid="UvA.Web.DataView`1.DataSource*"></a>
+  <h4 id="UvA_Web_DataView_1_DataSource" data-uid="UvA.Web.DataView`1.DataSource">DataSource</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;T&gt; DataSource { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;T&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UvA-FNWI/DataNose/new/master/apiSpec/new?filename=UvA_Web_DataView_1_DisplayFunction.md&amp;value=---%0Auid%3A%20UvA.Web.DataView%601.DisplayFunction%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UvA-FNWI/DataNose/blob/master/UvA.Web/Controls/Data/DataView.cs/#L28">View Source</a>
+  </span>
+  <a id="UvA_Web_DataView_1_DisplayFunction_" data-uid="UvA.Web.DataView`1.DisplayFunction*"></a>
+  <h4 id="UvA_Web_DataView_1_DisplayFunction" data-uid="UvA.Web.DataView`1.DisplayFunction">DisplayFunction</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Func&lt;T, Element&gt; DisplayFunction { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Func</span>&lt;T, <a class="xref" href="UvA.Web.Element.html">Element</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UvA-FNWI/DataNose/new/master/apiSpec/new?filename=UvA_Web_DataView_1_Elements.md&amp;value=---%0Auid%3A%20UvA.Web.DataView%601.Elements%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UvA-FNWI/DataNose/blob/master/UvA.Web/Controls/Data/DataView.cs/#L23">View Source</a>
+  </span>
+  <a id="UvA_Web_DataView_1_Elements_" data-uid="UvA.Web.DataView`1.Elements*"></a>
+  <h4 id="UvA_Web_DataView_1_Elements" data-uid="UvA.Web.DataView`1.Elements">Elements</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Dictionary&lt;T, Element&gt; Elements { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.Dictionary</span>&lt;T, <a class="xref" href="UvA.Web.Element.html">Element</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UvA-FNWI/DataNose/new/master/apiSpec/new?filename=UvA_Web_DataView_1_FilteredDataSource.md&amp;value=---%0Auid%3A%20UvA.Web.DataView%601.FilteredDataSource%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UvA-FNWI/DataNose/blob/master/UvA.Web/Controls/Data/DataView.cs/#L46">View Source</a>
+  </span>
+  <a id="UvA_Web_DataView_1_FilteredDataSource_" data-uid="UvA.Web.DataView`1.FilteredDataSource*"></a>
+  <h4 id="UvA_Web_DataView_1_FilteredDataSource" data-uid="UvA.Web.DataView`1.FilteredDataSource">FilteredDataSource</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;T&gt; FilteredDataSource { get; protected set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;T&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UvA-FNWI/DataNose/new/master/apiSpec/new?filename=UvA_Web_DataView_1_SortedDataSource.md&amp;value=---%0Auid%3A%20UvA.Web.DataView%601.SortedDataSource%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UvA-FNWI/DataNose/blob/master/UvA.Web/Controls/Data/DataView.cs/#L47">View Source</a>
+  </span>
+  <a id="UvA_Web_DataView_1_SortedDataSource_" data-uid="UvA.Web.DataView`1.SortedDataSource*"></a>
+  <h4 id="UvA_Web_DataView_1_SortedDataSource" data-uid="UvA.Web.DataView`1.SortedDataSource">SortedDataSource</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;T&gt; SortedDataSource { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;T&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UvA-FNWI/DataNose/new/master/apiSpec/new?filename=UvA_Web_DataView_1_TagName.md&amp;value=---%0Auid%3A%20UvA.Web.DataView%601.TagName%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UvA-FNWI/DataNose/blob/master/UvA.Web/Controls/Data/DataView.cs/#L15">View Source</a>
+  </span>
+  <a id="UvA_Web_DataView_1_TagName_" data-uid="UvA.Web.DataView`1.TagName*"></a>
+  <h4 id="UvA_Web_DataView_1_TagName" data-uid="UvA.Web.DataView`1.TagName">TagName</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string TagName { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_TagName">Element.TagName</a></div>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UvA-FNWI/DataNose/new/master/apiSpec/new?filename=UvA_Web_DataView_1_OnUpdateClient.md&amp;value=---%0Auid%3A%20UvA.Web.DataView%601.OnUpdateClient%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UvA-FNWI/DataNose/blob/master/UvA.Web/Controls/Data/DataView.cs/#L99">View Source</a>
+  </span>
+  <a id="UvA_Web_DataView_1_OnUpdateClient_" data-uid="UvA.Web.DataView`1.OnUpdateClient*"></a>
+  <h4 id="UvA_Web_DataView_1_OnUpdateClient" data-uid="UvA.Web.DataView`1.OnUpdateClient">OnUpdateClient()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void OnUpdateClient()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UvA-FNWI/DataNose/new/master/apiSpec/new?filename=UvA_Web_DataView_1_OnUpdateEnd.md&amp;value=---%0Auid%3A%20UvA.Web.DataView%601.OnUpdateEnd%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UvA-FNWI/DataNose/blob/master/UvA.Web/Controls/Data/DataView.cs/#L93">View Source</a>
+  </span>
+  <a id="UvA_Web_DataView_1_OnUpdateEnd_" data-uid="UvA.Web.DataView`1.OnUpdateEnd*"></a>
+  <h4 id="UvA_Web_DataView_1_OnUpdateEnd" data-uid="UvA.Web.DataView`1.OnUpdateEnd">OnUpdateEnd()</h4>
+  <div class="markdown level1 summary"><p>This method is called after an update of the view has been performed</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void OnUpdateEnd()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UvA-FNWI/DataNose/new/master/apiSpec/new?filename=UvA_Web_DataView_1_OnUpdateStart.md&amp;value=---%0Auid%3A%20UvA.Web.DataView%601.OnUpdateStart%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UvA-FNWI/DataNose/blob/master/UvA.Web/Controls/Data/DataView.cs/#L86">View Source</a>
+  </span>
+  <a id="UvA_Web_DataView_1_OnUpdateStart_" data-uid="UvA.Web.DataView`1.OnUpdateStart*"></a>
+  <h4 id="UvA_Web_DataView_1_OnUpdateStart" data-uid="UvA.Web.DataView`1.OnUpdateStart">OnUpdateStart()</h4>
+  <div class="markdown level1 summary"><p>This method is called before an update of the view is performed</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void OnUpdateStart()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UvA-FNWI/DataNose/new/master/apiSpec/new?filename=UvA_Web_DataView_1_RemoveElement__0_.md&amp;value=---%0Auid%3A%20UvA.Web.DataView%601.RemoveElement(%600)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UvA-FNWI/DataNose/blob/master/UvA.Web/Controls/Data/DataView.cs/#L181">View Source</a>
+  </span>
+  <a id="UvA_Web_DataView_1_RemoveElement_" data-uid="UvA.Web.DataView`1.RemoveElement*"></a>
+  <h4 id="UvA_Web_DataView_1_RemoveElement__0_" data-uid="UvA.Web.DataView`1.RemoveElement(`0)">RemoveElement(T)</h4>
+  <div class="markdown level1 summary"><p>Remove a row from the view, also on the client</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoveElement(T key)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">key</span></td>
+        <td><p>Row element to be removed</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UvA-FNWI/DataNose/new/master/apiSpec/new?filename=UvA_Web_DataView_1_SetDataSourceWithoutUpdate_System_Collections_Generic_IEnumerable__0__.md&amp;value=---%0Auid%3A%20UvA.Web.DataView%601.SetDataSourceWithoutUpdate(System.Collections.Generic.IEnumerable%7B%600%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UvA-FNWI/DataNose/blob/master/UvA.Web/Controls/Data/DataView.cs/#L39">View Source</a>
+  </span>
+  <a id="UvA_Web_DataView_1_SetDataSourceWithoutUpdate_" data-uid="UvA.Web.DataView`1.SetDataSourceWithoutUpdate*"></a>
+  <h4 id="UvA_Web_DataView_1_SetDataSourceWithoutUpdate_System_Collections_Generic_IEnumerable__0__" data-uid="UvA.Web.DataView`1.SetDataSourceWithoutUpdate(System.Collections.Generic.IEnumerable{`0})">SetDataSourceWithoutUpdate(IEnumerable&lt;T&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetDataSourceWithoutUpdate(IEnumerable&lt;T&gt; source)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;T&gt;</td>
+        <td><span class="parametername">source</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UvA-FNWI/DataNose/new/master/apiSpec/new?filename=UvA_Web_DataView_1_Sort_System_Func__0_System_IComparable__System_Nullable_System_Boolean__.md&amp;value=---%0Auid%3A%20UvA.Web.DataView%601.Sort(System.Func%7B%600%2CSystem.IComparable%7D%2CSystem.Nullable%7BSystem.Boolean%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UvA-FNWI/DataNose/blob/master/UvA.Web/Controls/Data/DataView.cs/#L68">View Source</a>
+  </span>
+  <a id="UvA_Web_DataView_1_Sort_" data-uid="UvA.Web.DataView`1.Sort*"></a>
+  <h4 id="UvA_Web_DataView_1_Sort_System_Func__0_System_IComparable__System_Nullable_System_Boolean__" data-uid="UvA.Web.DataView`1.Sort(System.Func{`0,System.IComparable},System.Nullable{System.Boolean})">Sort(Func&lt;T, IComparable&gt;, Nullable&lt;Boolean&gt;)</h4>
+  <div class="markdown level1 summary"><p>Sort the data using a sorting function and update the view</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Sort(Func&lt;T, IComparable&gt; sortFunction, bool? reverse = default(bool? ))</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Func</span>&lt;T, <span class="xref">System.IComparable</span>&gt;</td>
+        <td><span class="parametername">sortFunction</span></td>
+        <td><p>Sorting function</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
+        <td><span class="parametername">reverse</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UvA-FNWI/DataNose/new/master/apiSpec/new?filename=UvA_Web_DataView_1_Update_System_Boolean_.md&amp;value=---%0Auid%3A%20UvA.Web.DataView%601.Update(System.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UvA-FNWI/DataNose/blob/master/UvA.Web/Controls/Data/DataView.cs/#L107">View Source</a>
+  </span>
+  <a id="UvA_Web_DataView_1_Update_" data-uid="UvA.Web.DataView`1.Update*"></a>
+  <h4 id="UvA_Web_DataView_1_Update_System_Boolean_" data-uid="UvA.Web.DataView`1.Update(System.Boolean)">Update(Boolean)</h4>
+  <div class="markdown level1 summary"><p>Updates the view</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Update(bool clientCommand = true)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">clientCommand</span></td>
+        <td><p>If true, update on the client as well</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UvA-FNWI/DataNose/new/master/apiSpec/new?filename=UvA_Web_DataView_1_UpdateElement__0_System_Func__0__0__.md&amp;value=---%0Auid%3A%20UvA.Web.DataView%601.UpdateElement(%600%2CSystem.Func%7B%600%2C%600%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UvA-FNWI/DataNose/blob/master/UvA.Web/Controls/Data/DataView.cs/#L133">View Source</a>
+  </span>
+  <a id="UvA_Web_DataView_1_UpdateElement_" data-uid="UvA.Web.DataView`1.UpdateElement*"></a>
+  <h4 id="UvA_Web_DataView_1_UpdateElement__0_System_Func__0__0__" data-uid="UvA.Web.DataView`1.UpdateElement(`0,System.Func{`0,`0})">UpdateElement(T, Func&lt;T, T&gt;)</h4>
+  <div class="markdown level1 summary"><p>Updates a row in the view</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UpdateElement(T key, Func&lt;T, T&gt; updateAction = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">key</span></td>
+        <td><p>Row element to be updated</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Func</span>&lt;T, T&gt;</td>
+        <td><span class="parametername">updateAction</span></td>
+        <td><p>Update action to be performed</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="events">Events
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UvA-FNWI/DataNose/new/master/apiSpec/new?filename=UvA_Web_DataView_1_UpdateEnd.md&amp;value=---%0Auid%3A%20UvA.Web.DataView%601.UpdateEnd%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UvA-FNWI/DataNose/blob/master/UvA.Web/Controls/Data/DataView.cs/#L30">View Source</a>
+  </span>
+  <h4 id="UvA_Web_DataView_1_UpdateEnd" data-uid="UvA.Web.DataView`1.UpdateEnd">UpdateEnd</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler UpdateEnd</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.EventHandler</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="UvA.Web.JS.IClientObject.html">IClientObject</a>
+  </div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="UvA.Web.WebExtensions.html#UvA_Web_WebExtensions_WithStyle__1___0_UvA_Web_Style_">WebExtensions.WithStyle&lt;T&gt;(T, Style)</a>
+  </div>
+  <div>
+      <a class="xref" href="UvA.Web.JS.ClientExtensions.html#UvA_Web_JS_ClientExtensions_GetClientStyle_UvA_Web_Element_">ClientExtensions.GetClientStyle(Element)</a>
+  </div>
+  <div>
+      <a class="xref" href="UvA.Utilities.DataExtensions.html#UvA_Utilities_DataExtensions_IsIn__1___0___0_">DataExtensions.IsIn&lt;T&gt;(T, T)</a>
+  </div>
+  <div>
+      <a class="xref" href="UvA.Utilities.DataExtensions.html#UvA_Utilities_DataExtensions_IsIn__1___0___0___0_">DataExtensions.IsIn&lt;T&gt;(T, T, T)</a>
+  </div>
+  <div>
+      <a class="xref" href="UvA.Utilities.DataExtensions.html#UvA_Utilities_DataExtensions_IsIn__1___0___0___0___0_">DataExtensions.IsIn&lt;T&gt;(T, T, T, T)</a>
+  </div>
+  <div>
+      <a class="xref" href="UvA.Utilities.DataExtensions.html#UvA_Utilities_DataExtensions_IsIn__1___0___0___0___0___0_">DataExtensions.IsIn&lt;T&gt;(T, T, T, T, T)</a>
+  </div>
+  <div>
+      <a class="xref" href="UvA.Utilities.DataExtensions.html#UvA_Utilities_DataExtensions_IsIn__1___0___0___0___0___0___0_">DataExtensions.IsIn&lt;T&gt;(T, T, T, T, T, T)</a>
+  </div>
+  <div>
+      <a class="xref" href="UvA.Utilities.DataExtensions.html#UvA_Utilities_DataExtensions_IsIn__1___0___0___">DataExtensions.IsIn&lt;T&gt;(T, T[])</a>
+  </div>
+  <div>
+      <a class="xref" href="UvA.Utilities.DataExtensions.html#UvA_Utilities_DataExtensions_IsNotIn__1___0___0_">DataExtensions.IsNotIn&lt;T&gt;(T, T)</a>
+  </div>
+  <div>
+      <a class="xref" href="UvA.Utilities.DataExtensions.html#UvA_Utilities_DataExtensions_IsNotIn__1___0___0___0_">DataExtensions.IsNotIn&lt;T&gt;(T, T, T)</a>
+  </div>
+  <div>
+      <a class="xref" href="UvA.Utilities.DataExtensions.html#UvA_Utilities_DataExtensions_IsNotIn__1___0___0___0___0_">DataExtensions.IsNotIn&lt;T&gt;(T, T, T, T)</a>
+  </div>
+  <div>
+      <a class="xref" href="UvA.Utilities.DataExtensions.html#UvA_Utilities_DataExtensions_IsNotIn__1___0___0___0___0___0_">DataExtensions.IsNotIn&lt;T&gt;(T, T, T, T, T)</a>
+  </div>
+  <div>
+      <a class="xref" href="UvA.Utilities.DataExtensions.html#UvA_Utilities_DataExtensions_IsNotIn__1___0___0___0___0___0___0_">DataExtensions.IsNotIn&lt;T&gt;(T, T, T, T, T, T)</a>
+  </div>
+  <div>
+      <a class="xref" href="UvA.Utilities.DataExtensions.html#UvA_Utilities_DataExtensions_IsNotIn__1___0___0___">DataExtensions.IsNotIn&lt;T&gt;(T, T[])</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/UvA-FNWI/DataNose/new/master/apiSpec/new?filename=UvA_Web_DataView_1.md&amp;value=---%0Auid%3A%20UvA.Web.DataView%601%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/UvA-FNWI/DataNose/blob/master/UvA.Web/Controls/Data/DataView.cs/#L13" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

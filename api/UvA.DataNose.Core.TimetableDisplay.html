@@ -1,0 +1,1184 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class TimetableDisplay
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class TimetableDisplay
+   ">
+    <meta name="generator" content="docfx 2.40.12.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="UvA.DataNose.Core.TimetableDisplay">
+  
+  
+  <h1 id="UvA_DataNose_Core_TimetableDisplay" data-uid="UvA.DataNose.Core.TimetableDisplay" class="text-break">Class TimetableDisplay
+  </h1>
+  <div class="markdown level0 summary"><p>Displays a timetable in block format.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="UvA.Web.Element.html">Element</a></div>
+    <div class="level2"><a class="xref" href="UvA.Web.ContainerElement.html">ContainerElement</a></div>
+    <div class="level3"><a class="xref" href="UvA.Web.BlockElement.html">BlockElement</a></div>
+    <div class="level4"><span class="xref">TimetableDisplay</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="UvA.Web.JS.IClientObject.html">IClientObject</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="UvA.Web.BlockElement.html#UvA_Web_BlockElement_TagName">BlockElement.TagName</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.BlockElement.html#UvA_Web_BlockElement_FormatMultilineString_System_String_UvA_Web_Style_">BlockElement.FormatMultilineString(String, Style)</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.ContainerElement.html#UvA_Web_ContainerElement_Children">ContainerElement.Children</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.ContainerElement.html#UvA_Web_ContainerElement_ReplaceID">ContainerElement.ReplaceID</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.ContainerElement.html#UvA_Web_ContainerElement_ChildrenIsHidden">ContainerElement.ChildrenIsHidden</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.ContainerElement.html#UvA_Web_ContainerElement_Render">ContainerElement.Render()</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.ContainerElement.html#UvA_Web_ContainerElement_RenderChildren">ContainerElement.RenderChildren()</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.ContainerElement.html#UvA_Web_ContainerElement_PostRenderJSChildren">ContainerElement.PostRenderJSChildren()</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.ContainerElement.html#UvA_Web_ContainerElement_PostRenderJS">ContainerElement.PostRenderJS()</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_EnglishCulture">Element.EnglishCulture</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_DutchCulture">Element.DutchCulture</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_ID">Element.ID</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_GetClientName">Element.GetClientName()</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_Name">Element.Name</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_Parent">Element.Parent</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_Style">Element.Style</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_StyleFunction">Element.StyleFunction</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_Tag">Element.Tag</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_PopupText">Element.PopupText</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_Page">Element.Page</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_DisableContextMenu">Element.DisableContextMenu</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_PopupDisplayTop">Element.PopupDisplayTop</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_NoPrint">Element.NoPrint</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_KillOverflowOnPrint">Element.KillOverflowOnPrint</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_IsHidden">Element.IsHidden</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_HideFunction">Element.HideFunction</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_ShouldHide">Element.ShouldHide()</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_OnClick">Element.OnClick</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_ClientOnClick">Element.ClientOnClick</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_ClientOnClickFunction">Element.ClientOnClickFunction</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_OnContextMenu">Element.OnContextMenu</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_OnMouseDown">Element.OnMouseDown</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_ClientOnMouseDown">Element.ClientOnMouseDown</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_OnMouseUp">Element.OnMouseUp</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_MouseOverCommand">Element.MouseOverCommand</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_MouseOutCommand">Element.MouseOutCommand</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_KeyDownCommand">Element.KeyDownCommand</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_StopPropagation">Element.StopPropagation</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_ConfirmTextBeforeEvent">Element.ConfirmTextBeforeEvent</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_EnterTarget">Element.EnterTarget</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_NameParent">Element.NameParent</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_PopupElement">Element.PopupElement</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_ClientStyle">Element.ClientStyle</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_Font">Element.Font</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_Tooltip">Element.Tooltip</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_OpeningTag">Element.OpeningTag()</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_ClosingTag">Element.ClosingTag()</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_GetTagStart">Element.GetTagStart()</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_GetPopupCode">Element.GetPopupCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_ConfirmationID">Element.ConfirmationID</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_Attributes">Element.Attributes</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_SubclassAttributes">Element.SubclassAttributes</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_FormatVerbalText_System_String_">Element.FormatVerbalText(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_FormatText_System_String_">Element.FormatText(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_LookupText_System_String_System_Boolean_">Element.LookupText(String, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_FormatText_System_String___">Element.FormatText(String[])</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_FormatDate_System_Nullable_System_DateTime__System_String_System_String_">Element.FormatDate(Nullable&lt;DateTime&gt;, String, String)</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_FormatDate_System_DateTime_System_String_">Element.FormatDate(DateTime, String)</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_Localize_System_String___">Element.Localize(String[])</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_Execute_UvA_Web_JS_Command_">Element.Execute(Command)</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_Focus">Element.Focus()</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_SelectAll">Element.SelectAll()</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_IsHiddenByParent">Element.IsHiddenByParent</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_WrapIf_System_Boolean_System_Func_UvA_Web_Element_UvA_Web_Element__UvA_Web_Element_">Element.WrapIf(Boolean, Func&lt;Element, Element&gt;, Element)</a>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="UvA.DataNose.Core.html">UvA.DataNose.Core</a></h6>
+  <h6><strong>Assembly</strong>: UvA.DataNose.Core.dll</h6>
+  <h5 id="UvA_DataNose_Core_TimetableDisplay_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class TimetableDisplay : BlockElement, IClientObject</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UvA-FNWI/DataNose/new/master/apiSpec/new?filename=UvA_DataNose_Core_TimetableDisplay__ctor_UvA_DataNose_Core_TimetableSection_UvA_DataNose_Data_UvAData_.md&amp;value=---%0Auid%3A%20UvA.DataNose.Core.TimetableDisplay.%23ctor(UvA.DataNose.Core.TimetableSection%2CUvA.DataNose.Data.UvAData)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UvA-FNWI/DataNose/blob/master/UvA.DataNose.Core/Controls/TimetableDisplay.cs/#L73">View Source</a>
+  </span>
+  <a id="UvA_DataNose_Core_TimetableDisplay__ctor_" data-uid="UvA.DataNose.Core.TimetableDisplay.#ctor*"></a>
+  <h4 id="UvA_DataNose_Core_TimetableDisplay__ctor_UvA_DataNose_Core_TimetableSection_UvA_DataNose_Data_UvAData_" data-uid="UvA.DataNose.Core.TimetableDisplay.#ctor(UvA.DataNose.Core.TimetableSection,UvA.DataNose.Data.UvAData)">TimetableDisplay(TimetableSection, UvAData)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TimetableDisplay(TimetableSection parent, UvAData data)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UvA.DataNose.Core.TimetableSection.html">TimetableSection</a></td>
+        <td><span class="parametername">parent</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UvA.DataNose.Data.UvAData.html">UvAData</a></td>
+        <td><span class="parametername">data</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UvA-FNWI/DataNose/new/master/apiSpec/new?filename=UvA_DataNose_Core_TimetableDisplay_BlockStyle.md&amp;value=---%0Auid%3A%20UvA.DataNose.Core.TimetableDisplay.BlockStyle%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UvA-FNWI/DataNose/blob/master/UvA.DataNose.Core/Controls/TimetableDisplay.cs/#L62">View Source</a>
+  </span>
+  <h4 id="UvA_DataNose_Core_TimetableDisplay_BlockStyle" data-uid="UvA.DataNose.Core.TimetableDisplay.BlockStyle">BlockStyle</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Style BlockStyle</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UvA.Web.Style.html">Style</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UvA-FNWI/DataNose/new/master/apiSpec/new?filename=UvA_DataNose_Core_TimetableDisplay_DateStyle.md&amp;value=---%0Auid%3A%20UvA.DataNose.Core.TimetableDisplay.DateStyle%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UvA-FNWI/DataNose/blob/master/UvA.DataNose.Core/Controls/TimetableDisplay.cs/#L64">View Source</a>
+  </span>
+  <h4 id="UvA_DataNose_Core_TimetableDisplay_DateStyle" data-uid="UvA.DataNose.Core.TimetableDisplay.DateStyle">DateStyle</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Style DateStyle</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UvA.Web.Style.html">Style</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UvA-FNWI/DataNose/new/master/apiSpec/new?filename=UvA_DataNose_Core_TimetableDisplay_DeadlineStyle.md&amp;value=---%0Auid%3A%20UvA.DataNose.Core.TimetableDisplay.DeadlineStyle%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UvA-FNWI/DataNose/blob/master/UvA.DataNose.Core/Controls/TimetableDisplay.cs/#L63">View Source</a>
+  </span>
+  <h4 id="UvA_DataNose_Core_TimetableDisplay_DeadlineStyle" data-uid="UvA.DataNose.Core.TimetableDisplay.DeadlineStyle">DeadlineStyle</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Style DeadlineStyle</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UvA.Web.Style.html">Style</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UvA-FNWI/DataNose/new/master/apiSpec/new?filename=UvA_DataNose_Core_TimetableDisplay_Log.md&amp;value=---%0Auid%3A%20UvA.DataNose.Core.TimetableDisplay.Log%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UvA-FNWI/DataNose/blob/master/UvA.DataNose.Core/Controls/TimetableDisplay.cs/#L25">View Source</a>
+  </span>
+  <h4 id="UvA_DataNose_Core_TimetableDisplay_Log" data-uid="UvA.DataNose.Core.TimetableDisplay.Log">Log</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Logger Log</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UvA.Infrastructure.Logger.html">Logger</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UvA-FNWI/DataNose/new/master/apiSpec/new?filename=UvA_DataNose_Core_TimetableDisplay_StandardHourHeight.md&amp;value=---%0Auid%3A%20UvA.DataNose.Core.TimetableDisplay.StandardHourHeight%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UvA-FNWI/DataNose/blob/master/UvA.DataNose.Core/Controls/TimetableDisplay.cs/#L23">View Source</a>
+  </span>
+  <h4 id="UvA_DataNose_Core_TimetableDisplay_StandardHourHeight" data-uid="UvA.DataNose.Core.TimetableDisplay.StandardHourHeight">StandardHourHeight</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly int StandardHourHeight</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UvA-FNWI/DataNose/new/master/apiSpec/new?filename=UvA_DataNose_Core_TimetableDisplay_Description.md&amp;value=---%0Auid%3A%20UvA.DataNose.Core.TimetableDisplay.Description%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UvA-FNWI/DataNose/blob/master/UvA.DataNose.Core/Controls/TimetableDisplay.cs/#L59">View Source</a>
+  </span>
+  <a id="UvA_DataNose_Core_TimetableDisplay_Description_" data-uid="UvA.DataNose.Core.TimetableDisplay.Description*"></a>
+  <h4 id="UvA_DataNose_Core_TimetableDisplay_Description" data-uid="UvA.DataNose.Core.TimetableDisplay.Description">Description</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Description { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UvA-FNWI/DataNose/new/master/apiSpec/new?filename=UvA_DataNose_Core_TimetableDisplay_HeightPerHour.md&amp;value=---%0Auid%3A%20UvA.DataNose.Core.TimetableDisplay.HeightPerHour%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UvA-FNWI/DataNose/blob/master/UvA.DataNose.Core/Controls/TimetableDisplay.cs/#L36">View Source</a>
+  </span>
+  <a id="UvA_DataNose_Core_TimetableDisplay_HeightPerHour_" data-uid="UvA.DataNose.Core.TimetableDisplay.HeightPerHour*"></a>
+  <h4 id="UvA_DataNose_Core_TimetableDisplay_HeightPerHour" data-uid="UvA.DataNose.Core.TimetableDisplay.HeightPerHour">HeightPerHour</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int HeightPerHour { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UvA-FNWI/DataNose/new/master/apiSpec/new?filename=UvA_DataNose_Core_TimetableDisplay_IsPersonal.md&amp;value=---%0Auid%3A%20UvA.DataNose.Core.TimetableDisplay.IsPersonal%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UvA-FNWI/DataNose/blob/master/UvA.DataNose.Core/Controls/TimetableDisplay.cs/#L48">View Source</a>
+  </span>
+  <a id="UvA_DataNose_Core_TimetableDisplay_IsPersonal_" data-uid="UvA.DataNose.Core.TimetableDisplay.IsPersonal*"></a>
+  <h4 id="UvA_DataNose_Core_TimetableDisplay_IsPersonal" data-uid="UvA.DataNose.Core.TimetableDisplay.IsPersonal">IsPersonal</h4>
+  <div class="markdown level1 summary"><p>Gets or sets a value that indicates whether or not this is a personal timetable</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsPersonal { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UvA-FNWI/DataNose/new/master/apiSpec/new?filename=UvA_DataNose_Core_TimetableDisplay_PersonID.md&amp;value=---%0Auid%3A%20UvA.DataNose.Core.TimetableDisplay.PersonID%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UvA-FNWI/DataNose/blob/master/UvA.DataNose.Core/Controls/TimetableDisplay.cs/#L35">View Source</a>
+  </span>
+  <a id="UvA_DataNose_Core_TimetableDisplay_PersonID_" data-uid="UvA.DataNose.Core.TimetableDisplay.PersonID*"></a>
+  <h4 id="UvA_DataNose_Core_TimetableDisplay_PersonID" data-uid="UvA.DataNose.Core.TimetableDisplay.PersonID">PersonID</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int PersonID { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UvA-FNWI/DataNose/new/master/apiSpec/new?filename=UvA_DataNose_Core_TimetableDisplay_ShowDays.md&amp;value=---%0Auid%3A%20UvA.DataNose.Core.TimetableDisplay.ShowDays%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UvA-FNWI/DataNose/blob/master/UvA.DataNose.Core/Controls/TimetableDisplay.cs/#L41">View Source</a>
+  </span>
+  <a id="UvA_DataNose_Core_TimetableDisplay_ShowDays_" data-uid="UvA.DataNose.Core.TimetableDisplay.ShowDays*"></a>
+  <h4 id="UvA_DataNose_Core_TimetableDisplay_ShowDays" data-uid="UvA.DataNose.Core.TimetableDisplay.ShowDays">ShowDays</h4>
+  <div class="markdown level1 summary"><p>Display the days at the top of the timetable</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool ShowDays { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UvA-FNWI/DataNose/new/master/apiSpec/new?filename=UvA_DataNose_Core_TimetableDisplay_ShowHandled.md&amp;value=---%0Auid%3A%20UvA.DataNose.Core.TimetableDisplay.ShowHandled%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UvA-FNWI/DataNose/blob/master/UvA.DataNose.Core/Controls/TimetableDisplay.cs/#L53">View Source</a>
+  </span>
+  <a id="UvA_DataNose_Core_TimetableDisplay_ShowHandled_" data-uid="UvA.DataNose.Core.TimetableDisplay.ShowHandled*"></a>
+  <h4 id="UvA_DataNose_Core_TimetableDisplay_ShowHandled" data-uid="UvA.DataNose.Core.TimetableDisplay.ShowHandled">ShowHandled</h4>
+  <div class="markdown level1 summary"><p>Show handled messages</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool ShowHandled { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UvA-FNWI/DataNose/new/master/apiSpec/new?filename=UvA_DataNose_Core_TimetableDisplay_ShowInstructors.md&amp;value=---%0Auid%3A%20UvA.DataNose.Core.TimetableDisplay.ShowInstructors%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UvA-FNWI/DataNose/blob/master/UvA.DataNose.Core/Controls/TimetableDisplay.cs/#L57">View Source</a>
+  </span>
+  <a id="UvA_DataNose_Core_TimetableDisplay_ShowInstructors_" data-uid="UvA.DataNose.Core.TimetableDisplay.ShowInstructors*"></a>
+  <h4 id="UvA_DataNose_Core_TimetableDisplay_ShowInstructors" data-uid="UvA.DataNose.Core.TimetableDisplay.ShowInstructors">ShowInstructors</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool ShowInstructors { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UvA-FNWI/DataNose/new/master/apiSpec/new?filename=UvA_DataNose_Core_TimetableDisplay_ShowLocations.md&amp;value=---%0Auid%3A%20UvA.DataNose.Core.TimetableDisplay.ShowLocations%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UvA-FNWI/DataNose/blob/master/UvA.DataNose.Core/Controls/TimetableDisplay.cs/#L56">View Source</a>
+  </span>
+  <a id="UvA_DataNose_Core_TimetableDisplay_ShowLocations_" data-uid="UvA.DataNose.Core.TimetableDisplay.ShowLocations*"></a>
+  <h4 id="UvA_DataNose_Core_TimetableDisplay_ShowLocations" data-uid="UvA.DataNose.Core.TimetableDisplay.ShowLocations">ShowLocations</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool ShowLocations { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UvA-FNWI/DataNose/new/master/apiSpec/new?filename=UvA_DataNose_Core_TimetableDisplay_ShowMessages.md&amp;value=---%0Auid%3A%20UvA.DataNose.Core.TimetableDisplay.ShowMessages%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UvA-FNWI/DataNose/blob/master/UvA.DataNose.Core/Controls/TimetableDisplay.cs/#L58">View Source</a>
+  </span>
+  <a id="UvA_DataNose_Core_TimetableDisplay_ShowMessages_" data-uid="UvA.DataNose.Core.TimetableDisplay.ShowMessages*"></a>
+  <h4 id="UvA_DataNose_Core_TimetableDisplay_ShowMessages" data-uid="UvA.DataNose.Core.TimetableDisplay.ShowMessages">ShowMessages</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool ShowMessages { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UvA-FNWI/DataNose/new/master/apiSpec/new?filename=UvA_DataNose_Core_TimetableDisplay_ShowMinimal.md&amp;value=---%0Auid%3A%20UvA.DataNose.Core.TimetableDisplay.ShowMinimal%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UvA-FNWI/DataNose/blob/master/UvA.DataNose.Core/Controls/TimetableDisplay.cs/#L43">View Source</a>
+  </span>
+  <a id="UvA_DataNose_Core_TimetableDisplay_ShowMinimal_" data-uid="UvA.DataNose.Core.TimetableDisplay.ShowMinimal*"></a>
+  <h4 id="UvA_DataNose_Core_TimetableDisplay_ShowMinimal" data-uid="UvA.DataNose.Core.TimetableDisplay.ShowMinimal">ShowMinimal</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool ShowMinimal { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UvA-FNWI/DataNose/new/master/apiSpec/new?filename=UvA_DataNose_Core_TimetableDisplay_ShowOnlyCompulsory.md&amp;value=---%0Auid%3A%20UvA.DataNose.Core.TimetableDisplay.ShowOnlyCompulsory%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UvA-FNWI/DataNose/blob/master/UvA.DataNose.Core/Controls/TimetableDisplay.cs/#L55">View Source</a>
+  </span>
+  <a id="UvA_DataNose_Core_TimetableDisplay_ShowOnlyCompulsory_" data-uid="UvA.DataNose.Core.TimetableDisplay.ShowOnlyCompulsory*"></a>
+  <h4 id="UvA_DataNose_Core_TimetableDisplay_ShowOnlyCompulsory" data-uid="UvA.DataNose.Core.TimetableDisplay.ShowOnlyCompulsory">ShowOnlyCompulsory</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool ShowOnlyCompulsory { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UvA-FNWI/DataNose/new/master/apiSpec/new?filename=UvA_DataNose_Core_TimetableDisplay_StudentSet.md&amp;value=---%0Auid%3A%20UvA.DataNose.Core.TimetableDisplay.StudentSet%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UvA-FNWI/DataNose/blob/master/UvA.DataNose.Core/Controls/TimetableDisplay.cs/#L31">View Source</a>
+  </span>
+  <a id="UvA_DataNose_Core_TimetableDisplay_StudentSet_" data-uid="UvA.DataNose.Core.TimetableDisplay.StudentSet*"></a>
+  <h4 id="UvA_DataNose_Core_TimetableDisplay_StudentSet" data-uid="UvA.DataNose.Core.TimetableDisplay.StudentSet">StudentSet</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public StudentSet StudentSet { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UvA.DataNose.Data.StudentSet.html">StudentSet</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UvA-FNWI/DataNose/new/master/apiSpec/new?filename=UvA_DataNose_Core_TimetableDisplay_TargetProgramme.md&amp;value=---%0Auid%3A%20UvA.DataNose.Core.TimetableDisplay.TargetProgramme%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UvA-FNWI/DataNose/blob/master/UvA.DataNose.Core/Controls/TimetableDisplay.cs/#L32">View Source</a>
+  </span>
+  <a id="UvA_DataNose_Core_TimetableDisplay_TargetProgramme_" data-uid="UvA.DataNose.Core.TimetableDisplay.TargetProgramme*"></a>
+  <h4 id="UvA_DataNose_Core_TimetableDisplay_TargetProgramme" data-uid="UvA.DataNose.Core.TimetableDisplay.TargetProgramme">TargetProgramme</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Department TargetProgramme { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UvA.DataNose.Data.Department.html">Department</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UvA-FNWI/DataNose/new/master/apiSpec/new?filename=UvA_DataNose_Core_TimetableDisplay_TargetYear.md&amp;value=---%0Auid%3A%20UvA.DataNose.Core.TimetableDisplay.TargetYear%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UvA-FNWI/DataNose/blob/master/UvA.DataNose.Core/Controls/TimetableDisplay.cs/#L34">View Source</a>
+  </span>
+  <a id="UvA_DataNose_Core_TimetableDisplay_TargetYear_" data-uid="UvA.DataNose.Core.TimetableDisplay.TargetYear*"></a>
+  <h4 id="UvA_DataNose_Core_TimetableDisplay_TargetYear" data-uid="UvA.DataNose.Core.TimetableDisplay.TargetYear">TargetYear</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int TargetYear { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UvA-FNWI/DataNose/new/master/apiSpec/new?filename=UvA_DataNose_Core_TimetableDisplay_TargetZone.md&amp;value=---%0Auid%3A%20UvA.DataNose.Core.TimetableDisplay.TargetZone%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UvA-FNWI/DataNose/blob/master/UvA.DataNose.Core/Controls/TimetableDisplay.cs/#L33">View Source</a>
+  </span>
+  <a id="UvA_DataNose_Core_TimetableDisplay_TargetZone_" data-uid="UvA.DataNose.Core.TimetableDisplay.TargetZone*"></a>
+  <h4 id="UvA_DataNose_Core_TimetableDisplay_TargetZone" data-uid="UvA.DataNose.Core.TimetableDisplay.TargetZone">TargetZone</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Zone TargetZone { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UvA.DataNose.Data.Zone.html">Zone</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UvA-FNWI/DataNose/new/master/apiSpec/new?filename=UvA_DataNose_Core_TimetableDisplay_GetBlockColor_System_Nullable_System_Int32__.md&amp;value=---%0Auid%3A%20UvA.DataNose.Core.TimetableDisplay.GetBlockColor(System.Nullable%7BSystem.Int32%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UvA-FNWI/DataNose/blob/master/UvA.DataNose.Core/Controls/TimetableDisplay.cs/#L277">View Source</a>
+  </span>
+  <a id="UvA_DataNose_Core_TimetableDisplay_GetBlockColor_" data-uid="UvA.DataNose.Core.TimetableDisplay.GetBlockColor*"></a>
+  <h4 id="UvA_DataNose_Core_TimetableDisplay_GetBlockColor_System_Nullable_System_Int32__" data-uid="UvA.DataNose.Core.TimetableDisplay.GetBlockColor(System.Nullable{System.Int32})">GetBlockColor(Nullable&lt;Int32&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static HSLColor? GetBlockColor(int? hue)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td><span class="parametername">hue</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="UvA.Web.HSLColor.html">HSLColor</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UvA-FNWI/DataNose/new/master/apiSpec/new?filename=UvA_DataNose_Core_TimetableDisplay_GetBlockLine_System_Nullable_System_Int32__System_Boolean_.md&amp;value=---%0Auid%3A%20UvA.DataNose.Core.TimetableDisplay.GetBlockLine(System.Nullable%7BSystem.Int32%7D%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UvA-FNWI/DataNose/blob/master/UvA.DataNose.Core/Controls/TimetableDisplay.cs/#L266">View Source</a>
+  </span>
+  <a id="UvA_DataNose_Core_TimetableDisplay_GetBlockLine_" data-uid="UvA.DataNose.Core.TimetableDisplay.GetBlockLine*"></a>
+  <h4 id="UvA_DataNose_Core_TimetableDisplay_GetBlockLine_System_Nullable_System_Int32__System_Boolean_" data-uid="UvA.DataNose.Core.TimetableDisplay.GetBlockLine(System.Nullable{System.Int32},System.Boolean)">GetBlockLine(Nullable&lt;Int32&gt;, Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static InlineElement GetBlockLine(int? hue, bool comp)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td><span class="parametername">hue</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">comp</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UvA.Web.InlineElement.html">InlineElement</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UvA-FNWI/DataNose/new/master/apiSpec/new?filename=UvA_DataNose_Core_TimetableDisplay_Update.md&amp;value=---%0Auid%3A%20UvA.DataNose.Core.TimetableDisplay.Update%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UvA-FNWI/DataNose/blob/master/UvA.DataNose.Core/Controls/TimetableDisplay.cs/#L84">View Source</a>
+  </span>
+  <a id="UvA_DataNose_Core_TimetableDisplay_Update_" data-uid="UvA.DataNose.Core.TimetableDisplay.Update*"></a>
+  <h4 id="UvA_DataNose_Core_TimetableDisplay_Update" data-uid="UvA.DataNose.Core.TimetableDisplay.Update">Update()</h4>
+  <div class="markdown level1 summary"><p>Update the timetable</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Update()</code></pre>
+  </div>
+  <h3 id="events">Events
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UvA-FNWI/DataNose/new/master/apiSpec/new?filename=UvA_DataNose_Core_TimetableDisplay_CourseClick.md&amp;value=---%0Auid%3A%20UvA.DataNose.Core.TimetableDisplay.CourseClick%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UvA-FNWI/DataNose/blob/master/UvA.DataNose.Core/Controls/TimetableDisplay.cs/#L66">View Source</a>
+  </span>
+  <h4 id="UvA_DataNose_Core_TimetableDisplay_CourseClick" data-uid="UvA.DataNose.Core.TimetableDisplay.CourseClick">CourseClick</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler&lt;CourseClickEventArgs&gt; CourseClick</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="UvA.DataNose.Core.CourseClickEventArgs.html">CourseClickEventArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="UvA.Web.JS.IClientObject.html">IClientObject</a>
+  </div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="UvA.Utilities.DataExtensions.html#UvA_Utilities_DataExtensions_IsIn__1___0___0_">DataExtensions.IsIn&lt;T&gt;(T, T)</a>
+  </div>
+  <div>
+      <a class="xref" href="UvA.Utilities.DataExtensions.html#UvA_Utilities_DataExtensions_IsIn__1___0___0___0_">DataExtensions.IsIn&lt;T&gt;(T, T, T)</a>
+  </div>
+  <div>
+      <a class="xref" href="UvA.Utilities.DataExtensions.html#UvA_Utilities_DataExtensions_IsIn__1___0___0___0___0_">DataExtensions.IsIn&lt;T&gt;(T, T, T, T)</a>
+  </div>
+  <div>
+      <a class="xref" href="UvA.Utilities.DataExtensions.html#UvA_Utilities_DataExtensions_IsIn__1___0___0___0___0___0_">DataExtensions.IsIn&lt;T&gt;(T, T, T, T, T)</a>
+  </div>
+  <div>
+      <a class="xref" href="UvA.Utilities.DataExtensions.html#UvA_Utilities_DataExtensions_IsIn__1___0___0___0___0___0___0_">DataExtensions.IsIn&lt;T&gt;(T, T, T, T, T, T)</a>
+  </div>
+  <div>
+      <a class="xref" href="UvA.Utilities.DataExtensions.html#UvA_Utilities_DataExtensions_IsIn__1___0___0___">DataExtensions.IsIn&lt;T&gt;(T, T[])</a>
+  </div>
+  <div>
+      <a class="xref" href="UvA.Utilities.DataExtensions.html#UvA_Utilities_DataExtensions_IsNotIn__1___0___0_">DataExtensions.IsNotIn&lt;T&gt;(T, T)</a>
+  </div>
+  <div>
+      <a class="xref" href="UvA.Utilities.DataExtensions.html#UvA_Utilities_DataExtensions_IsNotIn__1___0___0___0_">DataExtensions.IsNotIn&lt;T&gt;(T, T, T)</a>
+  </div>
+  <div>
+      <a class="xref" href="UvA.Utilities.DataExtensions.html#UvA_Utilities_DataExtensions_IsNotIn__1___0___0___0___0_">DataExtensions.IsNotIn&lt;T&gt;(T, T, T, T)</a>
+  </div>
+  <div>
+      <a class="xref" href="UvA.Utilities.DataExtensions.html#UvA_Utilities_DataExtensions_IsNotIn__1___0___0___0___0___0_">DataExtensions.IsNotIn&lt;T&gt;(T, T, T, T, T)</a>
+  </div>
+  <div>
+      <a class="xref" href="UvA.Utilities.DataExtensions.html#UvA_Utilities_DataExtensions_IsNotIn__1___0___0___0___0___0___0_">DataExtensions.IsNotIn&lt;T&gt;(T, T, T, T, T, T)</a>
+  </div>
+  <div>
+      <a class="xref" href="UvA.Utilities.DataExtensions.html#UvA_Utilities_DataExtensions_IsNotIn__1___0___0___">DataExtensions.IsNotIn&lt;T&gt;(T, T[])</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/UvA-FNWI/DataNose/new/master/apiSpec/new?filename=UvA_DataNose_Core_TimetableDisplay.md&amp;value=---%0Auid%3A%20UvA.DataNose.Core.TimetableDisplay%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/UvA-FNWI/DataNose/blob/master/UvA.DataNose.Core/Controls/TimetableDisplay.cs/#L20" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

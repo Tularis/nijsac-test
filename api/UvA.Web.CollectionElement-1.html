@@ -1,0 +1,1029 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class CollectionElement&lt;T&gt;
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class CollectionElement&lt;T&gt;
+   ">
+    <meta name="generator" content="docfx 2.40.12.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="UvA.Web.CollectionElement`1">
+  
+  
+  <h1 id="UvA_Web_CollectionElement_1" data-uid="UvA.Web.CollectionElement`1" class="text-break">Class CollectionElement&lt;T&gt;
+  </h1>
+  <div class="markdown level0 summary"><p>Renders an editable collection</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="UvA.Web.Element.html">Element</a></div>
+    <div class="level2"><a class="xref" href="UvA.Web.ContainerElement.html">ContainerElement</a></div>
+    <div class="level3"><a class="xref" href="UvA.Web.BlockElement.html">BlockElement</a></div>
+    <div class="level4"><span class="xref">CollectionElement&lt;T&gt;</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="UvA.Web.JS.IClientObject.html">IClientObject</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="UvA.Web.BlockElement.html#UvA_Web_BlockElement_TagName">BlockElement.TagName</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.BlockElement.html#UvA_Web_BlockElement_FormatMultilineString_System_String_UvA_Web_Style_">BlockElement.FormatMultilineString(String, Style)</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.ContainerElement.html#UvA_Web_ContainerElement_Children">ContainerElement.Children</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.ContainerElement.html#UvA_Web_ContainerElement_ReplaceID">ContainerElement.ReplaceID</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.ContainerElement.html#UvA_Web_ContainerElement_ChildrenIsHidden">ContainerElement.ChildrenIsHidden</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.ContainerElement.html#UvA_Web_ContainerElement_Render">ContainerElement.Render()</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.ContainerElement.html#UvA_Web_ContainerElement_RenderChildren">ContainerElement.RenderChildren()</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.ContainerElement.html#UvA_Web_ContainerElement_PostRenderJSChildren">ContainerElement.PostRenderJSChildren()</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.ContainerElement.html#UvA_Web_ContainerElement_PostRenderJS">ContainerElement.PostRenderJS()</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_EnglishCulture">Element.EnglishCulture</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_DutchCulture">Element.DutchCulture</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_ID">Element.ID</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_GetClientName">Element.GetClientName()</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_Name">Element.Name</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_Parent">Element.Parent</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_Style">Element.Style</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_StyleFunction">Element.StyleFunction</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_Tag">Element.Tag</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_PopupText">Element.PopupText</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_Page">Element.Page</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_DisableContextMenu">Element.DisableContextMenu</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_PopupDisplayTop">Element.PopupDisplayTop</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_NoPrint">Element.NoPrint</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_KillOverflowOnPrint">Element.KillOverflowOnPrint</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_IsHidden">Element.IsHidden</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_HideFunction">Element.HideFunction</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_ShouldHide">Element.ShouldHide()</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_OnClick">Element.OnClick</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_ClientOnClick">Element.ClientOnClick</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_ClientOnClickFunction">Element.ClientOnClickFunction</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_OnContextMenu">Element.OnContextMenu</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_OnMouseDown">Element.OnMouseDown</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_ClientOnMouseDown">Element.ClientOnMouseDown</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_OnMouseUp">Element.OnMouseUp</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_MouseOverCommand">Element.MouseOverCommand</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_MouseOutCommand">Element.MouseOutCommand</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_KeyDownCommand">Element.KeyDownCommand</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_StopPropagation">Element.StopPropagation</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_ConfirmTextBeforeEvent">Element.ConfirmTextBeforeEvent</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_EnterTarget">Element.EnterTarget</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_NameParent">Element.NameParent</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_PopupElement">Element.PopupElement</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_ClientStyle">Element.ClientStyle</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_Font">Element.Font</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_Tooltip">Element.Tooltip</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_OpeningTag">Element.OpeningTag()</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_ClosingTag">Element.ClosingTag()</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_GetTagStart">Element.GetTagStart()</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_GetPopupCode">Element.GetPopupCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_ConfirmationID">Element.ConfirmationID</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_Attributes">Element.Attributes</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_SubclassAttributes">Element.SubclassAttributes</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_FormatVerbalText_System_String_">Element.FormatVerbalText(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_FormatText_System_String_">Element.FormatText(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_LookupText_System_String_System_Boolean_">Element.LookupText(String, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_FormatText_System_String___">Element.FormatText(String[])</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_FormatDate_System_Nullable_System_DateTime__System_String_System_String_">Element.FormatDate(Nullable&lt;DateTime&gt;, String, String)</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_FormatDate_System_DateTime_System_String_">Element.FormatDate(DateTime, String)</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_Localize_System_String___">Element.Localize(String[])</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_Execute_UvA_Web_JS_Command_">Element.Execute(Command)</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_Focus">Element.Focus()</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_SelectAll">Element.SelectAll()</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_IsHiddenByParent">Element.IsHiddenByParent</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_WrapIf_System_Boolean_System_Func_UvA_Web_Element_UvA_Web_Element__UvA_Web_Element_">Element.WrapIf(Boolean, Func&lt;Element, Element&gt;, Element)</a>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="UvA.Web.html">UvA.Web</a></h6>
+  <h6><strong>Assembly</strong>: UvA.Web.dll</h6>
+  <h5 id="UvA_Web_CollectionElement_1_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class CollectionElement&lt;T&gt; : BlockElement, IClientObject</code></pre>
+  </div>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>Type of the elements in the collection</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UvA-FNWI/DataNose/new/master/apiSpec/new?filename=UvA_Web_CollectionElement_1__ctor_System_Collections_Generic_ICollection__0__UvA_Web_ModalObjectPicker__0__System_Action_System_Func__0_System_String__System_Boolean_System_Func_UvA_Web_ModalObjectPicker__0___System_Boolean_System_Action_System_Boolean_.md&amp;value=---%0Auid%3A%20UvA.Web.CollectionElement%601.%23ctor(System.Collections.Generic.ICollection%7B%600%7D%2CUvA.Web.ModalObjectPicker%7B%600%7D%2CSystem.Action%2CSystem.Func%7B%600%2CSystem.String%7D%2CSystem.Boolean%2CSystem.Func%7BUvA.Web.ModalObjectPicker%7B%600%7D%7D%2CSystem.Boolean%2CSystem.Action%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UvA-FNWI/DataNose/blob/master/UvA.Web/Controls/CollectionElement.cs/#L44">View Source</a>
+  </span>
+  <a id="UvA_Web_CollectionElement_1__ctor_" data-uid="UvA.Web.CollectionElement`1.#ctor*"></a>
+  <h4 id="UvA_Web_CollectionElement_1__ctor_System_Collections_Generic_ICollection__0__UvA_Web_ModalObjectPicker__0__System_Action_System_Func__0_System_String__System_Boolean_System_Func_UvA_Web_ModalObjectPicker__0___System_Boolean_System_Action_System_Boolean_" data-uid="UvA.Web.CollectionElement`1.#ctor(System.Collections.Generic.ICollection{`0},UvA.Web.ModalObjectPicker{`0},System.Action,System.Func{`0,System.String},System.Boolean,System.Func{UvA.Web.ModalObjectPicker{`0}},System.Boolean,System.Action,System.Boolean)">CollectionElement(ICollection&lt;T&gt;, ModalObjectPicker&lt;T&gt;, Action, Func&lt;T, String&gt;, Boolean, Func&lt;ModalObjectPicker&lt;T&gt;&gt;, Boolean, Action, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Creates a new CollectionElement</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CollectionElement(ICollection&lt;T&gt; target, ModalObjectPicker&lt;T&gt; picker = null, Action changeAction = null, Func&lt;T, string&gt; displayFunction = null, bool confirmDelete = false, Func&lt;ModalObjectPicker&lt;T&gt;&gt; pickerFunction = null, bool isDisabled = false, Action addAction = null, bool newLayout = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.ICollection</span>&lt;T&gt;</td>
+        <td><span class="parametername">target</span></td>
+        <td><p>Collection to display and edit</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UvA.Web.ModalObjectPicker-1.html">ModalObjectPicker</a>&lt;T&gt;</td>
+        <td><span class="parametername">picker</span></td>
+        <td><p>ObjectPicker to display to the user for picking objects</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Action</span></td>
+        <td><span class="parametername">changeAction</span></td>
+        <td><p>Action to be executed whenever the collection is changed</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Func</span>&lt;T, <span class="xref">System.String</span>&gt;</td>
+        <td><span class="parametername">displayFunction</span></td>
+        <td><p>Function that specifies how an element should be displayed</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">confirmDelete</span></td>
+        <td><p>If true, display a confirmation dialog when the user tries to delete an object</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Func</span>&lt;<a class="xref" href="UvA.Web.ModalObjectPicker-1.html">ModalObjectPicker</a>&lt;T&gt;&gt;</td>
+        <td><span class="parametername">pickerFunction</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">isDisabled</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Action</span></td>
+        <td><span class="parametername">addAction</span></td>
+        <td><p>Action to execute when add button is clicked. Default is to open the picker</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">newLayout</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UvA-FNWI/DataNose/new/master/apiSpec/new?filename=UvA_Web_CollectionElement_1_AddAction.md&amp;value=---%0Auid%3A%20UvA.Web.CollectionElement%601.AddAction%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UvA-FNWI/DataNose/blob/master/UvA.Web/Controls/CollectionElement.cs/#L28">View Source</a>
+  </span>
+  <a id="UvA_Web_CollectionElement_1_AddAction_" data-uid="UvA.Web.CollectionElement`1.AddAction*"></a>
+  <h4 id="UvA_Web_CollectionElement_1_AddAction" data-uid="UvA.Web.CollectionElement`1.AddAction">AddAction</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Action AddAction { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Action</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UvA-FNWI/DataNose/new/master/apiSpec/new?filename=UvA_Web_CollectionElement_1_AllowDuplicates.md&amp;value=---%0Auid%3A%20UvA.Web.CollectionElement%601.AllowDuplicates%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UvA-FNWI/DataNose/blob/master/UvA.Web/Controls/CollectionElement.cs/#L24">View Source</a>
+  </span>
+  <a id="UvA_Web_CollectionElement_1_AllowDuplicates_" data-uid="UvA.Web.CollectionElement`1.AllowDuplicates*"></a>
+  <h4 id="UvA_Web_CollectionElement_1_AllowDuplicates" data-uid="UvA.Web.CollectionElement`1.AllowDuplicates">AllowDuplicates</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool AllowDuplicates { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UvA-FNWI/DataNose/new/master/apiSpec/new?filename=UvA_Web_CollectionElement_1_ConfirmDelete.md&amp;value=---%0Auid%3A%20UvA.Web.CollectionElement%601.ConfirmDelete%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UvA-FNWI/DataNose/blob/master/UvA.Web/Controls/CollectionElement.cs/#L19">View Source</a>
+  </span>
+  <a id="UvA_Web_CollectionElement_1_ConfirmDelete_" data-uid="UvA.Web.CollectionElement`1.ConfirmDelete*"></a>
+  <h4 id="UvA_Web_CollectionElement_1_ConfirmDelete" data-uid="UvA.Web.CollectionElement`1.ConfirmDelete">ConfirmDelete</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool ConfirmDelete { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UvA-FNWI/DataNose/new/master/apiSpec/new?filename=UvA_Web_CollectionElement_1_DeleteAction.md&amp;value=---%0Auid%3A%20UvA.Web.CollectionElement%601.DeleteAction%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UvA-FNWI/DataNose/blob/master/UvA.Web/Controls/CollectionElement.cs/#L29">View Source</a>
+  </span>
+  <a id="UvA_Web_CollectionElement_1_DeleteAction_" data-uid="UvA.Web.CollectionElement`1.DeleteAction*"></a>
+  <h4 id="UvA_Web_CollectionElement_1_DeleteAction" data-uid="UvA.Web.CollectionElement`1.DeleteAction">DeleteAction</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Action&lt;T&gt; DeleteAction { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Action</span>&lt;T&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UvA-FNWI/DataNose/new/master/apiSpec/new?filename=UvA_Web_CollectionElement_1_DisplayFunction.md&amp;value=---%0Auid%3A%20UvA.Web.CollectionElement%601.DisplayFunction%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UvA-FNWI/DataNose/blob/master/UvA.Web/Controls/CollectionElement.cs/#L18">View Source</a>
+  </span>
+  <a id="UvA_Web_CollectionElement_1_DisplayFunction_" data-uid="UvA.Web.CollectionElement`1.DisplayFunction*"></a>
+  <h4 id="UvA_Web_CollectionElement_1_DisplayFunction" data-uid="UvA.Web.CollectionElement`1.DisplayFunction">DisplayFunction</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Func&lt;T, string&gt; DisplayFunction { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Func</span>&lt;T, <span class="xref">System.String</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UvA-FNWI/DataNose/new/master/apiSpec/new?filename=UvA_Web_CollectionElement_1_IsDisabled.md&amp;value=---%0Auid%3A%20UvA.Web.CollectionElement%601.IsDisabled%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UvA-FNWI/DataNose/blob/master/UvA.Web/Controls/CollectionElement.cs/#L23">View Source</a>
+  </span>
+  <a id="UvA_Web_CollectionElement_1_IsDisabled_" data-uid="UvA.Web.CollectionElement`1.IsDisabled*"></a>
+  <h4 id="UvA_Web_CollectionElement_1_IsDisabled" data-uid="UvA.Web.CollectionElement`1.IsDisabled">IsDisabled</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsDisabled { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UvA-FNWI/DataNose/new/master/apiSpec/new?filename=UvA_Web_CollectionElement_1_NewLayout.md&amp;value=---%0Auid%3A%20UvA.Web.CollectionElement%601.NewLayout%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UvA-FNWI/DataNose/blob/master/UvA.Web/Controls/CollectionElement.cs/#L31">View Source</a>
+  </span>
+  <a id="UvA_Web_CollectionElement_1_NewLayout_" data-uid="UvA.Web.CollectionElement`1.NewLayout*"></a>
+  <h4 id="UvA_Web_CollectionElement_1_NewLayout" data-uid="UvA.Web.CollectionElement`1.NewLayout">NewLayout</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool NewLayout { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UvA-FNWI/DataNose/new/master/apiSpec/new?filename=UvA_Web_CollectionElement_1_Picker.md&amp;value=---%0Auid%3A%20UvA.Web.CollectionElement%601.Picker%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UvA-FNWI/DataNose/blob/master/UvA.Web/Controls/CollectionElement.cs/#L14">View Source</a>
+  </span>
+  <a id="UvA_Web_CollectionElement_1_Picker_" data-uid="UvA.Web.CollectionElement`1.Picker*"></a>
+  <h4 id="UvA_Web_CollectionElement_1_Picker" data-uid="UvA.Web.CollectionElement`1.Picker">Picker</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ModalObjectPicker&lt;T&gt; Picker { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UvA.Web.ModalObjectPicker-1.html">ModalObjectPicker</a>&lt;T&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UvA-FNWI/DataNose/new/master/apiSpec/new?filename=UvA_Web_CollectionElement_1_PickerFunction.md&amp;value=---%0Auid%3A%20UvA.Web.CollectionElement%601.PickerFunction%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UvA-FNWI/DataNose/blob/master/UvA.Web/Controls/CollectionElement.cs/#L15">View Source</a>
+  </span>
+  <a id="UvA_Web_CollectionElement_1_PickerFunction_" data-uid="UvA.Web.CollectionElement`1.PickerFunction*"></a>
+  <h4 id="UvA_Web_CollectionElement_1_PickerFunction" data-uid="UvA.Web.CollectionElement`1.PickerFunction">PickerFunction</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Func&lt;ModalObjectPicker&lt;T&gt;&gt; PickerFunction { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Func</span>&lt;<a class="xref" href="UvA.Web.ModalObjectPicker-1.html">ModalObjectPicker</a>&lt;T&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UvA-FNWI/DataNose/new/master/apiSpec/new?filename=UvA_Web_CollectionElement_1_PickerPosition.md&amp;value=---%0Auid%3A%20UvA.Web.CollectionElement%601.PickerPosition%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UvA-FNWI/DataNose/blob/master/UvA.Web/Controls/CollectionElement.cs/#L20">View Source</a>
+  </span>
+  <a id="UvA_Web_CollectionElement_1_PickerPosition_" data-uid="UvA.Web.CollectionElement`1.PickerPosition*"></a>
+  <h4 id="UvA_Web_CollectionElement_1_PickerPosition" data-uid="UvA.Web.CollectionElement`1.PickerPosition">PickerPosition</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PositionOption PickerPosition { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UvA.Web.PositionOption.html">PositionOption</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UvA-FNWI/DataNose/new/master/apiSpec/new?filename=UvA_Web_CollectionElement_1_SearchPrompt.md&amp;value=---%0Auid%3A%20UvA.Web.CollectionElement%601.SearchPrompt%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UvA-FNWI/DataNose/blob/master/UvA.Web/Controls/CollectionElement.cs/#L17">View Source</a>
+  </span>
+  <a id="UvA_Web_CollectionElement_1_SearchPrompt_" data-uid="UvA.Web.CollectionElement`1.SearchPrompt*"></a>
+  <h4 id="UvA_Web_CollectionElement_1_SearchPrompt" data-uid="UvA.Web.CollectionElement`1.SearchPrompt">SearchPrompt</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string SearchPrompt { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UvA-FNWI/DataNose/new/master/apiSpec/new?filename=UvA_Web_CollectionElement_1_Target.md&amp;value=---%0Auid%3A%20UvA.Web.CollectionElement%601.Target%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UvA-FNWI/DataNose/blob/master/UvA.Web/Controls/CollectionElement.cs/#L13">View Source</a>
+  </span>
+  <a id="UvA_Web_CollectionElement_1_Target_" data-uid="UvA.Web.CollectionElement`1.Target*"></a>
+  <h4 id="UvA_Web_CollectionElement_1_Target" data-uid="UvA.Web.CollectionElement`1.Target">Target</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ICollection&lt;T&gt; Target { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.ICollection</span>&lt;T&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UvA-FNWI/DataNose/new/master/apiSpec/new?filename=UvA_Web_CollectionElement_1_UpdateOnChange.md&amp;value=---%0Auid%3A%20UvA.Web.CollectionElement%601.UpdateOnChange%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UvA-FNWI/DataNose/blob/master/UvA.Web/Controls/CollectionElement.cs/#L22">View Source</a>
+  </span>
+  <a id="UvA_Web_CollectionElement_1_UpdateOnChange_" data-uid="UvA.Web.CollectionElement`1.UpdateOnChange*"></a>
+  <h4 id="UvA_Web_CollectionElement_1_UpdateOnChange" data-uid="UvA.Web.CollectionElement`1.UpdateOnChange">UpdateOnChange</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool UpdateOnChange { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UvA-FNWI/DataNose/new/master/apiSpec/new?filename=UvA_Web_CollectionElement_1_OnObjectClick__0_UvA_Web_MouseEventArgs_.md&amp;value=---%0Auid%3A%20UvA.Web.CollectionElement%601.OnObjectClick(%600%2CUvA.Web.MouseEventArgs)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UvA-FNWI/DataNose/blob/master/UvA.Web/Controls/CollectionElement.cs/#L139">View Source</a>
+  </span>
+  <a id="UvA_Web_CollectionElement_1_OnObjectClick_" data-uid="UvA.Web.CollectionElement`1.OnObjectClick*"></a>
+  <h4 id="UvA_Web_CollectionElement_1_OnObjectClick__0_UvA_Web_MouseEventArgs_" data-uid="UvA.Web.CollectionElement`1.OnObjectClick(`0,UvA.Web.MouseEventArgs)">OnObjectClick(T, MouseEventArgs)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void OnObjectClick(T obj, MouseEventArgs args)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">obj</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UvA.Web.MouseEventArgs.html">MouseEventArgs</a></td>
+        <td><span class="parametername">args</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UvA-FNWI/DataNose/new/master/apiSpec/new?filename=UvA_Web_CollectionElement_1_OnObjectContextMenu__0_UvA_Web_MouseEventArgs_.md&amp;value=---%0Auid%3A%20UvA.Web.CollectionElement%601.OnObjectContextMenu(%600%2CUvA.Web.MouseEventArgs)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UvA-FNWI/DataNose/blob/master/UvA.Web/Controls/CollectionElement.cs/#L147">View Source</a>
+  </span>
+  <a id="UvA_Web_CollectionElement_1_OnObjectContextMenu_" data-uid="UvA.Web.CollectionElement`1.OnObjectContextMenu*"></a>
+  <h4 id="UvA_Web_CollectionElement_1_OnObjectContextMenu__0_UvA_Web_MouseEventArgs_" data-uid="UvA.Web.CollectionElement`1.OnObjectContextMenu(`0,UvA.Web.MouseEventArgs)">OnObjectContextMenu(T, MouseEventArgs)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void OnObjectContextMenu(T obj, MouseEventArgs args)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">obj</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UvA.Web.MouseEventArgs.html">MouseEventArgs</a></td>
+        <td><span class="parametername">args</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UvA-FNWI/DataNose/new/master/apiSpec/new?filename=UvA_Web_CollectionElement_1_Update_System_Boolean_.md&amp;value=---%0Auid%3A%20UvA.Web.CollectionElement%601.Update(System.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UvA-FNWI/DataNose/blob/master/UvA.Web/Controls/CollectionElement.cs/#L91">View Source</a>
+  </span>
+  <a id="UvA_Web_CollectionElement_1_Update_" data-uid="UvA.Web.CollectionElement`1.Update*"></a>
+  <h4 id="UvA_Web_CollectionElement_1_Update_System_Boolean_" data-uid="UvA.Web.CollectionElement`1.Update(System.Boolean)">Update(Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Update(bool client = true)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">client</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="events">Events
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UvA-FNWI/DataNose/new/master/apiSpec/new?filename=UvA_Web_CollectionElement_1_Change.md&amp;value=---%0Auid%3A%20UvA.Web.CollectionElement%601.Change%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UvA-FNWI/DataNose/blob/master/UvA.Web/Controls/CollectionElement.cs/#L26">View Source</a>
+  </span>
+  <h4 id="UvA_Web_CollectionElement_1_Change" data-uid="UvA.Web.CollectionElement`1.Change">Change</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler Change</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.EventHandler</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="UvA.Web.JS.IClientObject.html">IClientObject</a>
+  </div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="UvA.Web.WebExtensions.html#UvA_Web_WebExtensions_WithStyle__1___0_UvA_Web_Style_">WebExtensions.WithStyle&lt;T&gt;(T, Style)</a>
+  </div>
+  <div>
+      <a class="xref" href="UvA.Web.JS.ClientExtensions.html#UvA_Web_JS_ClientExtensions_GetClientStyle_UvA_Web_Element_">ClientExtensions.GetClientStyle(Element)</a>
+  </div>
+  <div>
+      <a class="xref" href="UvA.Utilities.DataExtensions.html#UvA_Utilities_DataExtensions_IsIn__1___0___0_">DataExtensions.IsIn&lt;T&gt;(T, T)</a>
+  </div>
+  <div>
+      <a class="xref" href="UvA.Utilities.DataExtensions.html#UvA_Utilities_DataExtensions_IsIn__1___0___0___0_">DataExtensions.IsIn&lt;T&gt;(T, T, T)</a>
+  </div>
+  <div>
+      <a class="xref" href="UvA.Utilities.DataExtensions.html#UvA_Utilities_DataExtensions_IsIn__1___0___0___0___0_">DataExtensions.IsIn&lt;T&gt;(T, T, T, T)</a>
+  </div>
+  <div>
+      <a class="xref" href="UvA.Utilities.DataExtensions.html#UvA_Utilities_DataExtensions_IsIn__1___0___0___0___0___0_">DataExtensions.IsIn&lt;T&gt;(T, T, T, T, T)</a>
+  </div>
+  <div>
+      <a class="xref" href="UvA.Utilities.DataExtensions.html#UvA_Utilities_DataExtensions_IsIn__1___0___0___0___0___0___0_">DataExtensions.IsIn&lt;T&gt;(T, T, T, T, T, T)</a>
+  </div>
+  <div>
+      <a class="xref" href="UvA.Utilities.DataExtensions.html#UvA_Utilities_DataExtensions_IsIn__1___0___0___">DataExtensions.IsIn&lt;T&gt;(T, T[])</a>
+  </div>
+  <div>
+      <a class="xref" href="UvA.Utilities.DataExtensions.html#UvA_Utilities_DataExtensions_IsNotIn__1___0___0_">DataExtensions.IsNotIn&lt;T&gt;(T, T)</a>
+  </div>
+  <div>
+      <a class="xref" href="UvA.Utilities.DataExtensions.html#UvA_Utilities_DataExtensions_IsNotIn__1___0___0___0_">DataExtensions.IsNotIn&lt;T&gt;(T, T, T)</a>
+  </div>
+  <div>
+      <a class="xref" href="UvA.Utilities.DataExtensions.html#UvA_Utilities_DataExtensions_IsNotIn__1___0___0___0___0_">DataExtensions.IsNotIn&lt;T&gt;(T, T, T, T)</a>
+  </div>
+  <div>
+      <a class="xref" href="UvA.Utilities.DataExtensions.html#UvA_Utilities_DataExtensions_IsNotIn__1___0___0___0___0___0_">DataExtensions.IsNotIn&lt;T&gt;(T, T, T, T, T)</a>
+  </div>
+  <div>
+      <a class="xref" href="UvA.Utilities.DataExtensions.html#UvA_Utilities_DataExtensions_IsNotIn__1___0___0___0___0___0___0_">DataExtensions.IsNotIn&lt;T&gt;(T, T, T, T, T, T)</a>
+  </div>
+  <div>
+      <a class="xref" href="UvA.Utilities.DataExtensions.html#UvA_Utilities_DataExtensions_IsNotIn__1___0___0___">DataExtensions.IsNotIn&lt;T&gt;(T, T[])</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/UvA-FNWI/DataNose/new/master/apiSpec/new?filename=UvA_Web_CollectionElement_1.md&amp;value=---%0Auid%3A%20UvA.Web.CollectionElement%601%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/UvA-FNWI/DataNose/blob/master/UvA.Web/Controls/CollectionElement.cs/#L11" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

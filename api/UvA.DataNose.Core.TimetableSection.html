@@ -1,0 +1,1860 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class TimetableSection
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class TimetableSection
+   ">
+    <meta name="generator" content="docfx 2.40.12.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="UvA.DataNose.Core.TimetableSection">
+  
+  
+  <h1 id="UvA_DataNose_Core_TimetableSection" data-uid="UvA.DataNose.Core.TimetableSection" class="text-break">Class TimetableSection
+  </h1>
+  <div class="markdown level0 summary"><p>Summary description for TimetableSection</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="UvA.Web.Element.html">Element</a></div>
+    <div class="level2"><a class="xref" href="UvA.Web.ContainerElement.html">ContainerElement</a></div>
+    <div class="level3"><a class="xref" href="UvA.Web.BlockElement.html">BlockElement</a></div>
+    <div class="level4"><a class="xref" href="UvA.Web.Part.html">Part</a></div>
+    <div class="level5"><a class="xref" href="UvA.DataNose.Core.DataSection.html">DataSection</a></div>
+    <div class="level6"><span class="xref">TimetableSection</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="UvA.Web.JS.IClientObject.html">IClientObject</a></div>
+    <div><a class="xref" href="UvA.DataNose.Core.ITimetable.html">ITimetable</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="UvA.DataNose.Core.DataSection.html#UvA_DataNose_Core_DataSection_Log">DataSection.Log</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.DataNose.Core.DataSection.html#UvA_DataNose_Core_DataSection_GetNode_System_String_System_String_System_String_System_Type_UvA_Web_Node_System_Func_UvA_DataNose_Core_User_System_Boolean__">DataSection.GetNode(String, String, String, Type, Node, Func&lt;User, Boolean&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.DataNose.Core.DataSection.html#UvA_DataNose_Core_DataSection_GetNode_System_String_System_String_System_String_System_Type_UvA_Web_Node_System_Func_UvA_Web_Page_System_Boolean__">DataSection.GetNode(String, String, String, Type, Node, Func&lt;Page, Boolean&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.DataNose.Core.DataSection.html#UvA_DataNose_Core_DataSection_Container">DataSection.Container</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.DataNose.Core.DataSection.html#UvA_DataNose_Core_DataSection_Page">DataSection.Page</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.DataNose.Core.DataSection.html#UvA_DataNose_Core_DataSection_Data">DataSection.Data</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.DataNose.Core.DataSection.html#UvA_DataNose_Core_DataSection_ActiveUser">DataSection.ActiveUser</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.DataNose.Core.DataSection.html#UvA_DataNose_Core_DataSection_Screen">DataSection.Screen</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.DataNose.Core.DataSection.html#UvA_DataNose_Core_DataSection_StatisticsLog">DataSection.StatisticsLog</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.DataNose.Core.DataSection.html#UvA_DataNose_Core_DataSection_OnLogin">DataSection.OnLogin()</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.DataNose.Core.DataSection.html#UvA_DataNose_Core_DataSection_SaveData_System_Boolean_UvA_DataNose_Data_UvAData_System_String_System_Int32_">DataSection.SaveData(Boolean, UvAData, String, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.DataNose.Core.DataSection.html#UvA_DataNose_Core_DataSection_AddMenu_UvA_Web_ContextMenu_">DataSection.AddMenu(ContextMenu)</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.DataNose.Core.DataSection.html#UvA_DataNose_Core_DataSection_StartLoading">DataSection.StartLoading()</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.DataNose.Core.DataSection.html#UvA_DataNose_Core_DataSection_RunAsyncWithRoller_System_Action_System_Boolean_">DataSection.RunAsyncWithRoller(Action, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.DataNose.Core.DataSection.html#UvA_DataNose_Core_DataSection_EndLoading">DataSection.EndLoading()</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.DataNose.Core.DataSection.html#UvA_DataNose_Core_DataSection_DatabaseText_System_String_">DataSection.DatabaseText(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.DataNose.Core.DataSection.html#UvA_DataNose_Core_DataSection_RunTask_System_String_System_String_System_String_System_Boolean_System_Nullable_System_TimeSpan__">DataSection.RunTask(String, String, String, Boolean, Nullable&lt;TimeSpan&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.DataNose.Core.DataSection.html#UvA_DataNose_Core_DataSection_RunTask_UvA_DataNose_Data_BatchTask_System_String___System_Boolean_System_Nullable_System_TimeSpan__System_Action_">DataSection.RunTask(BatchTask, String[], Boolean, Nullable&lt;TimeSpan&gt;, Action)</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.DataNose.Core.DataSection.html#UvA_DataNose_Core_DataSection_RunTask_System_String_System_String_System_String___System_Boolean_System_Nullable_System_TimeSpan__System_Action_">DataSection.RunTask(String, String, String[], Boolean, Nullable&lt;TimeSpan&gt;, Action)</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.DataNose.Core.DataSection.html#UvA_DataNose_Core_DataSection_PrefixArrow_UvA_Web_Element_">DataSection.PrefixArrow(Element)</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Part.html#UvA_Web_Part_ShowDialog_UvA_Web_ModalDialog_">Part.ShowDialog(ModalDialog)</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Part.html#UvA_Web_Part_OnLanguageChange">Part.OnLanguageChange()</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Part.html#UvA_Web_Part_DisplayAlert_System_String_">Part.DisplayAlert(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Part.html#UvA_Web_Part_DisplayAlert_System_String___">Part.DisplayAlert(String[])</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Part.html#UvA_Web_Part_NavigateTo_UvA_Web_Node_System_Boolean_">Part.NavigateTo(Node, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Part.html#UvA_Web_Part_OnAttach">Part.OnAttach()</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Part.html#UvA_Web_Part_SetParameter_System_Int32_System_Object_System_Boolean_">Part.SetParameter(Int32, Object, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Part.html#UvA_Web_Part_OnClientUpdateRequest">Part.OnClientUpdateRequest()</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.BlockElement.html#UvA_Web_BlockElement_TagName">BlockElement.TagName</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.BlockElement.html#UvA_Web_BlockElement_FormatMultilineString_System_String_UvA_Web_Style_">BlockElement.FormatMultilineString(String, Style)</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.ContainerElement.html#UvA_Web_ContainerElement_Children">ContainerElement.Children</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.ContainerElement.html#UvA_Web_ContainerElement_ReplaceID">ContainerElement.ReplaceID</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.ContainerElement.html#UvA_Web_ContainerElement_ChildrenIsHidden">ContainerElement.ChildrenIsHidden</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.ContainerElement.html#UvA_Web_ContainerElement_Render">ContainerElement.Render()</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.ContainerElement.html#UvA_Web_ContainerElement_RenderChildren">ContainerElement.RenderChildren()</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.ContainerElement.html#UvA_Web_ContainerElement_PostRenderJSChildren">ContainerElement.PostRenderJSChildren()</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.ContainerElement.html#UvA_Web_ContainerElement_PostRenderJS">ContainerElement.PostRenderJS()</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_EnglishCulture">Element.EnglishCulture</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_DutchCulture">Element.DutchCulture</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_ID">Element.ID</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_GetClientName">Element.GetClientName()</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_Name">Element.Name</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_Parent">Element.Parent</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_Style">Element.Style</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_StyleFunction">Element.StyleFunction</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_Tag">Element.Tag</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_PopupText">Element.PopupText</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_DisableContextMenu">Element.DisableContextMenu</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_PopupDisplayTop">Element.PopupDisplayTop</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_NoPrint">Element.NoPrint</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_KillOverflowOnPrint">Element.KillOverflowOnPrint</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_IsHidden">Element.IsHidden</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_HideFunction">Element.HideFunction</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_ShouldHide">Element.ShouldHide()</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_OnClick">Element.OnClick</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_ClientOnClick">Element.ClientOnClick</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_ClientOnClickFunction">Element.ClientOnClickFunction</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_OnContextMenu">Element.OnContextMenu</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_OnMouseDown">Element.OnMouseDown</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_ClientOnMouseDown">Element.ClientOnMouseDown</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_OnMouseUp">Element.OnMouseUp</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_MouseOverCommand">Element.MouseOverCommand</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_MouseOutCommand">Element.MouseOutCommand</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_KeyDownCommand">Element.KeyDownCommand</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_StopPropagation">Element.StopPropagation</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_ConfirmTextBeforeEvent">Element.ConfirmTextBeforeEvent</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_EnterTarget">Element.EnterTarget</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_NameParent">Element.NameParent</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_PopupElement">Element.PopupElement</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_ClientStyle">Element.ClientStyle</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_Font">Element.Font</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_Tooltip">Element.Tooltip</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_OpeningTag">Element.OpeningTag()</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_ClosingTag">Element.ClosingTag()</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_GetTagStart">Element.GetTagStart()</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_GetPopupCode">Element.GetPopupCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_ConfirmationID">Element.ConfirmationID</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_Attributes">Element.Attributes</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_SubclassAttributes">Element.SubclassAttributes</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_FormatVerbalText_System_String_">Element.FormatVerbalText(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_FormatText_System_String_">Element.FormatText(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_LookupText_System_String_System_Boolean_">Element.LookupText(String, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_FormatText_System_String___">Element.FormatText(String[])</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_FormatDate_System_Nullable_System_DateTime__System_String_System_String_">Element.FormatDate(Nullable&lt;DateTime&gt;, String, String)</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_FormatDate_System_DateTime_System_String_">Element.FormatDate(DateTime, String)</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_Localize_System_String___">Element.Localize(String[])</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_Execute_UvA_Web_JS_Command_">Element.Execute(Command)</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_Focus">Element.Focus()</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_SelectAll">Element.SelectAll()</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_IsHiddenByParent">Element.IsHiddenByParent</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Element.html#UvA_Web_Element_WrapIf_System_Boolean_System_Func_UvA_Web_Element_UvA_Web_Element__UvA_Web_Element_">Element.WrapIf(Boolean, Func&lt;Element, Element&gt;, Element)</a>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="UvA.DataNose.Core.html">UvA.DataNose.Core</a></h6>
+  <h6><strong>Assembly</strong>: UvA.DataNose.Core.dll</h6>
+  <h5 id="UvA_DataNose_Core_TimetableSection_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class TimetableSection : DataSection, IClientObject, ITimetable</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UvA-FNWI/DataNose/new/master/apiSpec/new?filename=UvA_DataNose_Core_TimetableSection__ctor_UvA_DataNose_Core_DataContainer_.md&amp;value=---%0Auid%3A%20UvA.DataNose.Core.TimetableSection.%23ctor(UvA.DataNose.Core.DataContainer)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UvA-FNWI/DataNose/blob/master/UvA.DataNose.Core/Sections/Timetable/TimetableSection.cs/#L145">View Source</a>
+  </span>
+  <a id="UvA_DataNose_Core_TimetableSection__ctor_" data-uid="UvA.DataNose.Core.TimetableSection.#ctor*"></a>
+  <h4 id="UvA_DataNose_Core_TimetableSection__ctor_UvA_DataNose_Core_DataContainer_" data-uid="UvA.DataNose.Core.TimetableSection.#ctor(UvA.DataNose.Core.DataContainer)">TimetableSection(DataContainer)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TimetableSection(DataContainer container)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UvA.DataNose.Core.DataContainer.html">DataContainer</a></td>
+        <td><span class="parametername">container</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UvA-FNWI/DataNose/new/master/apiSpec/new?filename=UvA_DataNose_Core_TimetableSection__ctor_UvA_DataNose_Core_DataContainer_System_Int32_.md&amp;value=---%0Auid%3A%20UvA.DataNose.Core.TimetableSection.%23ctor(UvA.DataNose.Core.DataContainer%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UvA-FNWI/DataNose/blob/master/UvA.DataNose.Core/Sections/Timetable/TimetableSection.cs/#L150">View Source</a>
+  </span>
+  <a id="UvA_DataNose_Core_TimetableSection__ctor_" data-uid="UvA.DataNose.Core.TimetableSection.#ctor*"></a>
+  <h4 id="UvA_DataNose_Core_TimetableSection__ctor_UvA_DataNose_Core_DataContainer_System_Int32_" data-uid="UvA.DataNose.Core.TimetableSection.#ctor(UvA.DataNose.Core.DataContainer,System.Int32)">TimetableSection(DataContainer, Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TimetableSection(DataContainer container, int targetID)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UvA.DataNose.Core.DataContainer.html">DataContainer</a></td>
+        <td><span class="parametername">container</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">targetID</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UvA-FNWI/DataNose/new/master/apiSpec/new?filename=UvA_DataNose_Core_TimetableSection__ctor_UvA_DataNose_Core_DataContainer_System_Int32_System_Int32_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20UvA.DataNose.Core.TimetableSection.%23ctor(UvA.DataNose.Core.DataContainer%2CSystem.Int32%2CSystem.Int32%2CSystem.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UvA-FNWI/DataNose/blob/master/UvA.DataNose.Core/Sections/Timetable/TimetableSection.cs/#L162">View Source</a>
+  </span>
+  <a id="UvA_DataNose_Core_TimetableSection__ctor_" data-uid="UvA.DataNose.Core.TimetableSection.#ctor*"></a>
+  <h4 id="UvA_DataNose_Core_TimetableSection__ctor_UvA_DataNose_Core_DataContainer_System_Int32_System_Int32_System_Int32_System_Int32_" data-uid="UvA.DataNose.Core.TimetableSection.#ctor(UvA.DataNose.Core.DataContainer,System.Int32,System.Int32,System.Int32,System.Int32)">TimetableSection(DataContainer, Int32, Int32, Int32, Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TimetableSection(DataContainer container, int targetID, int week, int acyear, int startWeek)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UvA.DataNose.Core.DataContainer.html">DataContainer</a></td>
+        <td><span class="parametername">container</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">targetID</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">week</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">acyear</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">startWeek</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UvA-FNWI/DataNose/new/master/apiSpec/new?filename=UvA_DataNose_Core_TimetableSection__ctor_UvA_DataNose_Core_DataContainer_System_Int32_System_Int32_System_Int32_System_String___.md&amp;value=---%0Auid%3A%20UvA.DataNose.Core.TimetableSection.%23ctor(UvA.DataNose.Core.DataContainer%2CSystem.Int32%2CSystem.Int32%2CSystem.Int32%2CSystem.String%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UvA-FNWI/DataNose/blob/master/UvA.DataNose.Core/Sections/Timetable/TimetableSection.cs/#L168">View Source</a>
+  </span>
+  <a id="UvA_DataNose_Core_TimetableSection__ctor_" data-uid="UvA.DataNose.Core.TimetableSection.#ctor*"></a>
+  <h4 id="UvA_DataNose_Core_TimetableSection__ctor_UvA_DataNose_Core_DataContainer_System_Int32_System_Int32_System_Int32_System_String___" data-uid="UvA.DataNose.Core.TimetableSection.#ctor(UvA.DataNose.Core.DataContainer,System.Int32,System.Int32,System.Int32,System.String[])">TimetableSection(DataContainer, Int32, Int32, Int32, String[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TimetableSection(DataContainer container, int targetID, int academicYear = 0, int startWeek = 0, string[] progName = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UvA.DataNose.Core.DataContainer.html">DataContainer</a></td>
+        <td><span class="parametername">container</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">targetID</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">academicYear</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">startWeek</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span>[]</td>
+        <td><span class="parametername">progName</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UvA-FNWI/DataNose/new/master/apiSpec/new?filename=UvA_DataNose_Core_TimetableSection__ctor_UvA_DataNose_Core_DataContainer_System_Object_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20UvA.DataNose.Core.TimetableSection.%23ctor(UvA.DataNose.Core.DataContainer%2CSystem.Object%2CSystem.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UvA-FNWI/DataNose/blob/master/UvA.DataNose.Core/Sections/Timetable/TimetableSection.cs/#L156">View Source</a>
+  </span>
+  <a id="UvA_DataNose_Core_TimetableSection__ctor_" data-uid="UvA.DataNose.Core.TimetableSection.#ctor*"></a>
+  <h4 id="UvA_DataNose_Core_TimetableSection__ctor_UvA_DataNose_Core_DataContainer_System_Object_System_Int32_System_Int32_" data-uid="UvA.DataNose.Core.TimetableSection.#ctor(UvA.DataNose.Core.DataContainer,System.Object,System.Int32,System.Int32)">TimetableSection(DataContainer, Object, Int32, Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TimetableSection(DataContainer container, object target, int week, int acyear)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UvA.DataNose.Core.DataContainer.html">DataContainer</a></td>
+        <td><span class="parametername">container</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">target</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">week</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">acyear</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UvA-FNWI/DataNose/new/master/apiSpec/new?filename=UvA_DataNose_Core_TimetableSection_MaximumYear.md&amp;value=---%0Auid%3A%20UvA.DataNose.Core.TimetableSection.MaximumYear%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UvA-FNWI/DataNose/blob/master/UvA.DataNose.Core/Sections/Timetable/TimetableSection.cs/#L23">View Source</a>
+  </span>
+  <h4 id="UvA_DataNose_Core_TimetableSection_MaximumYear" data-uid="UvA.DataNose.Core.TimetableSection.MaximumYear">MaximumYear</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int MaximumYear</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UvA-FNWI/DataNose/new/master/apiSpec/new?filename=UvA_DataNose_Core_TimetableSection_AcademicYear.md&amp;value=---%0Auid%3A%20UvA.DataNose.Core.TimetableSection.AcademicYear%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UvA-FNWI/DataNose/blob/master/UvA.DataNose.Core/Sections/Timetable/TimetableSection.cs/#L57">View Source</a>
+  </span>
+  <a id="UvA_DataNose_Core_TimetableSection_AcademicYear_" data-uid="UvA.DataNose.Core.TimetableSection.AcademicYear*"></a>
+  <h4 id="UvA_DataNose_Core_TimetableSection_AcademicYear" data-uid="UvA.DataNose.Core.TimetableSection.AcademicYear">AcademicYear</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int AcademicYear { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UvA-FNWI/DataNose/new/master/apiSpec/new?filename=UvA_DataNose_Core_TimetableSection_ColorByActivityType.md&amp;value=---%0Auid%3A%20UvA.DataNose.Core.TimetableSection.ColorByActivityType%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UvA-FNWI/DataNose/blob/master/UvA.DataNose.Core/Sections/Timetable/TimetableSection.cs/#L60">View Source</a>
+  </span>
+  <a id="UvA_DataNose_Core_TimetableSection_ColorByActivityType_" data-uid="UvA.DataNose.Core.TimetableSection.ColorByActivityType*"></a>
+  <h4 id="UvA_DataNose_Core_TimetableSection_ColorByActivityType" data-uid="UvA.DataNose.Core.TimetableSection.ColorByActivityType">ColorByActivityType</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool ColorByActivityType { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UvA-FNWI/DataNose/new/master/apiSpec/new?filename=UvA_DataNose_Core_TimetableSection_EnableCanvasImport.md&amp;value=---%0Auid%3A%20UvA.DataNose.Core.TimetableSection.EnableCanvasImport%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UvA-FNWI/DataNose/blob/master/UvA.DataNose.Core/Sections/Timetable/TimetableSection.cs/#L61">View Source</a>
+  </span>
+  <a id="UvA_DataNose_Core_TimetableSection_EnableCanvasImport_" data-uid="UvA.DataNose.Core.TimetableSection.EnableCanvasImport*"></a>
+  <h4 id="UvA_DataNose_Core_TimetableSection_EnableCanvasImport" data-uid="UvA.DataNose.Core.TimetableSection.EnableCanvasImport">EnableCanvasImport</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool EnableCanvasImport { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UvA-FNWI/DataNose/new/master/apiSpec/new?filename=UvA_DataNose_Core_TimetableSection_EnableStudentSets.md&amp;value=---%0Auid%3A%20UvA.DataNose.Core.TimetableSection.EnableStudentSets%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UvA-FNWI/DataNose/blob/master/UvA.DataNose.Core/Sections/Timetable/TimetableSection.cs/#L70">View Source</a>
+  </span>
+  <a id="UvA_DataNose_Core_TimetableSection_EnableStudentSets_" data-uid="UvA.DataNose.Core.TimetableSection.EnableStudentSets*"></a>
+  <h4 id="UvA_DataNose_Core_TimetableSection_EnableStudentSets" data-uid="UvA.DataNose.Core.TimetableSection.EnableStudentSets">EnableStudentSets</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool EnableStudentSets { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UvA-FNWI/DataNose/new/master/apiSpec/new?filename=UvA_DataNose_Core_TimetableSection_IsPersonal.md&amp;value=---%0Auid%3A%20UvA.DataNose.Core.TimetableSection.IsPersonal%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UvA-FNWI/DataNose/blob/master/UvA.DataNose.Core/Sections/Timetable/TimetableSection.cs/#L58">View Source</a>
+  </span>
+  <a id="UvA_DataNose_Core_TimetableSection_IsPersonal_" data-uid="UvA.DataNose.Core.TimetableSection.IsPersonal*"></a>
+  <h4 id="UvA_DataNose_Core_TimetableSection_IsPersonal" data-uid="UvA.DataNose.Core.TimetableSection.IsPersonal">IsPersonal</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsPersonal { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UvA-FNWI/DataNose/new/master/apiSpec/new?filename=UvA_DataNose_Core_TimetableSection_IsStudent.md&amp;value=---%0Auid%3A%20UvA.DataNose.Core.TimetableSection.IsStudent%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UvA-FNWI/DataNose/blob/master/UvA.DataNose.Core/Sections/Timetable/TimetableSection.cs/#L59">View Source</a>
+  </span>
+  <a id="UvA_DataNose_Core_TimetableSection_IsStudent_" data-uid="UvA.DataNose.Core.TimetableSection.IsStudent*"></a>
+  <h4 id="UvA_DataNose_Core_TimetableSection_IsStudent" data-uid="UvA.DataNose.Core.TimetableSection.IsStudent">IsStudent</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsStudent { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UvA-FNWI/DataNose/new/master/apiSpec/new?filename=UvA_DataNose_Core_TimetableSection_MainDepartment.md&amp;value=---%0Auid%3A%20UvA.DataNose.Core.TimetableSection.MainDepartment%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UvA-FNWI/DataNose/blob/master/UvA.DataNose.Core/Sections/Timetable/TimetableSection.cs/#L54">View Source</a>
+  </span>
+  <a id="UvA_DataNose_Core_TimetableSection_MainDepartment_" data-uid="UvA.DataNose.Core.TimetableSection.MainDepartment*"></a>
+  <h4 id="UvA_DataNose_Core_TimetableSection_MainDepartment" data-uid="UvA.DataNose.Core.TimetableSection.MainDepartment">MainDepartment</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Department MainDepartment { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UvA.DataNose.Data.Department.html">Department</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UvA-FNWI/DataNose/new/master/apiSpec/new?filename=UvA_DataNose_Core_TimetableSection_MainYear.md&amp;value=---%0Auid%3A%20UvA.DataNose.Core.TimetableSection.MainYear%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UvA-FNWI/DataNose/blob/master/UvA.DataNose.Core/Sections/Timetable/TimetableSection.cs/#L55">View Source</a>
+  </span>
+  <a id="UvA_DataNose_Core_TimetableSection_MainYear_" data-uid="UvA.DataNose.Core.TimetableSection.MainYear*"></a>
+  <h4 id="UvA_DataNose_Core_TimetableSection_MainYear" data-uid="UvA.DataNose.Core.TimetableSection.MainYear">MainYear</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int MainYear { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UvA-FNWI/DataNose/new/master/apiSpec/new?filename=UvA_DataNose_Core_TimetableSection_Person.md&amp;value=---%0Auid%3A%20UvA.DataNose.Core.TimetableSection.Person%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UvA-FNWI/DataNose/blob/master/UvA.DataNose.Core/Sections/Timetable/TimetableSection.cs/#L63">View Source</a>
+  </span>
+  <a id="UvA_DataNose_Core_TimetableSection_Person_" data-uid="UvA.DataNose.Core.TimetableSection.Person*"></a>
+  <h4 id="UvA_DataNose_Core_TimetableSection_Person" data-uid="UvA.DataNose.Core.TimetableSection.Person">Person</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Person Person { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UvA.DataNose.Data.Person.html">Person</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UvA-FNWI/DataNose/new/master/apiSpec/new?filename=UvA_DataNose_Core_TimetableSection_ProgrammeNames.md&amp;value=---%0Auid%3A%20UvA.DataNose.Core.TimetableSection.ProgrammeNames%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UvA-FNWI/DataNose/blob/master/UvA.DataNose.Core/Sections/Timetable/TimetableSection.cs/#L53">View Source</a>
+  </span>
+  <a id="UvA_DataNose_Core_TimetableSection_ProgrammeNames_" data-uid="UvA.DataNose.Core.TimetableSection.ProgrammeNames*"></a>
+  <h4 id="UvA_DataNose_Core_TimetableSection_ProgrammeNames" data-uid="UvA.DataNose.Core.TimetableSection.ProgrammeNames">ProgrammeNames</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string[] ProgrammeNames { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UvA-FNWI/DataNose/new/master/apiSpec/new?filename=UvA_DataNose_Core_TimetableSection_SelectedWeek.md&amp;value=---%0Auid%3A%20UvA.DataNose.Core.TimetableSection.SelectedWeek%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UvA-FNWI/DataNose/blob/master/UvA.DataNose.Core/Sections/Timetable/TimetableSection.cs/#L56">View Source</a>
+  </span>
+  <a id="UvA_DataNose_Core_TimetableSection_SelectedWeek_" data-uid="UvA.DataNose.Core.TimetableSection.SelectedWeek*"></a>
+  <h4 id="UvA_DataNose_Core_TimetableSection_SelectedWeek" data-uid="UvA.DataNose.Core.TimetableSection.SelectedWeek">SelectedWeek</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int SelectedWeek { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UvA-FNWI/DataNose/new/master/apiSpec/new?filename=UvA_DataNose_Core_TimetableSection_ChangeWeek_System_Int32_.md&amp;value=---%0Auid%3A%20UvA.DataNose.Core.TimetableSection.ChangeWeek(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UvA-FNWI/DataNose/blob/master/UvA.DataNose.Core/Sections/Timetable/TimetableSection.cs/#L699">View Source</a>
+  </span>
+  <a id="UvA_DataNose_Core_TimetableSection_ChangeWeek_" data-uid="UvA.DataNose.Core.TimetableSection.ChangeWeek*"></a>
+  <h4 id="UvA_DataNose_Core_TimetableSection_ChangeWeek_System_Int32_" data-uid="UvA.DataNose.Core.TimetableSection.ChangeWeek(System.Int32)">ChangeWeek(Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ChangeWeek(int mod)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">mod</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UvA-FNWI/DataNose/new/master/apiSpec/new?filename=UvA_DataNose_Core_TimetableSection_GetNode_System_Int32_System_Int32_System_Int32_UvA_Web_Node_.md&amp;value=---%0Auid%3A%20UvA.DataNose.Core.TimetableSection.GetNode(System.Int32%2CSystem.Int32%2CSystem.Int32%2CUvA.Web.Node)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UvA-FNWI/DataNose/blob/master/UvA.DataNose.Core/Sections/Timetable/TimetableSection.cs/#L86">View Source</a>
+  </span>
+  <a id="UvA_DataNose_Core_TimetableSection_GetNode_" data-uid="UvA.DataNose.Core.TimetableSection.GetNode*"></a>
+  <h4 id="UvA_DataNose_Core_TimetableSection_GetNode_System_Int32_System_Int32_System_Int32_UvA_Web_Node_" data-uid="UvA.DataNose.Core.TimetableSection.GetNode(System.Int32,System.Int32,System.Int32,UvA.Web.Node)">GetNode(Int32, Int32, Int32, Node)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Node GetNode(int targetID, int week, int acyear, Node parent = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">targetID</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">week</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">acyear</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UvA.Web.Node.html">Node</a></td>
+        <td><span class="parametername">parent</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UvA.Web.Node.html">Node</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UvA-FNWI/DataNose/new/master/apiSpec/new?filename=UvA_DataNose_Core_TimetableSection_GetNode_System_Int32_System_Int32_UvA_Web_Node_.md&amp;value=---%0Auid%3A%20UvA.DataNose.Core.TimetableSection.GetNode(System.Int32%2CSystem.Int32%2CUvA.Web.Node)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UvA-FNWI/DataNose/blob/master/UvA.DataNose.Core/Sections/Timetable/TimetableSection.cs/#L81">View Source</a>
+  </span>
+  <a id="UvA_DataNose_Core_TimetableSection_GetNode_" data-uid="UvA.DataNose.Core.TimetableSection.GetNode*"></a>
+  <h4 id="UvA_DataNose_Core_TimetableSection_GetNode_System_Int32_System_Int32_UvA_Web_Node_" data-uid="UvA.DataNose.Core.TimetableSection.GetNode(System.Int32,System.Int32,UvA.Web.Node)">GetNode(Int32, Int32, Node)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Node GetNode(int targetID, int week, Node parent = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">targetID</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">week</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UvA.Web.Node.html">Node</a></td>
+        <td><span class="parametername">parent</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UvA.Web.Node.html">Node</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UvA-FNWI/DataNose/new/master/apiSpec/new?filename=UvA_DataNose_Core_TimetableSection_GetNode_System_Int32_UvA_Web_Node_.md&amp;value=---%0Auid%3A%20UvA.DataNose.Core.TimetableSection.GetNode(System.Int32%2CUvA.Web.Node)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UvA-FNWI/DataNose/blob/master/UvA.DataNose.Core/Sections/Timetable/TimetableSection.cs/#L76">View Source</a>
+  </span>
+  <a id="UvA_DataNose_Core_TimetableSection_GetNode_" data-uid="UvA.DataNose.Core.TimetableSection.GetNode*"></a>
+  <h4 id="UvA_DataNose_Core_TimetableSection_GetNode_System_Int32_UvA_Web_Node_" data-uid="UvA.DataNose.Core.TimetableSection.GetNode(System.Int32,UvA.Web.Node)">GetNode(Int32, Node)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Node GetNode(int targetID, Node parent = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">targetID</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UvA.Web.Node.html">Node</a></td>
+        <td><span class="parametername">parent</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UvA.Web.Node.html">Node</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UvA-FNWI/DataNose/new/master/apiSpec/new?filename=UvA_DataNose_Core_TimetableSection_GetNode_System_String_System_Int32_System_Int32_UvA_Web_Node_.md&amp;value=---%0Auid%3A%20UvA.DataNose.Core.TimetableSection.GetNode(System.String%2CSystem.Int32%2CSystem.Int32%2CUvA.Web.Node)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UvA-FNWI/DataNose/blob/master/UvA.DataNose.Core/Sections/Timetable/TimetableSection.cs/#L91">View Source</a>
+  </span>
+  <a id="UvA_DataNose_Core_TimetableSection_GetNode_" data-uid="UvA.DataNose.Core.TimetableSection.GetNode*"></a>
+  <h4 id="UvA_DataNose_Core_TimetableSection_GetNode_System_String_System_Int32_System_Int32_UvA_Web_Node_" data-uid="UvA.DataNose.Core.TimetableSection.GetNode(System.String,System.Int32,System.Int32,UvA.Web.Node)">GetNode(String, Int32, Int32, Node)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Node GetNode(string progName, int week, int acyear, Node parent = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">progName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">week</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">acyear</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UvA.Web.Node.html">Node</a></td>
+        <td><span class="parametername">parent</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UvA.Web.Node.html">Node</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UvA-FNWI/DataNose/new/master/apiSpec/new?filename=UvA_DataNose_Core_TimetableSection_GetNode_System_String_System_Int32_UvA_Web_Node_.md&amp;value=---%0Auid%3A%20UvA.DataNose.Core.TimetableSection.GetNode(System.String%2CSystem.Int32%2CUvA.Web.Node)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UvA-FNWI/DataNose/blob/master/UvA.DataNose.Core/Sections/Timetable/TimetableSection.cs/#L96">View Source</a>
+  </span>
+  <a id="UvA_DataNose_Core_TimetableSection_GetNode_" data-uid="UvA.DataNose.Core.TimetableSection.GetNode*"></a>
+  <h4 id="UvA_DataNose_Core_TimetableSection_GetNode_System_String_System_Int32_UvA_Web_Node_" data-uid="UvA.DataNose.Core.TimetableSection.GetNode(System.String,System.Int32,UvA.Web.Node)">GetNode(String, Int32, Node)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Node GetNode(string progName, int week, Node parent = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">progName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">week</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UvA.Web.Node.html">Node</a></td>
+        <td><span class="parametername">parent</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UvA.Web.Node.html">Node</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UvA-FNWI/DataNose/new/master/apiSpec/new?filename=UvA_DataNose_Core_TimetableSection_GetNode_System_String_System_String_System_Int32_UvA_Web_Node_.md&amp;value=---%0Auid%3A%20UvA.DataNose.Core.TimetableSection.GetNode(System.String%2CSystem.String%2CSystem.Int32%2CUvA.Web.Node)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UvA-FNWI/DataNose/blob/master/UvA.DataNose.Core/Sections/Timetable/TimetableSection.cs/#L106">View Source</a>
+  </span>
+  <a id="UvA_DataNose_Core_TimetableSection_GetNode_" data-uid="UvA.DataNose.Core.TimetableSection.GetNode*"></a>
+  <h4 id="UvA_DataNose_Core_TimetableSection_GetNode_System_String_System_String_System_Int32_UvA_Web_Node_" data-uid="UvA.DataNose.Core.TimetableSection.GetNode(System.String,System.String,System.Int32,UvA.Web.Node)">GetNode(String, String, Int32, Node)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Node GetNode(string progName, string week, int acyear, Node parent = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">progName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">week</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">acyear</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UvA.Web.Node.html">Node</a></td>
+        <td><span class="parametername">parent</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UvA.Web.Node.html">Node</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UvA-FNWI/DataNose/new/master/apiSpec/new?filename=UvA_DataNose_Core_TimetableSection_GetNode_System_String_UvA_Web_Node_.md&amp;value=---%0Auid%3A%20UvA.DataNose.Core.TimetableSection.GetNode(System.String%2CUvA.Web.Node)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UvA-FNWI/DataNose/blob/master/UvA.DataNose.Core/Sections/Timetable/TimetableSection.cs/#L111">View Source</a>
+  </span>
+  <a id="UvA_DataNose_Core_TimetableSection_GetNode_" data-uid="UvA.DataNose.Core.TimetableSection.GetNode*"></a>
+  <h4 id="UvA_DataNose_Core_TimetableSection_GetNode_System_String_UvA_Web_Node_" data-uid="UvA.DataNose.Core.TimetableSection.GetNode(System.String,UvA.Web.Node)">GetNode(String, Node)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Node GetNode(string progName, Node parent = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">progName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UvA.Web.Node.html">Node</a></td>
+        <td><span class="parametername">parent</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UvA.Web.Node.html">Node</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UvA-FNWI/DataNose/new/master/apiSpec/new?filename=UvA_DataNose_Core_TimetableSection_GetNode_System_String___System_Int32_System_Int32_UvA_Web_Node_.md&amp;value=---%0Auid%3A%20UvA.DataNose.Core.TimetableSection.GetNode(System.String%5B%5D%2CSystem.Int32%2CSystem.Int32%2CUvA.Web.Node)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UvA-FNWI/DataNose/blob/master/UvA.DataNose.Core/Sections/Timetable/TimetableSection.cs/#L121">View Source</a>
+  </span>
+  <a id="UvA_DataNose_Core_TimetableSection_GetNode_" data-uid="UvA.DataNose.Core.TimetableSection.GetNode*"></a>
+  <h4 id="UvA_DataNose_Core_TimetableSection_GetNode_System_String___System_Int32_System_Int32_UvA_Web_Node_" data-uid="UvA.DataNose.Core.TimetableSection.GetNode(System.String[],System.Int32,System.Int32,UvA.Web.Node)">GetNode(String[], Int32, Int32, Node)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Node GetNode(string[] progName, int week, int acyear, Node parent = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span>[]</td>
+        <td><span class="parametername">progName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">week</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">acyear</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UvA.Web.Node.html">Node</a></td>
+        <td><span class="parametername">parent</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UvA.Web.Node.html">Node</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UvA-FNWI/DataNose/new/master/apiSpec/new?filename=UvA_DataNose_Core_TimetableSection_GetNode_System_String___System_Int32_UvA_Web_Node_.md&amp;value=---%0Auid%3A%20UvA.DataNose.Core.TimetableSection.GetNode(System.String%5B%5D%2CSystem.Int32%2CUvA.Web.Node)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UvA-FNWI/DataNose/blob/master/UvA.DataNose.Core/Sections/Timetable/TimetableSection.cs/#L101">View Source</a>
+  </span>
+  <a id="UvA_DataNose_Core_TimetableSection_GetNode_" data-uid="UvA.DataNose.Core.TimetableSection.GetNode*"></a>
+  <h4 id="UvA_DataNose_Core_TimetableSection_GetNode_System_String___System_Int32_UvA_Web_Node_" data-uid="UvA.DataNose.Core.TimetableSection.GetNode(System.String[],System.Int32,UvA.Web.Node)">GetNode(String[], Int32, Node)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Node GetNode(string[] progName, int week, Node parent = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span>[]</td>
+        <td><span class="parametername">progName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">week</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UvA.Web.Node.html">Node</a></td>
+        <td><span class="parametername">parent</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UvA.Web.Node.html">Node</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UvA-FNWI/DataNose/new/master/apiSpec/new?filename=UvA_DataNose_Core_TimetableSection_GetNode_System_String___UvA_Web_Node_.md&amp;value=---%0Auid%3A%20UvA.DataNose.Core.TimetableSection.GetNode(System.String%5B%5D%2CUvA.Web.Node)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UvA-FNWI/DataNose/blob/master/UvA.DataNose.Core/Sections/Timetable/TimetableSection.cs/#L116">View Source</a>
+  </span>
+  <a id="UvA_DataNose_Core_TimetableSection_GetNode_" data-uid="UvA.DataNose.Core.TimetableSection.GetNode*"></a>
+  <h4 id="UvA_DataNose_Core_TimetableSection_GetNode_System_String___UvA_Web_Node_" data-uid="UvA.DataNose.Core.TimetableSection.GetNode(System.String[],UvA.Web.Node)">GetNode(String[], Node)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Node GetNode(string[] progName, Node parent = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span>[]</td>
+        <td><span class="parametername">progName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UvA.Web.Node.html">Node</a></td>
+        <td><span class="parametername">parent</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UvA.Web.Node.html">Node</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UvA-FNWI/DataNose/new/master/apiSpec/new?filename=UvA_DataNose_Core_TimetableSection_GetNode_System_Tuple_System_String_System_Int32__UvA_Web_Node_.md&amp;value=---%0Auid%3A%20UvA.DataNose.Core.TimetableSection.GetNode(System.Tuple%7BSystem.String%2CSystem.Int32%7D%2CUvA.Web.Node)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UvA-FNWI/DataNose/blob/master/UvA.DataNose.Core/Sections/Timetable/TimetableSection.cs/#L126">View Source</a>
+  </span>
+  <a id="UvA_DataNose_Core_TimetableSection_GetNode_" data-uid="UvA.DataNose.Core.TimetableSection.GetNode*"></a>
+  <h4 id="UvA_DataNose_Core_TimetableSection_GetNode_System_Tuple_System_String_System_Int32__UvA_Web_Node_" data-uid="UvA.DataNose.Core.TimetableSection.GetNode(System.Tuple{System.String,System.Int32},UvA.Web.Node)">GetNode(Tuple&lt;String, Int32&gt;, Node)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Node GetNode(Tuple&lt;string, int&gt; progNameAndYear, Node parent = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Tuple</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.Int32</span>&gt;</td>
+        <td><span class="parametername">progNameAndYear</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UvA.Web.Node.html">Node</a></td>
+        <td><span class="parametername">parent</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UvA.Web.Node.html">Node</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UvA-FNWI/DataNose/new/master/apiSpec/new?filename=UvA_DataNose_Core_TimetableSection_GetNode_UvA_Web_Node_System_Int32_System_String___System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20UvA.DataNose.Core.TimetableSection.GetNode(UvA.Web.Node%2CSystem.Int32%2CSystem.String%5B%5D%2CSystem.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UvA-FNWI/DataNose/blob/master/UvA.DataNose.Core/Sections/Timetable/TimetableSection.cs/#L133">View Source</a>
+  </span>
+  <a id="UvA_DataNose_Core_TimetableSection_GetNode_" data-uid="UvA.DataNose.Core.TimetableSection.GetNode*"></a>
+  <h4 id="UvA_DataNose_Core_TimetableSection_GetNode_UvA_Web_Node_System_Int32_System_String___System_Int32_System_Int32_" data-uid="UvA.DataNose.Core.TimetableSection.GetNode(UvA.Web.Node,System.Int32,System.String[],System.Int32,System.Int32)">GetNode(Node, Int32, String[], Int32, Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Node GetNode(Node parent = null, int targetID = 0, string[] progName = null, int week = 0, int acyear = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UvA.Web.Node.html">Node</a></td>
+        <td><span class="parametername">parent</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">targetID</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span>[]</td>
+        <td><span class="parametername">progName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">week</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">acyear</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UvA.Web.Node.html">Node</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UvA-FNWI/DataNose/new/master/apiSpec/new?filename=UvA_DataNose_Core_TimetableSection_ProcessParameters.md&amp;value=---%0Auid%3A%20UvA.DataNose.Core.TimetableSection.ProcessParameters%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UvA-FNWI/DataNose/blob/master/UvA.DataNose.Core/Sections/Timetable/TimetableSection.cs/#L483">View Source</a>
+  </span>
+  <a id="UvA_DataNose_Core_TimetableSection_ProcessParameters_" data-uid="UvA.DataNose.Core.TimetableSection.ProcessParameters*"></a>
+  <h4 id="UvA_DataNose_Core_TimetableSection_ProcessParameters" data-uid="UvA.DataNose.Core.TimetableSection.ProcessParameters">ProcessParameters()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void ProcessParameters()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="UvA.Web.Part.html#UvA_Web_Part_ProcessParameters">Part.ProcessParameters()</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UvA-FNWI/DataNose/new/master/apiSpec/new?filename=UvA_DataNose_Core_TimetableSection_Update.md&amp;value=---%0Auid%3A%20UvA.DataNose.Core.TimetableSection.Update%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UvA-FNWI/DataNose/blob/master/UvA.DataNose.Core/Sections/Timetable/TimetableSection.cs/#L832">View Source</a>
+  </span>
+  <a id="UvA_DataNose_Core_TimetableSection_Update_" data-uid="UvA.DataNose.Core.TimetableSection.Update*"></a>
+  <h4 id="UvA_DataNose_Core_TimetableSection_Update" data-uid="UvA.DataNose.Core.TimetableSection.Update">Update()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Update()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="UvA.Web.Part.html#UvA_Web_Part_Update">Part.Update()</a></div>
+  <h3 id="events">Events
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UvA-FNWI/DataNose/new/master/apiSpec/new?filename=UvA_DataNose_Core_TimetableSection_Updating.md&amp;value=---%0Auid%3A%20UvA.DataNose.Core.TimetableSection.Updating%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UvA-FNWI/DataNose/blob/master/UvA.DataNose.Core/Sections/Timetable/TimetableSection.cs/#L72">View Source</a>
+  </span>
+  <h4 id="UvA_DataNose_Core_TimetableSection_Updating" data-uid="UvA.DataNose.Core.TimetableSection.Updating">Updating</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler Updating</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.EventHandler</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="UvA.Web.JS.IClientObject.html">IClientObject</a>
+  </div>
+  <div>
+      <a class="xref" href="UvA.DataNose.Core.ITimetable.html">ITimetable</a>
+  </div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="UvA.Utilities.DataExtensions.html#UvA_Utilities_DataExtensions_IsIn__1___0___0_">DataExtensions.IsIn&lt;T&gt;(T, T)</a>
+  </div>
+  <div>
+      <a class="xref" href="UvA.Utilities.DataExtensions.html#UvA_Utilities_DataExtensions_IsIn__1___0___0___0_">DataExtensions.IsIn&lt;T&gt;(T, T, T)</a>
+  </div>
+  <div>
+      <a class="xref" href="UvA.Utilities.DataExtensions.html#UvA_Utilities_DataExtensions_IsIn__1___0___0___0___0_">DataExtensions.IsIn&lt;T&gt;(T, T, T, T)</a>
+  </div>
+  <div>
+      <a class="xref" href="UvA.Utilities.DataExtensions.html#UvA_Utilities_DataExtensions_IsIn__1___0___0___0___0___0_">DataExtensions.IsIn&lt;T&gt;(T, T, T, T, T)</a>
+  </div>
+  <div>
+      <a class="xref" href="UvA.Utilities.DataExtensions.html#UvA_Utilities_DataExtensions_IsIn__1___0___0___0___0___0___0_">DataExtensions.IsIn&lt;T&gt;(T, T, T, T, T, T)</a>
+  </div>
+  <div>
+      <a class="xref" href="UvA.Utilities.DataExtensions.html#UvA_Utilities_DataExtensions_IsIn__1___0___0___">DataExtensions.IsIn&lt;T&gt;(T, T[])</a>
+  </div>
+  <div>
+      <a class="xref" href="UvA.Utilities.DataExtensions.html#UvA_Utilities_DataExtensions_IsNotIn__1___0___0_">DataExtensions.IsNotIn&lt;T&gt;(T, T)</a>
+  </div>
+  <div>
+      <a class="xref" href="UvA.Utilities.DataExtensions.html#UvA_Utilities_DataExtensions_IsNotIn__1___0___0___0_">DataExtensions.IsNotIn&lt;T&gt;(T, T, T)</a>
+  </div>
+  <div>
+      <a class="xref" href="UvA.Utilities.DataExtensions.html#UvA_Utilities_DataExtensions_IsNotIn__1___0___0___0___0_">DataExtensions.IsNotIn&lt;T&gt;(T, T, T, T)</a>
+  </div>
+  <div>
+      <a class="xref" href="UvA.Utilities.DataExtensions.html#UvA_Utilities_DataExtensions_IsNotIn__1___0___0___0___0___0_">DataExtensions.IsNotIn&lt;T&gt;(T, T, T, T, T)</a>
+  </div>
+  <div>
+      <a class="xref" href="UvA.Utilities.DataExtensions.html#UvA_Utilities_DataExtensions_IsNotIn__1___0___0___0___0___0___0_">DataExtensions.IsNotIn&lt;T&gt;(T, T, T, T, T, T)</a>
+  </div>
+  <div>
+      <a class="xref" href="UvA.Utilities.DataExtensions.html#UvA_Utilities_DataExtensions_IsNotIn__1___0___0___">DataExtensions.IsNotIn&lt;T&gt;(T, T[])</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/UvA-FNWI/DataNose/new/master/apiSpec/new?filename=UvA_DataNose_Core_TimetableSection.md&amp;value=---%0Auid%3A%20UvA.DataNose.Core.TimetableSection%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/UvA-FNWI/DataNose/blob/master/UvA.DataNose.Core/Sections/Timetable/TimetableSection.cs/#L18" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

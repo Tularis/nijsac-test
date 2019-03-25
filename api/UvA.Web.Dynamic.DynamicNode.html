@@ -1,0 +1,496 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class DynamicNode
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class DynamicNode
+   ">
+    <meta name="generator" content="docfx 2.40.12.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="UvA.Web.Dynamic.DynamicNode">
+  
+  
+  <h1 id="UvA_Web_Dynamic_DynamicNode" data-uid="UvA.Web.Dynamic.DynamicNode" class="text-break">Class DynamicNode
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="UvA.Web.Node.html">Node</a></div>
+    <div class="level2"><span class="xref">DynamicNode</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="UvA.Web.INameObject.html">INameObject</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="UvA.Web.Node.html#UvA_Web_Node_Title">Node.Title</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Node.html#UvA_Web_Node_Name">Node.Name</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Node.html#UvA_Web_Node_Path">Node.Path</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Node.html#UvA_Web_Node_SectionType">Node.SectionType</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Node.html#UvA_Web_Node_Parameters">Node.Parameters</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Node.html#UvA_Web_Node_InternalParameters">Node.InternalParameters</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Node.html#UvA_Web_Node_DynamicParameters">Node.DynamicParameters</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Node.html#UvA_Web_Node_AuthorizationFunction">Node.AuthorizationFunction</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Node.html#UvA_Web_Node_HideTile">Node.HideTile</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Node.html#UvA_Web_Node_DisplayInBar">Node.DisplayInBar</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Node.html#UvA_Web_Node_UseGenericImage">Node.UseGenericImage</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Node.html#UvA_Web_Node_IgnoreParentParameters">Node.IgnoreParentParameters</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Node.html#UvA_Web_Node_HideContainer">Node.HideContainer</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Node.html#UvA_Web_Node_IgnoreParameters">Node.IgnoreParameters</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Node.html#UvA_Web_Node_ReloadOnLogin">Node.ReloadOnLogin</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Node.html#UvA_Web_Node_Children">Node.Children</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Node.html#UvA_Web_Node_Parent">Node.Parent</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Node.html#UvA_Web_Node_PathWithImageParameters">Node.PathWithImageParameters</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Node.html#UvA_Web_Node_PathWithParameters">Node.PathWithParameters</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Node.html#UvA_Web_Node_PathWithAllParameters">Node.PathWithAllParameters</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Node.html#UvA_Web_Node_Href">Node.Href</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Node.html#UvA_Web_Node_NamePath">Node.NamePath</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Node.html#UvA_Web_Node_ManualImagePath">Node.ManualImagePath</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Node.html#UvA_Web_Node_ImagePath">Node.ImagePath</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Node.html#UvA_Web_Node_FullPath">Node.FullPath</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Node.html#UvA_Web_Node_TargetHref">Node.TargetHref</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Node.html#UvA_Web_Node_AllParameters">Node.AllParameters</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Node.html#UvA_Web_Node_ReloadOnTileClick">Node.ReloadOnTileClick</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Node.html#UvA_Web_Node_ReloadAlways">Node.ReloadAlways</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Node.html#UvA_Web_Node_PreventOnClick">Node.PreventOnClick</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Node.html#UvA_Web_Node_GetParent__1">Node.GetParent&lt;T&gt;()</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Node.html#UvA_Web_Node_Root">Node.Root</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Node.html#UvA_Web_Node_GetHierarchy_System_Boolean_">Node.GetHierarchy(Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Node.html#UvA_Web_Node_FindChild_System_String_">Node.FindChild(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Node.html#UvA_Web_Node_UpdateDynamicParameters_System_String_">Node.UpdateDynamicParameters(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Node.html#UvA_Web_Node_GetLink_UvA_Web_Element_System_Action_System_Boolean_">Node.GetLink(Element, Action, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Node.html#UvA_Web_Node_NoReloadNode">Node.NoReloadNode</a>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="UvA.Web.Dynamic.html">UvA.Web.Dynamic</a></h6>
+  <h6><strong>Assembly</strong>: UvA.Web.dll</h6>
+  <h5 id="UvA_Web_Dynamic_DynamicNode_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class DynamicNode : Node, INameObject</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UvA-FNWI/DataNose/new/master/apiSpec/new?filename=UvA_Web_Dynamic_DynamicNode__ctor_System_String_System_String_System_String_System_Func_UvA_Web_Page_System_Boolean__UvA_Web_Node_System_Object___.md&amp;value=---%0Auid%3A%20UvA.Web.Dynamic.DynamicNode.%23ctor(System.String%2CSystem.String%2CSystem.String%2CSystem.Func%7BUvA.Web.Page%2CSystem.Boolean%7D%2CUvA.Web.Node%2CSystem.Object%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UvA-FNWI/DataNose/blob/master/UvA.Web/Dynamic/DynamicNode.cs/#L24">View Source</a>
+  </span>
+  <a id="UvA_Web_Dynamic_DynamicNode__ctor_" data-uid="UvA.Web.Dynamic.DynamicNode.#ctor*"></a>
+  <h4 id="UvA_Web_Dynamic_DynamicNode__ctor_System_String_System_String_System_String_System_Func_UvA_Web_Page_System_Boolean__UvA_Web_Node_System_Object___" data-uid="UvA.Web.Dynamic.DynamicNode.#ctor(System.String,System.String,System.String,System.Func{UvA.Web.Page,System.Boolean},UvA.Web.Node,System.Object[])">DynamicNode(String, String, String, Func&lt;Page, Boolean&gt;, Node, Object[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DynamicNode(string name, string path, string sectionName, Func&lt;Page, bool&gt; authFunction, Node parent, params object[] internalParams)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">path</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">sectionName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Func</span>&lt;<a class="xref" href="UvA.Web.Page.html">Page</a>, <span class="xref">System.Boolean</span>&gt;</td>
+        <td><span class="parametername">authFunction</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UvA.Web.Node.html">Node</a></td>
+        <td><span class="parametername">parent</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span>[]</td>
+        <td><span class="parametername">internalParams</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UvA-FNWI/DataNose/new/master/apiSpec/new?filename=UvA_Web_Dynamic_DynamicNode_NodeParameters.md&amp;value=---%0Auid%3A%20UvA.Web.Dynamic.DynamicNode.NodeParameters%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UvA-FNWI/DataNose/blob/master/UvA.Web/Dynamic/DynamicNode.cs/#L22">View Source</a>
+  </span>
+  <a id="UvA_Web_Dynamic_DynamicNode_NodeParameters_" data-uid="UvA.Web.Dynamic.DynamicNode.NodeParameters*"></a>
+  <h4 id="UvA_Web_Dynamic_DynamicNode_NodeParameters" data-uid="UvA.Web.Dynamic.DynamicNode.NodeParameters">NodeParameters</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public object[] NodeParameters { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UvA-FNWI/DataNose/new/master/apiSpec/new?filename=UvA_Web_Dynamic_DynamicNode_SectionName.md&amp;value=---%0Auid%3A%20UvA.Web.Dynamic.DynamicNode.SectionName%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UvA-FNWI/DataNose/blob/master/UvA.Web/Dynamic/DynamicNode.cs/#L20">View Source</a>
+  </span>
+  <a id="UvA_Web_Dynamic_DynamicNode_SectionName_" data-uid="UvA.Web.Dynamic.DynamicNode.SectionName*"></a>
+  <h4 id="UvA_Web_Dynamic_DynamicNode_SectionName" data-uid="UvA.Web.Dynamic.DynamicNode.SectionName">SectionName</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string SectionName { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UvA-FNWI/DataNose/new/master/apiSpec/new?filename=UvA_Web_Dynamic_DynamicNode_WatchChanges.md&amp;value=---%0Auid%3A%20UvA.Web.Dynamic.DynamicNode.WatchChanges%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UvA-FNWI/DataNose/blob/master/UvA.Web/Dynamic/DynamicNode.cs/#L21">View Source</a>
+  </span>
+  <a id="UvA_Web_Dynamic_DynamicNode_WatchChanges_" data-uid="UvA.Web.Dynamic.DynamicNode.WatchChanges*"></a>
+  <h4 id="UvA_Web_Dynamic_DynamicNode_WatchChanges" data-uid="UvA.Web.Dynamic.DynamicNode.WatchChanges">WatchChanges</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool WatchChanges { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UvA-FNWI/DataNose/new/master/apiSpec/new?filename=UvA_Web_Dynamic_DynamicNode_CompileAndLoad_UvA_Web_SectionContainer_.md&amp;value=---%0Auid%3A%20UvA.Web.Dynamic.DynamicNode.CompileAndLoad(UvA.Web.SectionContainer)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UvA-FNWI/DataNose/blob/master/UvA.Web/Dynamic/DynamicNode.cs/#L38">View Source</a>
+  </span>
+  <a id="UvA_Web_Dynamic_DynamicNode_CompileAndLoad_" data-uid="UvA.Web.Dynamic.DynamicNode.CompileAndLoad*"></a>
+  <h4 id="UvA_Web_Dynamic_DynamicNode_CompileAndLoad_UvA_Web_SectionContainer_" data-uid="UvA.Web.Dynamic.DynamicNode.CompileAndLoad(UvA.Web.SectionContainer)">CompileAndLoad(SectionContainer)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CompileAndLoad(SectionContainer container)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UvA.Web.SectionContainer.html">SectionContainer</a></td>
+        <td><span class="parametername">container</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="UvA.Web.INameObject.html">INameObject</a>
+  </div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="UvA.Utilities.DataExtensions.html#UvA_Utilities_DataExtensions_IsIn__1___0___0_">DataExtensions.IsIn&lt;T&gt;(T, T)</a>
+  </div>
+  <div>
+      <a class="xref" href="UvA.Utilities.DataExtensions.html#UvA_Utilities_DataExtensions_IsIn__1___0___0___0_">DataExtensions.IsIn&lt;T&gt;(T, T, T)</a>
+  </div>
+  <div>
+      <a class="xref" href="UvA.Utilities.DataExtensions.html#UvA_Utilities_DataExtensions_IsIn__1___0___0___0___0_">DataExtensions.IsIn&lt;T&gt;(T, T, T, T)</a>
+  </div>
+  <div>
+      <a class="xref" href="UvA.Utilities.DataExtensions.html#UvA_Utilities_DataExtensions_IsIn__1___0___0___0___0___0_">DataExtensions.IsIn&lt;T&gt;(T, T, T, T, T)</a>
+  </div>
+  <div>
+      <a class="xref" href="UvA.Utilities.DataExtensions.html#UvA_Utilities_DataExtensions_IsIn__1___0___0___0___0___0___0_">DataExtensions.IsIn&lt;T&gt;(T, T, T, T, T, T)</a>
+  </div>
+  <div>
+      <a class="xref" href="UvA.Utilities.DataExtensions.html#UvA_Utilities_DataExtensions_IsIn__1___0___0___">DataExtensions.IsIn&lt;T&gt;(T, T[])</a>
+  </div>
+  <div>
+      <a class="xref" href="UvA.Utilities.DataExtensions.html#UvA_Utilities_DataExtensions_IsNotIn__1___0___0_">DataExtensions.IsNotIn&lt;T&gt;(T, T)</a>
+  </div>
+  <div>
+      <a class="xref" href="UvA.Utilities.DataExtensions.html#UvA_Utilities_DataExtensions_IsNotIn__1___0___0___0_">DataExtensions.IsNotIn&lt;T&gt;(T, T, T)</a>
+  </div>
+  <div>
+      <a class="xref" href="UvA.Utilities.DataExtensions.html#UvA_Utilities_DataExtensions_IsNotIn__1___0___0___0___0_">DataExtensions.IsNotIn&lt;T&gt;(T, T, T, T)</a>
+  </div>
+  <div>
+      <a class="xref" href="UvA.Utilities.DataExtensions.html#UvA_Utilities_DataExtensions_IsNotIn__1___0___0___0___0___0_">DataExtensions.IsNotIn&lt;T&gt;(T, T, T, T, T)</a>
+  </div>
+  <div>
+      <a class="xref" href="UvA.Utilities.DataExtensions.html#UvA_Utilities_DataExtensions_IsNotIn__1___0___0___0___0___0___0_">DataExtensions.IsNotIn&lt;T&gt;(T, T, T, T, T, T)</a>
+  </div>
+  <div>
+      <a class="xref" href="UvA.Utilities.DataExtensions.html#UvA_Utilities_DataExtensions_IsNotIn__1___0___0___">DataExtensions.IsNotIn&lt;T&gt;(T, T[])</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/UvA-FNWI/DataNose/new/master/apiSpec/new?filename=UvA_Web_Dynamic_DynamicNode.md&amp;value=---%0Auid%3A%20UvA.Web.Dynamic.DynamicNode%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/UvA-FNWI/DataNose/blob/master/UvA.Web/Dynamic/DynamicNode.cs/#L18" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

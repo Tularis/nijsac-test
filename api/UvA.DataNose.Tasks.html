@@ -1,0 +1,239 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Namespace UvA.DataNose.Tasks
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Namespace UvA.DataNose.Tasks
+   ">
+    <meta name="generator" content="docfx 2.40.12.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="UvA.DataNose.Tasks">
+  
+  <h1 id="UvA_DataNose_Tasks" data-uid="UvA.DataNose.Tasks" class="text-break">Namespace UvA.DataNose.Tasks
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="markdown level0 remarks"></div>
+    <h3 id="classes">Classes
+  </h3>
+      <h4><a class="xref" href="UvA.DataNose.Tasks.AcadPlanTasks.html">AcadPlanTasks</a></h4>
+      <section></section>
+      <h4><a class="xref" href="UvA.DataNose.Tasks.ANSTasks.html">ANSTasks</a></h4>
+      <section></section>
+      <h4><a class="xref" href="UvA.DataNose.Tasks.BudgetTasks.html">BudgetTasks</a></h4>
+      <section></section>
+      <h4><a class="xref" href="UvA.DataNose.Tasks.CanvasTasks.html">CanvasTasks</a></h4>
+      <section></section>
+      <h4><a class="xref" href="UvA.DataNose.Tasks.CatalogConverter.html">CatalogConverter</a></h4>
+      <section></section>
+      <h4><a class="xref" href="UvA.DataNose.Tasks.CleanupTasks.html">CleanupTasks</a></h4>
+      <section></section>
+      <h4><a class="xref" href="UvA.DataNose.Tasks.CourseCatalogueTasks.html">CourseCatalogueTasks</a></h4>
+      <section></section>
+      <h4><a class="xref" href="UvA.DataNose.Tasks.CourseManualTasks.html">CourseManualTasks</a></h4>
+      <section></section>
+      <h4><a class="xref" href="UvA.DataNose.Tasks.CurriculumTasks.html">CurriculumTasks</a></h4>
+      <section></section>
+      <h4><a class="xref" href="UvA.DataNose.Tasks.DNQueryFNWIStudents.html">DNQueryFNWIStudents</a></h4>
+      <section><p>Methods, &quot;views&quot;, for retrieving active FNWI students: StudentPrograms, Plans, MainPlans (&quot;hoofdvakkers&quot;).
+and a &quot;preferred&quot; main plan in case the student has more than one. Subplans are not yet supported.</p>
+</section>
+      <h4><a class="xref" href="UvA.DataNose.Tasks.DNQueryFNWIStudents.StudentCarProgPlanSub.html">DNQueryFNWIStudents.StudentCarProgPlanSub</a></h4>
+      <section><p>Student-Programme-Plan combination</p>
+</section>
+      <h4><a class="xref" href="UvA.DataNose.Tasks.DNQueryMinorEnrolments.html">DNQueryMinorEnrolments</a></h4>
+      <section></section>
+      <h4><a class="xref" href="UvA.DataNose.Tasks.DNQueryMinorEnrolments.MinorEnrolment.html">DNQueryMinorEnrolments.MinorEnrolment</a></h4>
+      <section></section>
+      <h4><a class="xref" href="UvA.DataNose.Tasks.DNQuerySingleDoubleProgs.html">DNQuerySingleDoubleProgs</a></h4>
+      <section><p>This class knows about single and double programmes, for purposes of knowing the starters of a given programme
+and year.</p>
+<p>Two programmes together may cooperate to offer a double programme.
+When students are enrolled in both programmes they can get permission to follow the double programme.
+From then on, the double programme acts much like a separate programme: it has its own list of starting students.</p>
+<p>This class makes it possible to treat single and double programmes much alike:</p>
+<ul>
+<li>You can ask for the starters of an arbitrary programme (single or double)</li>
+<li>In case of double: only starters are returned that have permission for the double programme AND are still
+enrolled in both parent programmes.</li>
+<li>In case of single: only starters are shown that attend this programme as a single programme;
+i.e. students starting in one of the double programmes that this programme is parent of, are omitted.
+(I now made this optional)</li>
+</ul>
+<p>Use it e.g. to send a mailing where admitted starters for a double programme get a different letter from
+those that will start in one (or both) of the two parent programmes, without being admitted to the double prog.
+(The same setup could be used to get lists of participating, not just starting students, but...)</p>
+<p>Other, derived questions that this class answers:</p>
+<ul>
+<li>Given a student enrolment for a parent program: give an array of double programs (children of this parent program)
+that the student attends.</li>
+<li>Given a student ID and a (parent) programme name: same as previous</li>
+<li>Same as previous, but return only the first double programme name (or empty string if there are none)</li>
+</ul>
+</section>
+      <h4><a class="xref" href="UvA.DataNose.Tasks.DriveTasks.html">DriveTasks</a></h4>
+      <section></section>
+      <h4><a class="xref" href="UvA.DataNose.Tasks.DVMTasks.html">DVMTasks</a></h4>
+      <section></section>
+      <h4><a class="xref" href="UvA.DataNose.Tasks.DVMTasks.DoubleTitles.html">DVMTasks.DoubleTitles</a></h4>
+      <section></section>
+      <h4><a class="xref" href="UvA.DataNose.Tasks.FinanceTasks.html">FinanceTasks</a></h4>
+      <section></section>
+      <h4><a class="xref" href="UvA.DataNose.Tasks.GitLabTasks.html">GitLabTasks</a></h4>
+      <section></section>
+      <h4><a class="xref" href="UvA.DataNose.Tasks.GraduationTasks.html">GraduationTasks</a></h4>
+      <section></section>
+      <h4><a class="xref" href="UvA.DataNose.Tasks.HousingTasks.html">HousingTasks</a></h4>
+      <section></section>
+      <h4><a class="xref" href="UvA.DataNose.Tasks.JointDegreeTasks.html">JointDegreeTasks</a></h4>
+      <section></section>
+      <h4><a class="xref" href="UvA.DataNose.Tasks.LoadTextFromFile.html">LoadTextFromFile</a></h4>
+      <section><p>Load Text from a file into the Text table
+If the combination of lanuage_ID and key already exists, the Value is updated.
+Otherwise, a new entry in the Text table is created</p>
+</section>
+      <h4><a class="xref" href="UvA.DataNose.Tasks.MailEngine-1.html">MailEngine&lt;T&gt;</a></h4>
+      <section></section>
+      <h4><a class="xref" href="UvA.DataNose.Tasks.PaymentTasks.html">PaymentTasks</a></h4>
+      <section></section>
+      <h4><a class="xref" href="UvA.DataNose.Tasks.ProjectTasks.html">ProjectTasks</a></h4>
+      <section></section>
+      <h4><a class="xref" href="UvA.DataNose.Tasks.ProjectTasks.GradePart.html">ProjectTasks.GradePart</a></h4>
+      <section></section>
+      <h4><a class="xref" href="UvA.DataNose.Tasks.QASTasks.html">QASTasks</a></h4>
+      <section></section>
+      <h4><a class="xref" href="UvA.DataNose.Tasks.SISTasks.html">SISTasks</a></h4>
+      <section></section>
+      <h4><a class="xref" href="UvA.DataNose.Tasks.SPlusImportTasks.html">SPlusImportTasks</a></h4>
+      <section><p>Contains methods that retrieve information from Syllabus+</p>
+</section>
+      <h4><a class="xref" href="UvA.DataNose.Tasks.StudentTasks.html">StudentTasks</a></h4>
+      <section></section>
+      <h4><a class="xref" href="UvA.DataNose.Tasks.TaskTasks.html">TaskTasks</a></h4>
+      <section></section>
+      <h4><a class="xref" href="UvA.DataNose.Tasks.TestAnalysisTasks.html">TestAnalysisTasks</a></h4>
+      <section></section>
+      <h4><a class="xref" href="UvA.DataNose.Tasks.TimetableTasks.html">TimetableTasks</a></h4>
+      <section></section>
+      <h4><a class="xref" href="UvA.DataNose.Tasks.TriggerEngine.html">TriggerEngine</a></h4>
+      <section></section>
+      <h4><a class="xref" href="UvA.DataNose.Tasks.UpdateTool.html">UpdateTool</a></h4>
+      <section><p>Static class that contains methods that should be executed periodically</p>
+</section>
+      <h4><a class="xref" href="UvA.DataNose.Tasks.UserRolesTasks.html">UserRolesTasks</a></h4>
+      <section></section>
+      <h4><a class="xref" href="UvA.DataNose.Tasks.UvANoseTasks.html">UvANoseTasks</a></h4>
+      <section></section>
+      <h4><a class="xref" href="UvA.DataNose.Tasks.WorkflowRepositoryHelper.html">WorkflowRepositoryHelper</a></h4>
+      <section></section>
+      <h4><a class="xref" href="UvA.DataNose.Tasks.WorkflowTasks.html">WorkflowTasks</a></h4>
+      <section></section>
+      <h4><a class="xref" href="UvA.DataNose.Tasks.YClassesTasks.html">YClassesTasks</a></h4>
+      <section></section>
+    <h3 id="enums">Enums
+  </h3>
+      <h4><a class="xref" href="UvA.DataNose.Tasks.CatalogConverter.CourseAttributeValueType.html">CatalogConverter.CourseAttributeValueType</a></h4>
+      <section></section>
+      <h4><a class="xref" href="UvA.DataNose.Tasks.CourseManualTasks.CourseAttributeValueType.html">CourseManualTasks.CourseAttributeValueType</a></h4>
+      <section></section>
+      <h4><a class="xref" href="UvA.DataNose.Tasks.DNQuerySingleDoubleProgs.HomeInstitution.html">DNQuerySingleDoubleProgs.HomeInstitution</a></h4>
+      <section></section>
+      <h4><a class="xref" href="UvA.DataNose.Tasks.DNQuerySingleDoubleProgs.SingleDouble.html">DNQuerySingleDoubleProgs.SingleDouble</a></h4>
+      <section></section>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

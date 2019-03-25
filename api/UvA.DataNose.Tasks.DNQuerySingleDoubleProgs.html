@@ -1,0 +1,642 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class DNQuerySingleDoubleProgs
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class DNQuerySingleDoubleProgs
+   ">
+    <meta name="generator" content="docfx 2.40.12.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="UvA.DataNose.Tasks.DNQuerySingleDoubleProgs">
+  
+  
+  <h1 id="UvA_DataNose_Tasks_DNQuerySingleDoubleProgs" data-uid="UvA.DataNose.Tasks.DNQuerySingleDoubleProgs" class="text-break">Class DNQuerySingleDoubleProgs
+  </h1>
+  <div class="markdown level0 summary"><p>This class knows about single and double programmes, for purposes of knowing the starters of a given programme
+and year.</p>
+<p>Two programmes together may cooperate to offer a double programme.
+When students are enrolled in both programmes they can get permission to follow the double programme.
+From then on, the double programme acts much like a separate programme: it has its own list of starting students.</p>
+<p>This class makes it possible to treat single and double programmes much alike:</p>
+<ul>
+<li>You can ask for the starters of an arbitrary programme (single or double)</li>
+<li>In case of double: only starters are returned that have permission for the double programme AND are still
+enrolled in both parent programmes.</li>
+<li>In case of single: only starters are shown that attend this programme as a single programme;
+i.e. students starting in one of the double programmes that this programme is parent of, are omitted.
+(I now made this optional)</li>
+</ul>
+<p>Use it e.g. to send a mailing where admitted starters for a double programme get a different letter from
+those that will start in one (or both) of the two parent programmes, without being admitted to the double prog.
+(The same setup could be used to get lists of participating, not just starting students, but...)</p>
+<p>Other, derived questions that this class answers:</p>
+<ul>
+<li>Given a student enrolment for a parent program: give an array of double programs (children of this parent program)
+that the student attends.</li>
+<li>Given a student ID and a (parent) programme name: same as previous</li>
+<li>Same as previous, but return only the first double programme name (or empty string if there are none)</li>
+</ul>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">DNQuerySingleDoubleProgs</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="UvA.DataNose.Tasks.html">UvA.DataNose.Tasks</a></h6>
+  <h6><strong>Assembly</strong>: UvA.DataNose.Tasks.dll</h6>
+  <h5 id="UvA_DataNose_Tasks_DNQuerySingleDoubleProgs_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class DNQuerySingleDoubleProgs</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UvA-FNWI/DataNose/new/master/apiSpec/new?filename=UvA_DataNose_Tasks_DNQuerySingleDoubleProgs__ctor_UvA_DataNose_Data_UvAData_.md&amp;value=---%0Auid%3A%20UvA.DataNose.Tasks.DNQuerySingleDoubleProgs.%23ctor(UvA.DataNose.Data.UvAData)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UvA-FNWI/DataNose/blob/master/UvA.DataNose.Tasks/Queries/DNQuerySingleDoubleProgs.cs/#L68">View Source</a>
+  </span>
+  <a id="UvA_DataNose_Tasks_DNQuerySingleDoubleProgs__ctor_" data-uid="UvA.DataNose.Tasks.DNQuerySingleDoubleProgs.#ctor*"></a>
+  <h4 id="UvA_DataNose_Tasks_DNQuerySingleDoubleProgs__ctor_UvA_DataNose_Data_UvAData_" data-uid="UvA.DataNose.Tasks.DNQuerySingleDoubleProgs.#ctor(UvA.DataNose.Data.UvAData)">DNQuerySingleDoubleProgs(UvAData)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DNQuerySingleDoubleProgs(UvAData data)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UvA.DataNose.Data.UvAData.html">UvAData</a></td>
+        <td><span class="parametername">data</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UvA-FNWI/DataNose/new/master/apiSpec/new?filename=UvA_DataNose_Tasks_DNQuerySingleDoubleProgs_AddDoubleProgramme_System_String_System_String_System_String_.md&amp;value=---%0Auid%3A%20UvA.DataNose.Tasks.DNQuerySingleDoubleProgs.AddDoubleProgramme(System.String%2CSystem.String%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UvA-FNWI/DataNose/blob/master/UvA.DataNose.Tasks/Queries/DNQuerySingleDoubleProgs.cs/#L79">View Source</a>
+  </span>
+  <a id="UvA_DataNose_Tasks_DNQuerySingleDoubleProgs_AddDoubleProgramme_" data-uid="UvA.DataNose.Tasks.DNQuerySingleDoubleProgs.AddDoubleProgramme*"></a>
+  <h4 id="UvA_DataNose_Tasks_DNQuerySingleDoubleProgs_AddDoubleProgramme_System_String_System_String_System_String_" data-uid="UvA.DataNose.Tasks.DNQuerySingleDoubleProgs.AddDoubleProgramme(System.String,System.String,System.String)">AddDoubleProgramme(String, String, String)</h4>
+  <div class="markdown level1 summary"><p>Configuration: define a double programme and its (single programme) parents</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddDoubleProgramme(string doubleprog, string parent1, string parent2)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">doubleprog</span></td>
+        <td><p>short name of double programme, like: BSc WN</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">parent1</span></td>
+        <td><p>short name of parent 1, like: BSc WI</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">parent2</span></td>
+        <td><p>short name of parent 2, like: BSc NS</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UvA-FNWI/DataNose/new/master/apiSpec/new?filename=UvA_DataNose_Tasks_DNQuerySingleDoubleProgs_GetDoubleProgrammesForStudentAndParentProgramme_System_Int32_System_String_System_Int32_.md&amp;value=---%0Auid%3A%20UvA.DataNose.Tasks.DNQuerySingleDoubleProgs.GetDoubleProgrammesForStudentAndParentProgramme(System.Int32%2CSystem.String%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UvA-FNWI/DataNose/blob/master/UvA.DataNose.Tasks/Queries/DNQuerySingleDoubleProgs.cs/#L312">View Source</a>
+  </span>
+  <a id="UvA_DataNose_Tasks_DNQuerySingleDoubleProgs_GetDoubleProgrammesForStudentAndParentProgramme_" data-uid="UvA.DataNose.Tasks.DNQuerySingleDoubleProgs.GetDoubleProgrammesForStudentAndParentProgramme*"></a>
+  <h4 id="UvA_DataNose_Tasks_DNQuerySingleDoubleProgs_GetDoubleProgrammesForStudentAndParentProgramme_System_Int32_System_String_System_Int32_" data-uid="UvA.DataNose.Tasks.DNQuerySingleDoubleProgs.GetDoubleProgrammesForStudentAndParentProgramme(System.Int32,System.String,System.Int32)">GetDoubleProgrammesForStudentAndParentProgramme(Int32, String, Int32)</h4>
+  <div class="markdown level1 summary"><p>Find the double programmes for a single student and parent programme name</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string[] GetDoubleProgrammesForStudentAndParentProgramme(int studentid, string parentname, int acadYear)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">studentid</span></td>
+        <td><p>id of the student</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">parentname</span></td>
+        <td><p>name of parent programme</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">acadYear</span></td>
+        <td><p>academic year for which to check the enrolment</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span>[]</td>
+        <td><p>array of programme names, possibly empty</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UvA-FNWI/DataNose/new/master/apiSpec/new?filename=UvA_DataNose_Tasks_DNQuerySingleDoubleProgs_GetDoubleProgrammesForStudentAndParentProgramme_UvA_DataNose_Data_Enrolment_.md&amp;value=---%0Auid%3A%20UvA.DataNose.Tasks.DNQuerySingleDoubleProgs.GetDoubleProgrammesForStudentAndParentProgramme(UvA.DataNose.Data.Enrolment)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UvA-FNWI/DataNose/blob/master/UvA.DataNose.Tasks/Queries/DNQuerySingleDoubleProgs.cs/#L347">View Source</a>
+  </span>
+  <a id="UvA_DataNose_Tasks_DNQuerySingleDoubleProgs_GetDoubleProgrammesForStudentAndParentProgramme_" data-uid="UvA.DataNose.Tasks.DNQuerySingleDoubleProgs.GetDoubleProgrammesForStudentAndParentProgramme*"></a>
+  <h4 id="UvA_DataNose_Tasks_DNQuerySingleDoubleProgs_GetDoubleProgrammesForStudentAndParentProgramme_UvA_DataNose_Data_Enrolment_" data-uid="UvA.DataNose.Tasks.DNQuerySingleDoubleProgs.GetDoubleProgrammesForStudentAndParentProgramme(UvA.DataNose.Data.Enrolment)">GetDoubleProgrammesForStudentAndParentProgramme(Enrolment)</h4>
+  <div class="markdown level1 summary"><p>Find the double programmes for a single student enrolment in a parent programme.
+Returns empty array if parent is not registered as a parent by this class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string[] GetDoubleProgrammesForStudentAndParentProgramme(Enrolment e0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UvA.DataNose.Data.Enrolment.html">Enrolment</a></td>
+        <td><span class="parametername">e0</span></td>
+        <td><p>the enrolment</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span>[]</td>
+        <td><p>array of programme names, can be empty</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UvA-FNWI/DataNose/new/master/apiSpec/new?filename=UvA_DataNose_Tasks_DNQuerySingleDoubleProgs_GetFirstDoubleProgrammeForStudentAndParentProgramme_System_Int32_System_String_System_Int32_.md&amp;value=---%0Auid%3A%20UvA.DataNose.Tasks.DNQuerySingleDoubleProgs.GetFirstDoubleProgrammeForStudentAndParentProgramme(System.Int32%2CSystem.String%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UvA-FNWI/DataNose/blob/master/UvA.DataNose.Tasks/Queries/DNQuerySingleDoubleProgs.cs/#L330">View Source</a>
+  </span>
+  <a id="UvA_DataNose_Tasks_DNQuerySingleDoubleProgs_GetFirstDoubleProgrammeForStudentAndParentProgramme_" data-uid="UvA.DataNose.Tasks.DNQuerySingleDoubleProgs.GetFirstDoubleProgrammeForStudentAndParentProgramme*"></a>
+  <h4 id="UvA_DataNose_Tasks_DNQuerySingleDoubleProgs_GetFirstDoubleProgrammeForStudentAndParentProgramme_System_Int32_System_String_System_Int32_" data-uid="UvA.DataNose.Tasks.DNQuerySingleDoubleProgs.GetFirstDoubleProgrammeForStudentAndParentProgramme(System.Int32,System.String,System.Int32)">GetFirstDoubleProgrammeForStudentAndParentProgramme(Int32, String, Int32)</h4>
+  <div class="markdown level1 summary"><p>Find one double programme for a single student and parent programme name
+Use it only if there can be at most one double programme for each student. It throws an error otherwise.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GetFirstDoubleProgrammeForStudentAndParentProgramme(int studentid, string parentname, int acadYear)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">studentid</span></td>
+        <td><p>id of the student</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">parentname</span></td>
+        <td><p>name of parent programme</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">acadYear</span></td>
+        <td><p>academic year for which to check the enrolment</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>name of 1 double programme, or &quot;&quot; if there are none</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UvA-FNWI/DataNose/new/master/apiSpec/new?filename=UvA_DataNose_Tasks_DNQuerySingleDoubleProgs_GetParents_System_String_.md&amp;value=---%0Auid%3A%20UvA.DataNose.Tasks.DNQuerySingleDoubleProgs.GetParents(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UvA-FNWI/DataNose/blob/master/UvA.DataNose.Tasks/Queries/DNQuerySingleDoubleProgs.cs/#L130">View Source</a>
+  </span>
+  <a id="UvA_DataNose_Tasks_DNQuerySingleDoubleProgs_GetParents_" data-uid="UvA.DataNose.Tasks.DNQuerySingleDoubleProgs.GetParents*"></a>
+  <h4 id="UvA_DataNose_Tasks_DNQuerySingleDoubleProgs_GetParents_System_String_" data-uid="UvA.DataNose.Tasks.DNQuerySingleDoubleProgs.GetParents(System.String)">GetParents(String)</h4>
+  <div class="markdown level1 summary"><p>Get the two parent programme names for a given double programme</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string[] GetParents(string programmeName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">programmeName</span></td>
+        <td><p>Name of a double programme</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span>[]</td>
+        <td><p>the two parent programme names</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UvA-FNWI/DataNose/new/master/apiSpec/new?filename=UvA_DataNose_Tasks_DNQuerySingleDoubleProgs_GetStarters_System_String_System_Int32_UvA_DataNose_Tasks_DNQuerySingleDoubleProgs_HomeInstitution_System_Boolean_.md&amp;value=---%0Auid%3A%20UvA.DataNose.Tasks.DNQuerySingleDoubleProgs.GetStarters(System.String%2CSystem.Int32%2CUvA.DataNose.Tasks.DNQuerySingleDoubleProgs.HomeInstitution%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UvA-FNWI/DataNose/blob/master/UvA.DataNose.Tasks/Queries/DNQuerySingleDoubleProgs.cs/#L171">View Source</a>
+  </span>
+  <a id="UvA_DataNose_Tasks_DNQuerySingleDoubleProgs_GetStarters_" data-uid="UvA.DataNose.Tasks.DNQuerySingleDoubleProgs.GetStarters*"></a>
+  <h4 id="UvA_DataNose_Tasks_DNQuerySingleDoubleProgs_GetStarters_System_String_System_Int32_UvA_DataNose_Tasks_DNQuerySingleDoubleProgs_HomeInstitution_System_Boolean_" data-uid="UvA.DataNose.Tasks.DNQuerySingleDoubleProgs.GetStarters(System.String,System.Int32,UvA.DataNose.Tasks.DNQuerySingleDoubleProgs.HomeInstitution,System.Boolean)">GetStarters(String, Int32, DNQuerySingleDoubleProgs.HomeInstitution, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Return the starters in a double or single programma, for a given academic year
+Option: Students registered for a double are not returned for the involved parent single programmes</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IQueryable&lt;Student&gt; GetStarters(string programmeName, int acadYear, DNQuerySingleDoubleProgs.HomeInstitution institution = DNQuerySingleDoubleProgs.HomeInstitution.unspecified, bool OmitDoubleStudentsForSingleProgramme = true)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">programmeName</span></td>
+        <td><p>The single or double programme for which we want to select starting students</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">acadYear</span></td>
+        <td><p>The academic year where students have their first enrollment (you can enquire about a past year: who were starters)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UvA.DataNose.Tasks.DNQuerySingleDoubleProgs.HomeInstitution.html">DNQuerySingleDoubleProgs.HomeInstitution</a></td>
+        <td><span class="parametername">institution</span></td>
+        <td><p>Select VUfirst, UvAfirst, or all students if 'unspecified'</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">OmitDoubleStudentsForSingleProgramme</span></td>
+        <td><p>Whether to omit registered double programme students, when one of the parent programmes is asked for</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Linq.IQueryable</span>&lt;<a class="xref" href="UvA.DataNose.Data.Student.html">Student</a>&gt;</td>
+        <td><p>the participating students</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UvA-FNWI/DataNose/new/master/apiSpec/new?filename=UvA_DataNose_Tasks_DNQuerySingleDoubleProgs_IsDouble_System_String_.md&amp;value=---%0Auid%3A%20UvA.DataNose.Tasks.DNQuerySingleDoubleProgs.IsDouble(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UvA-FNWI/DataNose/blob/master/UvA.DataNose.Tasks/Queries/DNQuerySingleDoubleProgs.cs/#L116">View Source</a>
+  </span>
+  <a id="UvA_DataNose_Tasks_DNQuerySingleDoubleProgs_IsDouble_" data-uid="UvA.DataNose.Tasks.DNQuerySingleDoubleProgs.IsDouble*"></a>
+  <h4 id="UvA_DataNose_Tasks_DNQuerySingleDoubleProgs_IsDouble_System_String_" data-uid="UvA.DataNose.Tasks.DNQuerySingleDoubleProgs.IsDouble(System.String)">IsDouble(String)</h4>
+  <div class="markdown level1 summary"><p>Is this programme a double bachelor programme?</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsDouble(string programmeName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">programmeName</span></td>
+        <td><p>Name of the programme</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>is it?</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="UvA.Utilities.DataExtensions.html#UvA_Utilities_DataExtensions_IsIn__1___0___0_">DataExtensions.IsIn&lt;T&gt;(T, T)</a>
+  </div>
+  <div>
+      <a class="xref" href="UvA.Utilities.DataExtensions.html#UvA_Utilities_DataExtensions_IsIn__1___0___0___0_">DataExtensions.IsIn&lt;T&gt;(T, T, T)</a>
+  </div>
+  <div>
+      <a class="xref" href="UvA.Utilities.DataExtensions.html#UvA_Utilities_DataExtensions_IsIn__1___0___0___0___0_">DataExtensions.IsIn&lt;T&gt;(T, T, T, T)</a>
+  </div>
+  <div>
+      <a class="xref" href="UvA.Utilities.DataExtensions.html#UvA_Utilities_DataExtensions_IsIn__1___0___0___0___0___0_">DataExtensions.IsIn&lt;T&gt;(T, T, T, T, T)</a>
+  </div>
+  <div>
+      <a class="xref" href="UvA.Utilities.DataExtensions.html#UvA_Utilities_DataExtensions_IsIn__1___0___0___0___0___0___0_">DataExtensions.IsIn&lt;T&gt;(T, T, T, T, T, T)</a>
+  </div>
+  <div>
+      <a class="xref" href="UvA.Utilities.DataExtensions.html#UvA_Utilities_DataExtensions_IsIn__1___0___0___">DataExtensions.IsIn&lt;T&gt;(T, T[])</a>
+  </div>
+  <div>
+      <a class="xref" href="UvA.Utilities.DataExtensions.html#UvA_Utilities_DataExtensions_IsNotIn__1___0___0_">DataExtensions.IsNotIn&lt;T&gt;(T, T)</a>
+  </div>
+  <div>
+      <a class="xref" href="UvA.Utilities.DataExtensions.html#UvA_Utilities_DataExtensions_IsNotIn__1___0___0___0_">DataExtensions.IsNotIn&lt;T&gt;(T, T, T)</a>
+  </div>
+  <div>
+      <a class="xref" href="UvA.Utilities.DataExtensions.html#UvA_Utilities_DataExtensions_IsNotIn__1___0___0___0___0_">DataExtensions.IsNotIn&lt;T&gt;(T, T, T, T)</a>
+  </div>
+  <div>
+      <a class="xref" href="UvA.Utilities.DataExtensions.html#UvA_Utilities_DataExtensions_IsNotIn__1___0___0___0___0___0_">DataExtensions.IsNotIn&lt;T&gt;(T, T, T, T, T)</a>
+  </div>
+  <div>
+      <a class="xref" href="UvA.Utilities.DataExtensions.html#UvA_Utilities_DataExtensions_IsNotIn__1___0___0___0___0___0___0_">DataExtensions.IsNotIn&lt;T&gt;(T, T, T, T, T, T)</a>
+  </div>
+  <div>
+      <a class="xref" href="UvA.Utilities.DataExtensions.html#UvA_Utilities_DataExtensions_IsNotIn__1___0___0___">DataExtensions.IsNotIn&lt;T&gt;(T, T[])</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/UvA-FNWI/DataNose/new/master/apiSpec/new?filename=UvA_DataNose_Tasks_DNQuerySingleDoubleProgs.md&amp;value=---%0Auid%3A%20UvA.DataNose.Tasks.DNQuerySingleDoubleProgs%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/UvA-FNWI/DataNose/blob/master/UvA.DataNose.Tasks/Queries/DNQuerySingleDoubleProgs.cs/#L37" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

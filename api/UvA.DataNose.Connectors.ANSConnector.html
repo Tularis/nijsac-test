@@ -1,0 +1,992 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class ANSConnector
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class ANSConnector
+   ">
+    <meta name="generator" content="docfx 2.40.12.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="UvA.DataNose.Connectors.ANSConnector">
+  
+  
+  <h1 id="UvA_DataNose_Connectors_ANSConnector" data-uid="UvA.DataNose.Connectors.ANSConnector" class="text-break">Class ANSConnector
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="UvA.DataNose.Connectors.WebTool.html">WebTool</a></div>
+    <div class="level2"><span class="xref">ANSConnector</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="UvA.DataNose.Connectors.WebTool.html#UvA_DataNose_Connectors_WebTool_UserAgent">WebTool.UserAgent</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.DataNose.Connectors.WebTool.html#UvA_DataNose_Connectors_WebTool_Credentials">WebTool.Credentials</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.DataNose.Connectors.WebTool.html#UvA_DataNose_Connectors_WebTool_BaseUrl">WebTool.BaseUrl</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.DataNose.Connectors.WebTool.html#UvA_DataNose_Connectors_WebTool_Page">WebTool.Page</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.DataNose.Connectors.WebTool.html#UvA_DataNose_Connectors_WebTool_CurrentUrl">WebTool.CurrentUrl</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.DataNose.Connectors.WebTool.html#UvA_DataNose_Connectors_WebTool_AcceptHeader">WebTool.AcceptHeader</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.DataNose.Connectors.WebTool.html#UvA_DataNose_Connectors_WebTool_AuthorizationHeader">WebTool.AuthorizationHeader</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.DataNose.Connectors.WebTool.html#UvA_DataNose_Connectors_WebTool_AllowAutoRedirect">WebTool.AllowAutoRedirect</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.DataNose.Connectors.WebTool.html#UvA_DataNose_Connectors_WebTool_CustomHeaders">WebTool.CustomHeaders</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.DataNose.Connectors.WebTool.html#UvA_DataNose_Connectors_WebTool_Document">WebTool.Document</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.DataNose.Connectors.WebTool.html#UvA_DataNose_Connectors_WebTool_ResponseHeaders">WebTool.ResponseHeaders</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.DataNose.Connectors.WebTool.html#UvA_DataNose_Connectors_WebTool_Cookies">WebTool.Cookies</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.DataNose.Connectors.WebTool.html#UvA_DataNose_Connectors_WebTool_DownloadFile_System_String_System_String_">WebTool.DownloadFile(String, String)</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.DataNose.Connectors.WebTool.html#UvA_DataNose_Connectors_WebTool_Get_System_String_">WebTool.Get(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.DataNose.Connectors.WebTool.html#UvA_DataNose_Connectors_WebTool_Get_System_String_System_Collections_Generic_IEnumerable_System_Collections_Generic_KeyValuePair_System_String_System_String___System_Collections_Generic_IEnumerable_System_Collections_Generic_KeyValuePair_System_String_System_String___">WebTool.Get(String, IEnumerable&lt;KeyValuePair&lt;String, String&gt;&gt;, IEnumerable&lt;KeyValuePair&lt;String, String&gt;&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.DataNose.Connectors.WebTool.html#UvA_DataNose_Connectors_WebTool_Post_System_String_System_String_">WebTool.Post(String, String)</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.DataNose.Connectors.WebTool.html#UvA_DataNose_Connectors_WebTool_Post_System_String_System_Net_Http_MultipartFormDataContent_">WebTool.Post(String, MultipartFormDataContent)</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.DataNose.Connectors.WebTool.html#UvA_DataNose_Connectors_WebTool_PostJson_System_String_System_Object_">WebTool.PostJson(String, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.DataNose.Connectors.WebTool.html#UvA_DataNose_Connectors_WebTool_Post_System_String_System_Collections_Generic_IEnumerable_System_Collections_Generic_KeyValuePair_System_String_System_String___">WebTool.Post(String, IEnumerable&lt;KeyValuePair&lt;String, String&gt;&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.DataNose.Connectors.WebTool.html#UvA_DataNose_Connectors_WebTool_PostJsonString_System_String_System_String_System_Collections_Generic_IEnumerable_System_Collections_Generic_KeyValuePair_System_String_System_String___">WebTool.PostJsonString(String, String, IEnumerable&lt;KeyValuePair&lt;String, String&gt;&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.DataNose.Connectors.WebTool.html#UvA_DataNose_Connectors_WebTool_PutJson_System_String_System_String_System_Collections_Generic_IEnumerable_System_Collections_Generic_KeyValuePair_System_String_System_String___">WebTool.PutJson(String, String, IEnumerable&lt;KeyValuePair&lt;String, String&gt;&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.DataNose.Connectors.WebTool.html#UvA_DataNose_Connectors_WebTool_PutXmlString_System_String_System_String_">WebTool.PutXmlString(String, String)</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.DataNose.Connectors.WebTool.html#UvA_DataNose_Connectors_WebTool_PutXml_System_String_System_String_System_Collections_Generic_IEnumerable_System_Collections_Generic_KeyValuePair_System_String_System_String___">WebTool.PutXml(String, String, IEnumerable&lt;KeyValuePair&lt;String, String&gt;&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.DataNose.Connectors.WebTool.html#UvA_DataNose_Connectors_WebTool_PostXml_System_String_System_String_System_Collections_Generic_IEnumerable_System_Collections_Generic_KeyValuePair_System_String_System_String___">WebTool.PostXml(String, String, IEnumerable&lt;KeyValuePair&lt;String, String&gt;&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.DataNose.Connectors.WebTool.html#UvA_DataNose_Connectors_WebTool_Delete_System_String_">WebTool.Delete(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.DataNose.Connectors.WebTool.html#UvA_DataNose_Connectors_WebTool_DeleteJson_System_String_System_String_System_Collections_Generic_IEnumerable_System_Collections_Generic_KeyValuePair_System_String_System_String___">WebTool.DeleteJson(String, String, IEnumerable&lt;KeyValuePair&lt;String, String&gt;&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.DataNose.Connectors.WebTool.html#UvA_DataNose_Connectors_WebTool_GetAction">WebTool.GetAction()</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.DataNose.Connectors.WebTool.html#UvA_DataNose_Connectors_WebTool_GetHiddenFields_AngleSharp_Dom_IParentNode_">WebTool.GetHiddenFields(IParentNode)</a>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="UvA.DataNose.Connectors.html">UvA.DataNose.Connectors</a></h6>
+  <h6><strong>Assembly</strong>: UvA.DataNose.Connectors.dll</h6>
+  <h5 id="UvA_DataNose_Connectors_ANSConnector_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class ANSConnector : WebTool</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UvA-FNWI/DataNose/new/master/apiSpec/new?filename=UvA_DataNose_Connectors_ANSConnector__ctor.md&amp;value=---%0Auid%3A%20UvA.DataNose.Connectors.ANSConnector.%23ctor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UvA-FNWI/DataNose/blob/master/UvA.DataNose.Connectors/ANSConnector.cs/#L22">View Source</a>
+  </span>
+  <a id="UvA_DataNose_Connectors_ANSConnector__ctor_" data-uid="UvA.DataNose.Connectors.ANSConnector.#ctor*"></a>
+  <h4 id="UvA_DataNose_Connectors_ANSConnector__ctor" data-uid="UvA.DataNose.Connectors.ANSConnector.#ctor">ANSConnector()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ANSConnector()</code></pre>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UvA-FNWI/DataNose/new/master/apiSpec/new?filename=UvA_DataNose_Connectors_ANSConnector_AddCourseUser_System_Int32_System_Int32_System_String_.md&amp;value=---%0Auid%3A%20UvA.DataNose.Connectors.ANSConnector.AddCourseUser(System.Int32%2CSystem.Int32%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UvA-FNWI/DataNose/blob/master/UvA.DataNose.Connectors/ANSConnector.cs/#L60">View Source</a>
+  </span>
+  <a id="UvA_DataNose_Connectors_ANSConnector_AddCourseUser_" data-uid="UvA.DataNose.Connectors.ANSConnector.AddCourseUser*"></a>
+  <h4 id="UvA_DataNose_Connectors_ANSConnector_AddCourseUser_System_Int32_System_Int32_System_String_" data-uid="UvA.DataNose.Connectors.ANSConnector.AddCourseUser(System.Int32,System.Int32,System.String)">AddCourseUser(Int32, Int32, String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddCourseUser(int courseId, int userId, string role)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">courseId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">userId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">role</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UvA-FNWI/DataNose/new/master/apiSpec/new?filename=UvA_DataNose_Connectors_ANSConnector_CreateCourse_System_String_System_String_System_Int32_System_Int32___System_Int32___.md&amp;value=---%0Auid%3A%20UvA.DataNose.Connectors.ANSConnector.CreateCourse(System.String%2CSystem.String%2CSystem.Int32%2CSystem.Int32%5B%5D%2CSystem.Int32%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UvA-FNWI/DataNose/blob/master/UvA.DataNose.Connectors/ANSConnector.cs/#L78">View Source</a>
+  </span>
+  <a id="UvA_DataNose_Connectors_ANSConnector_CreateCourse_" data-uid="UvA.DataNose.Connectors.ANSConnector.CreateCourse*"></a>
+  <h4 id="UvA_DataNose_Connectors_ANSConnector_CreateCourse_System_String_System_String_System_Int32_System_Int32___System_Int32___" data-uid="UvA.DataNose.Connectors.ANSConnector.CreateCourse(System.String,System.String,System.Int32,System.Int32[],System.Int32[])">CreateCourse(String, String, Int32, Int32[], Int32[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int CreateCourse(string name, string catalogNumber, int academicyear, int[] periods, int[] studies)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">catalogNumber</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">academicyear</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span>[]</td>
+        <td><span class="parametername">periods</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span>[]</td>
+        <td><span class="parametername">studies</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UvA-FNWI/DataNose/new/master/apiSpec/new?filename=UvA_DataNose_Connectors_ANSConnector_CreatePeriod_System_String_.md&amp;value=---%0Auid%3A%20UvA.DataNose.Connectors.ANSConnector.CreatePeriod(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UvA-FNWI/DataNose/blob/master/UvA.DataNose.Connectors/ANSConnector.cs/#L64">View Source</a>
+  </span>
+  <a id="UvA_DataNose_Connectors_ANSConnector_CreatePeriod_" data-uid="UvA.DataNose.Connectors.ANSConnector.CreatePeriod*"></a>
+  <h4 id="UvA_DataNose_Connectors_ANSConnector_CreatePeriod_System_String_" data-uid="UvA.DataNose.Connectors.ANSConnector.CreatePeriod(System.String)">CreatePeriod(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CreatePeriod(string name)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UvA-FNWI/DataNose/new/master/apiSpec/new?filename=UvA_DataNose_Connectors_ANSConnector_CreateUser_System_String_System_String_System_String_System_String_System_String_System_String_.md&amp;value=---%0Auid%3A%20UvA.DataNose.Connectors.ANSConnector.CreateUser(System.String%2CSystem.String%2CSystem.String%2CSystem.String%2CSystem.String%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UvA-FNWI/DataNose/blob/master/UvA.DataNose.Connectors/ANSConnector.cs/#L117">View Source</a>
+  </span>
+  <a id="UvA_DataNose_Connectors_ANSConnector_CreateUser_" data-uid="UvA.DataNose.Connectors.ANSConnector.CreateUser*"></a>
+  <h4 id="UvA_DataNose_Connectors_ANSConnector_CreateUser_System_String_System_String_System_String_System_String_System_String_System_String_" data-uid="UvA.DataNose.Connectors.ANSConnector.CreateUser(System.String,System.String,System.String,System.String,System.String,System.String)">CreateUser(String, String, String, String, String, String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ANSConnector.User CreateUser(string student_number, string firstName, string middleName, string lastName, string email, string affiliation)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">student_number</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">firstName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">middleName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">lastName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">email</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">affiliation</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UvA.DataNose.Connectors.ANSConnector.User.html">ANSConnector.User</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UvA-FNWI/DataNose/new/master/apiSpec/new?filename=UvA_DataNose_Connectors_ANSConnector_GetAssignments_System_Int32_.md&amp;value=---%0Auid%3A%20UvA.DataNose.Connectors.ANSConnector.GetAssignments(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UvA-FNWI/DataNose/blob/master/UvA.DataNose.Connectors/ANSConnector.cs/#L56">View Source</a>
+  </span>
+  <a id="UvA_DataNose_Connectors_ANSConnector_GetAssignments_" data-uid="UvA.DataNose.Connectors.ANSConnector.GetAssignments*"></a>
+  <h4 id="UvA_DataNose_Connectors_ANSConnector_GetAssignments_System_Int32_" data-uid="UvA.DataNose.Connectors.ANSConnector.GetAssignments(System.Int32)">GetAssignments(Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;ANSConnector.Assignment&gt; GetAssignments(int courseID)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">courseID</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="UvA.DataNose.Connectors.ANSConnector.Assignment.html">ANSConnector.Assignment</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UvA-FNWI/DataNose/new/master/apiSpec/new?filename=UvA_DataNose_Connectors_ANSConnector_GetCourses.md&amp;value=---%0Auid%3A%20UvA.DataNose.Connectors.ANSConnector.GetCourses%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UvA-FNWI/DataNose/blob/master/UvA.DataNose.Connectors/ANSConnector.cs/#L51">View Source</a>
+  </span>
+  <a id="UvA_DataNose_Connectors_ANSConnector_GetCourses_" data-uid="UvA.DataNose.Connectors.ANSConnector.GetCourses*"></a>
+  <h4 id="UvA_DataNose_Connectors_ANSConnector_GetCourses" data-uid="UvA.DataNose.Connectors.ANSConnector.GetCourses">GetCourses()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;ANSConnector.Course&gt; GetCourses()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="UvA.DataNose.Connectors.ANSConnector.Course.html">ANSConnector.Course</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UvA-FNWI/DataNose/new/master/apiSpec/new?filename=UvA_DataNose_Connectors_ANSConnector_GetCourseUsers_System_Int32_.md&amp;value=---%0Auid%3A%20UvA.DataNose.Connectors.ANSConnector.GetCourseUsers(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UvA-FNWI/DataNose/blob/master/UvA.DataNose.Connectors/ANSConnector.cs/#L52">View Source</a>
+  </span>
+  <a id="UvA_DataNose_Connectors_ANSConnector_GetCourseUsers_" data-uid="UvA.DataNose.Connectors.ANSConnector.GetCourseUsers*"></a>
+  <h4 id="UvA_DataNose_Connectors_ANSConnector_GetCourseUsers_System_Int32_" data-uid="UvA.DataNose.Connectors.ANSConnector.GetCourseUsers(System.Int32)">GetCourseUsers(Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;ANSConnector.User&gt; GetCourseUsers(int courseId)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">courseId</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="UvA.DataNose.Connectors.ANSConnector.User.html">ANSConnector.User</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UvA-FNWI/DataNose/new/master/apiSpec/new?filename=UvA_DataNose_Connectors_ANSConnector_GetPeriods.md&amp;value=---%0Auid%3A%20UvA.DataNose.Connectors.ANSConnector.GetPeriods%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UvA-FNWI/DataNose/blob/master/UvA.DataNose.Connectors/ANSConnector.cs/#L54">View Source</a>
+  </span>
+  <a id="UvA_DataNose_Connectors_ANSConnector_GetPeriods_" data-uid="UvA.DataNose.Connectors.ANSConnector.GetPeriods*"></a>
+  <h4 id="UvA_DataNose_Connectors_ANSConnector_GetPeriods" data-uid="UvA.DataNose.Connectors.ANSConnector.GetPeriods">GetPeriods()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;ANSConnector.Period&gt; GetPeriods()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="UvA.DataNose.Connectors.ANSConnector.Period.html">ANSConnector.Period</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UvA-FNWI/DataNose/new/master/apiSpec/new?filename=UvA_DataNose_Connectors_ANSConnector_GetResults_System_Int32_.md&amp;value=---%0Auid%3A%20UvA.DataNose.Connectors.ANSConnector.GetResults(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UvA-FNWI/DataNose/blob/master/UvA.DataNose.Connectors/ANSConnector.cs/#L62">View Source</a>
+  </span>
+  <a id="UvA_DataNose_Connectors_ANSConnector_GetResults_" data-uid="UvA.DataNose.Connectors.ANSConnector.GetResults*"></a>
+  <h4 id="UvA_DataNose_Connectors_ANSConnector_GetResults_System_Int32_" data-uid="UvA.DataNose.Connectors.ANSConnector.GetResults(System.Int32)">GetResults(Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;ANSConnector.Result&gt; GetResults(int assignmentId)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">assignmentId</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="UvA.DataNose.Connectors.ANSConnector.Result.html">ANSConnector.Result</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UvA-FNWI/DataNose/new/master/apiSpec/new?filename=UvA_DataNose_Connectors_ANSConnector_GetStudies.md&amp;value=---%0Auid%3A%20UvA.DataNose.Connectors.ANSConnector.GetStudies%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UvA-FNWI/DataNose/blob/master/UvA.DataNose.Connectors/ANSConnector.cs/#L55">View Source</a>
+  </span>
+  <a id="UvA_DataNose_Connectors_ANSConnector_GetStudies_" data-uid="UvA.DataNose.Connectors.ANSConnector.GetStudies*"></a>
+  <h4 id="UvA_DataNose_Connectors_ANSConnector_GetStudies" data-uid="UvA.DataNose.Connectors.ANSConnector.GetStudies">GetStudies()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;ANSConnector.Study&gt; GetStudies()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="UvA.DataNose.Connectors.ANSConnector.Study.html">ANSConnector.Study</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UvA-FNWI/DataNose/new/master/apiSpec/new?filename=UvA_DataNose_Connectors_ANSConnector_GetUser_System_Int32_.md&amp;value=---%0Auid%3A%20UvA.DataNose.Connectors.ANSConnector.GetUser(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UvA-FNWI/DataNose/blob/master/UvA.DataNose.Connectors/ANSConnector.cs/#L49">View Source</a>
+  </span>
+  <a id="UvA_DataNose_Connectors_ANSConnector_GetUser_" data-uid="UvA.DataNose.Connectors.ANSConnector.GetUser*"></a>
+  <h4 id="UvA_DataNose_Connectors_ANSConnector_GetUser_System_Int32_" data-uid="UvA.DataNose.Connectors.ANSConnector.GetUser(System.Int32)">GetUser(Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ANSConnector.User GetUser(int id)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">id</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UvA.DataNose.Connectors.ANSConnector.User.html">ANSConnector.User</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UvA-FNWI/DataNose/new/master/apiSpec/new?filename=UvA_DataNose_Connectors_ANSConnector_GetUsers.md&amp;value=---%0Auid%3A%20UvA.DataNose.Connectors.ANSConnector.GetUsers%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UvA-FNWI/DataNose/blob/master/UvA.DataNose.Connectors/ANSConnector.cs/#L48">View Source</a>
+  </span>
+  <a id="UvA_DataNose_Connectors_ANSConnector_GetUsers_" data-uid="UvA.DataNose.Connectors.ANSConnector.GetUsers*"></a>
+  <h4 id="UvA_DataNose_Connectors_ANSConnector_GetUsers" data-uid="UvA.DataNose.Connectors.ANSConnector.GetUsers">GetUsers()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;ANSConnector.User&gt; GetUsers()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="UvA.DataNose.Connectors.ANSConnector.User.html">ANSConnector.User</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UvA-FNWI/DataNose/new/master/apiSpec/new?filename=UvA_DataNose_Connectors_ANSConnector_RemoveCourseUser_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20UvA.DataNose.Connectors.ANSConnector.RemoveCourseUser(System.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UvA-FNWI/DataNose/blob/master/UvA.DataNose.Connectors/ANSConnector.cs/#L59">View Source</a>
+  </span>
+  <a id="UvA_DataNose_Connectors_ANSConnector_RemoveCourseUser_" data-uid="UvA.DataNose.Connectors.ANSConnector.RemoveCourseUser*"></a>
+  <h4 id="UvA_DataNose_Connectors_ANSConnector_RemoveCourseUser_System_Int32_System_Int32_" data-uid="UvA.DataNose.Connectors.ANSConnector.RemoveCourseUser(System.Int32,System.Int32)">RemoveCourseUser(Int32, Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoveCourseUser(int courseId, int userId)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">courseId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">userId</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UvA-FNWI/DataNose/new/master/apiSpec/new?filename=UvA_DataNose_Connectors_ANSConnector_UpdateCourse_System_Int32_System_String_System_String_System_Int32_System_Int32___System_Int32___.md&amp;value=---%0Auid%3A%20UvA.DataNose.Connectors.ANSConnector.UpdateCourse(System.Int32%2CSystem.String%2CSystem.String%2CSystem.Int32%2CSystem.Int32%5B%5D%2CSystem.Int32%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UvA-FNWI/DataNose/blob/master/UvA.DataNose.Connectors/ANSConnector.cs/#L97">View Source</a>
+  </span>
+  <a id="UvA_DataNose_Connectors_ANSConnector_UpdateCourse_" data-uid="UvA.DataNose.Connectors.ANSConnector.UpdateCourse*"></a>
+  <h4 id="UvA_DataNose_Connectors_ANSConnector_UpdateCourse_System_Int32_System_String_System_String_System_Int32_System_Int32___System_Int32___" data-uid="UvA.DataNose.Connectors.ANSConnector.UpdateCourse(System.Int32,System.String,System.String,System.Int32,System.Int32[],System.Int32[])">UpdateCourse(Int32, String, String, Int32, Int32[], Int32[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int UpdateCourse(int id, string name, string catalogNumber, int academicyear, int[] periods, int[] studies)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">id</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">catalogNumber</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">academicyear</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span>[]</td>
+        <td><span class="parametername">periods</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span>[]</td>
+        <td><span class="parametername">studies</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UvA-FNWI/DataNose/new/master/apiSpec/new?filename=UvA_DataNose_Connectors_ANSConnector_UpdateUser_System_Int32_System_String_System_String_System_String_System_String_.md&amp;value=---%0Auid%3A%20UvA.DataNose.Connectors.ANSConnector.UpdateUser(System.Int32%2CSystem.String%2CSystem.String%2CSystem.String%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UvA-FNWI/DataNose/blob/master/UvA.DataNose.Connectors/ANSConnector.cs/#L132">View Source</a>
+  </span>
+  <a id="UvA_DataNose_Connectors_ANSConnector_UpdateUser_" data-uid="UvA.DataNose.Connectors.ANSConnector.UpdateUser*"></a>
+  <h4 id="UvA_DataNose_Connectors_ANSConnector_UpdateUser_System_Int32_System_String_System_String_System_String_System_String_" data-uid="UvA.DataNose.Connectors.ANSConnector.UpdateUser(System.Int32,System.String,System.String,System.String,System.String)">UpdateUser(Int32, String, String, String, String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ANSConnector.User UpdateUser(int id, string firstName, string middleName, string lastName, string email)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">id</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">firstName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">middleName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">lastName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">email</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UvA.DataNose.Connectors.ANSConnector.User.html">ANSConnector.User</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="UvA.Utilities.DataExtensions.html#UvA_Utilities_DataExtensions_IsIn__1___0___0_">DataExtensions.IsIn&lt;T&gt;(T, T)</a>
+  </div>
+  <div>
+      <a class="xref" href="UvA.Utilities.DataExtensions.html#UvA_Utilities_DataExtensions_IsIn__1___0___0___0_">DataExtensions.IsIn&lt;T&gt;(T, T, T)</a>
+  </div>
+  <div>
+      <a class="xref" href="UvA.Utilities.DataExtensions.html#UvA_Utilities_DataExtensions_IsIn__1___0___0___0___0_">DataExtensions.IsIn&lt;T&gt;(T, T, T, T)</a>
+  </div>
+  <div>
+      <a class="xref" href="UvA.Utilities.DataExtensions.html#UvA_Utilities_DataExtensions_IsIn__1___0___0___0___0___0_">DataExtensions.IsIn&lt;T&gt;(T, T, T, T, T)</a>
+  </div>
+  <div>
+      <a class="xref" href="UvA.Utilities.DataExtensions.html#UvA_Utilities_DataExtensions_IsIn__1___0___0___0___0___0___0_">DataExtensions.IsIn&lt;T&gt;(T, T, T, T, T, T)</a>
+  </div>
+  <div>
+      <a class="xref" href="UvA.Utilities.DataExtensions.html#UvA_Utilities_DataExtensions_IsIn__1___0___0___">DataExtensions.IsIn&lt;T&gt;(T, T[])</a>
+  </div>
+  <div>
+      <a class="xref" href="UvA.Utilities.DataExtensions.html#UvA_Utilities_DataExtensions_IsNotIn__1___0___0_">DataExtensions.IsNotIn&lt;T&gt;(T, T)</a>
+  </div>
+  <div>
+      <a class="xref" href="UvA.Utilities.DataExtensions.html#UvA_Utilities_DataExtensions_IsNotIn__1___0___0___0_">DataExtensions.IsNotIn&lt;T&gt;(T, T, T)</a>
+  </div>
+  <div>
+      <a class="xref" href="UvA.Utilities.DataExtensions.html#UvA_Utilities_DataExtensions_IsNotIn__1___0___0___0___0_">DataExtensions.IsNotIn&lt;T&gt;(T, T, T, T)</a>
+  </div>
+  <div>
+      <a class="xref" href="UvA.Utilities.DataExtensions.html#UvA_Utilities_DataExtensions_IsNotIn__1___0___0___0___0___0_">DataExtensions.IsNotIn&lt;T&gt;(T, T, T, T, T)</a>
+  </div>
+  <div>
+      <a class="xref" href="UvA.Utilities.DataExtensions.html#UvA_Utilities_DataExtensions_IsNotIn__1___0___0___0___0___0___0_">DataExtensions.IsNotIn&lt;T&gt;(T, T, T, T, T, T)</a>
+  </div>
+  <div>
+      <a class="xref" href="UvA.Utilities.DataExtensions.html#UvA_Utilities_DataExtensions_IsNotIn__1___0___0___">DataExtensions.IsNotIn&lt;T&gt;(T, T[])</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/UvA-FNWI/DataNose/new/master/apiSpec/new?filename=UvA_DataNose_Connectors_ANSConnector.md&amp;value=---%0Auid%3A%20UvA.DataNose.Connectors.ANSConnector%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/UvA-FNWI/DataNose/blob/master/UvA.DataNose.Connectors/ANSConnector.cs/#L15" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

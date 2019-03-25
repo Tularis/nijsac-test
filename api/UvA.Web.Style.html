@@ -1,0 +1,2608 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class Style
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class Style
+   ">
+    <meta name="generator" content="docfx 2.40.12.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="UvA.Web.Style">
+  
+  
+  <h1 id="UvA_Web_Style" data-uid="UvA.Web.Style" class="text-break">Class Style
+  </h1>
+  <div class="markdown level0 summary"><p>Represents a CSS style</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">Style</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="UvA.Web.IStyle.html">IStyle</a></div>
+    <div><span class="xref">System.ICloneable</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="UvA.Web.html">UvA.Web</a></h6>
+  <h6><strong>Assembly</strong>: UvA.Web.dll</h6>
+  <h5 id="UvA_Web_Style_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class Style : IStyle, ICloneable</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UvA-FNWI/DataNose/new/master/apiSpec/new?filename=UvA_Web_Style__ctor_System_String_System_String_System_String_System_Nullable_UvA_Web_FontFamily__System_Nullable_System_Drawing_Color__System_Nullable_System_Drawing_Color__System_Nullable_System_Int32__System_Nullable_System_Int32__System_Nullable_System_Boolean__System_Nullable_System_Boolean__System_Boolean_System_Nullable_UvA_Web_TextDecoration__System_Nullable_UvA_Web_Position__UvA_Web_Margin_UvA_Web_Margin_UvA_Web_Margin_System_Nullable_UvA_Web_Cursor__System_Nullable_UvA_Web_TextAlign__System_Nullable_UvA_Web_VerticalAlign__UvA_Web_Length_UvA_Web_Length_System_Nullable_System_Int32__UvA_Web_Border_UvA_Web_Border_UvA_Web_Border_UvA_Web_Border_UvA_Web_Border_System_Nullable_UvA_Web_Overflow__System_Nullable_UvA_Web_Overflow__System_Nullable_UvA_Web_Overflow__System_Nullable_UvA_Web_WhiteSpace__System_Nullable_UvA_Web_Display__System_Nullable_System_Double__UvA_Web_Length_UvA_Web_Length_UvA_Web_Shadow_UvA_Web_Transition_System_Nullable_UvA_Web_TextOverflow__System_Nullable_UvA_Web_Resize__UvA_Web_Length_UvA_Web_Length_UvA_Web_Length_UvA_Web_Length_UvA_Web_Background_System_Nullable_UvA_Web_Float__UvA_Web_Border_System_Nullable_UvA_Web_ListStyleType__System_Nullable_UvA_Web_BoxSizing__System_Nullable_UvA_Web_WordBreak__System_Nullable_UvA_Web_HSLColor__System_Nullable_UvA_Web_TableLayout__System_Nullable_UvA_Web_Visibility__.md&amp;value=---%0Auid%3A%20UvA.Web.Style.%23ctor(System.String%2CSystem.String%2CSystem.String%2CSystem.Nullable%7BUvA.Web.FontFamily%7D%2CSystem.Nullable%7BSystem.Drawing.Color%7D%2CSystem.Nullable%7BSystem.Drawing.Color%7D%2CSystem.Nullable%7BSystem.Int32%7D%2CSystem.Nullable%7BSystem.Int32%7D%2CSystem.Nullable%7BSystem.Boolean%7D%2CSystem.Nullable%7BSystem.Boolean%7D%2CSystem.Boolean%2CSystem.Nullable%7BUvA.Web.TextDecoration%7D%2CSystem.Nullable%7BUvA.Web.Position%7D%2CUvA.Web.Margin%2CUvA.Web.Margin%2CUvA.Web.Margin%2CSystem.Nullable%7BUvA.Web.Cursor%7D%2CSystem.Nullable%7BUvA.Web.TextAlign%7D%2CSystem.Nullable%7BUvA.Web.VerticalAlign%7D%2CUvA.Web.Length%2CUvA.Web.Length%2CSystem.Nullable%7BSystem.Int32%7D%2CUvA.Web.Border%2CUvA.Web.Border%2CUvA.Web.Border%2CUvA.Web.Border%2CUvA.Web.Border%2CSystem.Nullable%7BUvA.Web.Overflow%7D%2CSystem.Nullable%7BUvA.Web.Overflow%7D%2CSystem.Nullable%7BUvA.Web.Overflow%7D%2CSystem.Nullable%7BUvA.Web.WhiteSpace%7D%2CSystem.Nullable%7BUvA.Web.Display%7D%2CSystem.Nullable%7BSystem.Double%7D%2CUvA.Web.Length%2CUvA.Web.Length%2CUvA.Web.Shadow%2CUvA.Web.Transition%2CSystem.Nullable%7BUvA.Web.TextOverflow%7D%2CSystem.Nullable%7BUvA.Web.Resize%7D%2CUvA.Web.Length%2CUvA.Web.Length%2CUvA.Web.Length%2CUvA.Web.Length%2CUvA.Web.Background%2CSystem.Nullable%7BUvA.Web.Float%7D%2CUvA.Web.Border%2CSystem.Nullable%7BUvA.Web.ListStyleType%7D%2CSystem.Nullable%7BUvA.Web.BoxSizing%7D%2CSystem.Nullable%7BUvA.Web.WordBreak%7D%2CSystem.Nullable%7BUvA.Web.HSLColor%7D%2CSystem.Nullable%7BUvA.Web.TableLayout%7D%2CSystem.Nullable%7BUvA.Web.Visibility%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UvA-FNWI/DataNose/blob/master/UvA.Web/Style/Style.cs/#L252">View Source</a>
+  </span>
+  <a id="UvA_Web_Style__ctor_" data-uid="UvA.Web.Style.#ctor*"></a>
+  <h4 id="UvA_Web_Style__ctor_System_String_System_String_System_String_System_Nullable_UvA_Web_FontFamily__System_Nullable_System_Drawing_Color__System_Nullable_System_Drawing_Color__System_Nullable_System_Int32__System_Nullable_System_Int32__System_Nullable_System_Boolean__System_Nullable_System_Boolean__System_Boolean_System_Nullable_UvA_Web_TextDecoration__System_Nullable_UvA_Web_Position__UvA_Web_Margin_UvA_Web_Margin_UvA_Web_Margin_System_Nullable_UvA_Web_Cursor__System_Nullable_UvA_Web_TextAlign__System_Nullable_UvA_Web_VerticalAlign__UvA_Web_Length_UvA_Web_Length_System_Nullable_System_Int32__UvA_Web_Border_UvA_Web_Border_UvA_Web_Border_UvA_Web_Border_UvA_Web_Border_System_Nullable_UvA_Web_Overflow__System_Nullable_UvA_Web_Overflow__System_Nullable_UvA_Web_Overflow__System_Nullable_UvA_Web_WhiteSpace__System_Nullable_UvA_Web_Display__System_Nullable_System_Double__UvA_Web_Length_UvA_Web_Length_UvA_Web_Shadow_UvA_Web_Transition_System_Nullable_UvA_Web_TextOverflow__System_Nullable_UvA_Web_Resize__UvA_Web_Length_UvA_Web_Length_UvA_Web_Length_UvA_Web_Length_UvA_Web_Background_System_Nullable_UvA_Web_Float__UvA_Web_Border_System_Nullable_UvA_Web_ListStyleType__System_Nullable_UvA_Web_BoxSizing__System_Nullable_UvA_Web_WordBreak__System_Nullable_UvA_Web_HSLColor__System_Nullable_UvA_Web_TableLayout__System_Nullable_UvA_Web_Visibility__" data-uid="UvA.Web.Style.#ctor(System.String,System.String,System.String,System.Nullable{UvA.Web.FontFamily},System.Nullable{System.Drawing.Color},System.Nullable{System.Drawing.Color},System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Boolean,System.Nullable{UvA.Web.TextDecoration},System.Nullable{UvA.Web.Position},UvA.Web.Margin,UvA.Web.Margin,UvA.Web.Margin,System.Nullable{UvA.Web.Cursor},System.Nullable{UvA.Web.TextAlign},System.Nullable{UvA.Web.VerticalAlign},UvA.Web.Length,UvA.Web.Length,System.Nullable{System.Int32},UvA.Web.Border,UvA.Web.Border,UvA.Web.Border,UvA.Web.Border,UvA.Web.Border,System.Nullable{UvA.Web.Overflow},System.Nullable{UvA.Web.Overflow},System.Nullable{UvA.Web.Overflow},System.Nullable{UvA.Web.WhiteSpace},System.Nullable{UvA.Web.Display},System.Nullable{System.Double},UvA.Web.Length,UvA.Web.Length,UvA.Web.Shadow,UvA.Web.Transition,System.Nullable{UvA.Web.TextOverflow},System.Nullable{UvA.Web.Resize},UvA.Web.Length,UvA.Web.Length,UvA.Web.Length,UvA.Web.Length,UvA.Web.Background,System.Nullable{UvA.Web.Float},UvA.Web.Border,System.Nullable{UvA.Web.ListStyleType},System.Nullable{UvA.Web.BoxSizing},System.Nullable{UvA.Web.WordBreak},System.Nullable{UvA.Web.HSLColor},System.Nullable{UvA.Web.TableLayout},System.Nullable{UvA.Web.Visibility})">Style(String, String, String, Nullable&lt;FontFamily&gt;, Nullable&lt;Color&gt;, Nullable&lt;Color&gt;, Nullable&lt;Int32&gt;, Nullable&lt;Int32&gt;, Nullable&lt;Boolean&gt;, Nullable&lt;Boolean&gt;, Boolean, Nullable&lt;TextDecoration&gt;, Nullable&lt;Position&gt;, Margin, Margin, Margin, Nullable&lt;Cursor&gt;, Nullable&lt;TextAlign&gt;, Nullable&lt;VerticalAlign&gt;, Length, Length, Nullable&lt;Int32&gt;, Border, Border, Border, Border, Border, Nullable&lt;Overflow&gt;, Nullable&lt;Overflow&gt;, Nullable&lt;Overflow&gt;, Nullable&lt;WhiteSpace&gt;, Nullable&lt;Display&gt;, Nullable&lt;Double&gt;, Length, Length, Shadow, Transition, Nullable&lt;TextOverflow&gt;, Nullable&lt;Resize&gt;, Length, Length, Length, Length, Background, Nullable&lt;Float&gt;, Border, Nullable&lt;ListStyleType&gt;, Nullable&lt;BoxSizing&gt;, Nullable&lt;WordBreak&gt;, Nullable&lt;HSLColor&gt;, Nullable&lt;TableLayout&gt;, Nullable&lt;Visibility&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Style(string name = null, string targetElement = null, string code = null, FontFamily? fontFamily = default(FontFamily? ), Color? color = default(Color? ), Color? backgroundColor = default(Color? ), int? fontSize = default(int? ), int? fontWeight = default(int? ), bool? fontBold = default(bool? ), bool? fontItalic = default(bool? ), bool borderCollapse = false, TextDecoration? textDecoration = default(TextDecoration? ), Position? position = default(Position? ), Margin location = null, Margin padding = null, Margin margin = null, Cursor? cursor = default(Cursor? ), TextAlign? textAlign = default(TextAlign? ), VerticalAlign? verticalAlign = default(VerticalAlign? ), Length width = null, Length height = null, int? zIndex = default(int? ), Border border = null, Border borderLeft = null, Border borderTop = null, Border borderRight = null, Border borderBottom = null, Overflow? overflow = default(Overflow? ), Overflow? overflowX = default(Overflow? ), Overflow? overflowY = default(Overflow? ), WhiteSpace? whiteSpace = default(WhiteSpace? ), Display? display = default(Display? ), double? opacity = default(double? ), Length lineHeight = null, Length borderRadius = null, Shadow shadow = null, Transition transition = null, TextOverflow? textOverflow = default(TextOverflow? ), Resize? resize = default(Resize? ), Length minWidth = null, Length maxWidth = null, Length maxHeight = null, Length minHeight = null, Background background = null, Float? float = default(Float? ), Border outline = null, ListStyleType? listStyleType = default(ListStyleType? ), BoxSizing? boxSizing = default(BoxSizing? ), WordBreak? wordBreak = default(WordBreak? ), HSLColor? hslBackgroundColor = default(HSLColor? ), TableLayout? tableLayout = default(TableLayout? ), Visibility? visibility = default(Visibility? ))</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">targetElement</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">code</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="UvA.Web.FontFamily.html">FontFamily</a>&gt;</td>
+        <td><span class="parametername">fontFamily</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Drawing.Color</span>&gt;</td>
+        <td><span class="parametername">color</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Drawing.Color</span>&gt;</td>
+        <td><span class="parametername">backgroundColor</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td><span class="parametername">fontSize</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td><span class="parametername">fontWeight</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
+        <td><span class="parametername">fontBold</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
+        <td><span class="parametername">fontItalic</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">borderCollapse</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="UvA.Web.TextDecoration.html">TextDecoration</a>&gt;</td>
+        <td><span class="parametername">textDecoration</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="UvA.Web.Position.html">Position</a>&gt;</td>
+        <td><span class="parametername">position</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UvA.Web.Margin.html">Margin</a></td>
+        <td><span class="parametername">location</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UvA.Web.Margin.html">Margin</a></td>
+        <td><span class="parametername">padding</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UvA.Web.Margin.html">Margin</a></td>
+        <td><span class="parametername">margin</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="UvA.Web.Cursor.html">Cursor</a>&gt;</td>
+        <td><span class="parametername">cursor</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="UvA.Web.TextAlign.html">TextAlign</a>&gt;</td>
+        <td><span class="parametername">textAlign</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="UvA.Web.VerticalAlign.html">VerticalAlign</a>&gt;</td>
+        <td><span class="parametername">verticalAlign</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UvA.Web.Length.html">Length</a></td>
+        <td><span class="parametername">width</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UvA.Web.Length.html">Length</a></td>
+        <td><span class="parametername">height</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td><span class="parametername">zIndex</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UvA.Web.Border.html">Border</a></td>
+        <td><span class="parametername">border</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UvA.Web.Border.html">Border</a></td>
+        <td><span class="parametername">borderLeft</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UvA.Web.Border.html">Border</a></td>
+        <td><span class="parametername">borderTop</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UvA.Web.Border.html">Border</a></td>
+        <td><span class="parametername">borderRight</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UvA.Web.Border.html">Border</a></td>
+        <td><span class="parametername">borderBottom</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="UvA.Web.Overflow.html">Overflow</a>&gt;</td>
+        <td><span class="parametername">overflow</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="UvA.Web.Overflow.html">Overflow</a>&gt;</td>
+        <td><span class="parametername">overflowX</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="UvA.Web.Overflow.html">Overflow</a>&gt;</td>
+        <td><span class="parametername">overflowY</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="UvA.Web.WhiteSpace.html">WhiteSpace</a>&gt;</td>
+        <td><span class="parametername">whiteSpace</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="UvA.Web.Display.html">Display</a>&gt;</td>
+        <td><span class="parametername">display</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Double</span>&gt;</td>
+        <td><span class="parametername">opacity</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UvA.Web.Length.html">Length</a></td>
+        <td><span class="parametername">lineHeight</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UvA.Web.Length.html">Length</a></td>
+        <td><span class="parametername">borderRadius</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UvA.Web.Shadow.html">Shadow</a></td>
+        <td><span class="parametername">shadow</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UvA.Web.Transition.html">Transition</a></td>
+        <td><span class="parametername">transition</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="UvA.Web.TextOverflow.html">TextOverflow</a>&gt;</td>
+        <td><span class="parametername">textOverflow</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="UvA.Web.Resize.html">Resize</a>&gt;</td>
+        <td><span class="parametername">resize</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UvA.Web.Length.html">Length</a></td>
+        <td><span class="parametername">minWidth</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UvA.Web.Length.html">Length</a></td>
+        <td><span class="parametername">maxWidth</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UvA.Web.Length.html">Length</a></td>
+        <td><span class="parametername">maxHeight</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UvA.Web.Length.html">Length</a></td>
+        <td><span class="parametername">minHeight</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UvA.Web.Background.html">Background</a></td>
+        <td><span class="parametername">background</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="UvA.Web.Float.html">Float</a>&gt;</td>
+        <td><span class="parametername">float</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UvA.Web.Border.html">Border</a></td>
+        <td><span class="parametername">outline</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="UvA.Web.ListStyleType.html">ListStyleType</a>&gt;</td>
+        <td><span class="parametername">listStyleType</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="UvA.Web.BoxSizing.html">BoxSizing</a>&gt;</td>
+        <td><span class="parametername">boxSizing</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="UvA.Web.WordBreak.html">WordBreak</a>&gt;</td>
+        <td><span class="parametername">wordBreak</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="UvA.Web.HSLColor.html">HSLColor</a>&gt;</td>
+        <td><span class="parametername">hslBackgroundColor</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="UvA.Web.TableLayout.html">TableLayout</a>&gt;</td>
+        <td><span class="parametername">tableLayout</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="UvA.Web.Visibility.html">Visibility</a>&gt;</td>
+        <td><span class="parametername">visibility</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UvA-FNWI/DataNose/new/master/apiSpec/new?filename=UvA_Web_Style__ctor_UvA_Web_Style_System_String_System_String_System_String_System_Nullable_UvA_Web_FontFamily__System_Nullable_System_Drawing_Color__System_Nullable_System_Drawing_Color__System_Nullable_System_Int32__System_Nullable_System_Int32__System_Nullable_System_Boolean__System_Nullable_System_Boolean__System_Nullable_System_Boolean__System_Nullable_UvA_Web_TextDecoration__System_Nullable_UvA_Web_Position__UvA_Web_Margin_UvA_Web_Margin_UvA_Web_Margin_System_Nullable_UvA_Web_Cursor__System_Nullable_UvA_Web_TextAlign__System_Nullable_UvA_Web_VerticalAlign__UvA_Web_Length_UvA_Web_Length_System_Nullable_System_Int32__UvA_Web_Border_UvA_Web_Border_UvA_Web_Border_UvA_Web_Border_UvA_Web_Border_System_Nullable_UvA_Web_Overflow__System_Nullable_UvA_Web_Overflow__System_Nullable_UvA_Web_Overflow__System_Nullable_UvA_Web_WhiteSpace__System_Nullable_UvA_Web_Display__System_Nullable_System_Double__UvA_Web_Length_UvA_Web_Length_UvA_Web_Shadow_UvA_Web_Transition_System_Nullable_UvA_Web_TextOverflow__System_Nullable_UvA_Web_Resize__UvA_Web_Length_UvA_Web_Length_UvA_Web_Length_UvA_Web_Length_UvA_Web_Background_System_Nullable_UvA_Web_Float__UvA_Web_Border_System_Nullable_UvA_Web_ListStyleType__System_Nullable_UvA_Web_BoxSizing__System_Nullable_UvA_Web_WordBreak__System_Nullable_UvA_Web_TableLayout__System_Nullable_UvA_Web_Visibility__.md&amp;value=---%0Auid%3A%20UvA.Web.Style.%23ctor(UvA.Web.Style%2CSystem.String%2CSystem.String%2CSystem.String%2CSystem.Nullable%7BUvA.Web.FontFamily%7D%2CSystem.Nullable%7BSystem.Drawing.Color%7D%2CSystem.Nullable%7BSystem.Drawing.Color%7D%2CSystem.Nullable%7BSystem.Int32%7D%2CSystem.Nullable%7BSystem.Int32%7D%2CSystem.Nullable%7BSystem.Boolean%7D%2CSystem.Nullable%7BSystem.Boolean%7D%2CSystem.Nullable%7BSystem.Boolean%7D%2CSystem.Nullable%7BUvA.Web.TextDecoration%7D%2CSystem.Nullable%7BUvA.Web.Position%7D%2CUvA.Web.Margin%2CUvA.Web.Margin%2CUvA.Web.Margin%2CSystem.Nullable%7BUvA.Web.Cursor%7D%2CSystem.Nullable%7BUvA.Web.TextAlign%7D%2CSystem.Nullable%7BUvA.Web.VerticalAlign%7D%2CUvA.Web.Length%2CUvA.Web.Length%2CSystem.Nullable%7BSystem.Int32%7D%2CUvA.Web.Border%2CUvA.Web.Border%2CUvA.Web.Border%2CUvA.Web.Border%2CUvA.Web.Border%2CSystem.Nullable%7BUvA.Web.Overflow%7D%2CSystem.Nullable%7BUvA.Web.Overflow%7D%2CSystem.Nullable%7BUvA.Web.Overflow%7D%2CSystem.Nullable%7BUvA.Web.WhiteSpace%7D%2CSystem.Nullable%7BUvA.Web.Display%7D%2CSystem.Nullable%7BSystem.Double%7D%2CUvA.Web.Length%2CUvA.Web.Length%2CUvA.Web.Shadow%2CUvA.Web.Transition%2CSystem.Nullable%7BUvA.Web.TextOverflow%7D%2CSystem.Nullable%7BUvA.Web.Resize%7D%2CUvA.Web.Length%2CUvA.Web.Length%2CUvA.Web.Length%2CUvA.Web.Length%2CUvA.Web.Background%2CSystem.Nullable%7BUvA.Web.Float%7D%2CUvA.Web.Border%2CSystem.Nullable%7BUvA.Web.ListStyleType%7D%2CSystem.Nullable%7BUvA.Web.BoxSizing%7D%2CSystem.Nullable%7BUvA.Web.WordBreak%7D%2CSystem.Nullable%7BUvA.Web.TableLayout%7D%2CSystem.Nullable%7BUvA.Web.Visibility%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UvA-FNWI/DataNose/blob/master/UvA.Web/Style/Style.cs/#L91">View Source</a>
+  </span>
+  <a id="UvA_Web_Style__ctor_" data-uid="UvA.Web.Style.#ctor*"></a>
+  <h4 id="UvA_Web_Style__ctor_UvA_Web_Style_System_String_System_String_System_String_System_Nullable_UvA_Web_FontFamily__System_Nullable_System_Drawing_Color__System_Nullable_System_Drawing_Color__System_Nullable_System_Int32__System_Nullable_System_Int32__System_Nullable_System_Boolean__System_Nullable_System_Boolean__System_Nullable_System_Boolean__System_Nullable_UvA_Web_TextDecoration__System_Nullable_UvA_Web_Position__UvA_Web_Margin_UvA_Web_Margin_UvA_Web_Margin_System_Nullable_UvA_Web_Cursor__System_Nullable_UvA_Web_TextAlign__System_Nullable_UvA_Web_VerticalAlign__UvA_Web_Length_UvA_Web_Length_System_Nullable_System_Int32__UvA_Web_Border_UvA_Web_Border_UvA_Web_Border_UvA_Web_Border_UvA_Web_Border_System_Nullable_UvA_Web_Overflow__System_Nullable_UvA_Web_Overflow__System_Nullable_UvA_Web_Overflow__System_Nullable_UvA_Web_WhiteSpace__System_Nullable_UvA_Web_Display__System_Nullable_System_Double__UvA_Web_Length_UvA_Web_Length_UvA_Web_Shadow_UvA_Web_Transition_System_Nullable_UvA_Web_TextOverflow__System_Nullable_UvA_Web_Resize__UvA_Web_Length_UvA_Web_Length_UvA_Web_Length_UvA_Web_Length_UvA_Web_Background_System_Nullable_UvA_Web_Float__UvA_Web_Border_System_Nullable_UvA_Web_ListStyleType__System_Nullable_UvA_Web_BoxSizing__System_Nullable_UvA_Web_WordBreak__System_Nullable_UvA_Web_TableLayout__System_Nullable_UvA_Web_Visibility__" data-uid="UvA.Web.Style.#ctor(UvA.Web.Style,System.String,System.String,System.String,System.Nullable{UvA.Web.FontFamily},System.Nullable{System.Drawing.Color},System.Nullable{System.Drawing.Color},System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Nullable{UvA.Web.TextDecoration},System.Nullable{UvA.Web.Position},UvA.Web.Margin,UvA.Web.Margin,UvA.Web.Margin,System.Nullable{UvA.Web.Cursor},System.Nullable{UvA.Web.TextAlign},System.Nullable{UvA.Web.VerticalAlign},UvA.Web.Length,UvA.Web.Length,System.Nullable{System.Int32},UvA.Web.Border,UvA.Web.Border,UvA.Web.Border,UvA.Web.Border,UvA.Web.Border,System.Nullable{UvA.Web.Overflow},System.Nullable{UvA.Web.Overflow},System.Nullable{UvA.Web.Overflow},System.Nullable{UvA.Web.WhiteSpace},System.Nullable{UvA.Web.Display},System.Nullable{System.Double},UvA.Web.Length,UvA.Web.Length,UvA.Web.Shadow,UvA.Web.Transition,System.Nullable{UvA.Web.TextOverflow},System.Nullable{UvA.Web.Resize},UvA.Web.Length,UvA.Web.Length,UvA.Web.Length,UvA.Web.Length,UvA.Web.Background,System.Nullable{UvA.Web.Float},UvA.Web.Border,System.Nullable{UvA.Web.ListStyleType},System.Nullable{UvA.Web.BoxSizing},System.Nullable{UvA.Web.WordBreak},System.Nullable{UvA.Web.TableLayout},System.Nullable{UvA.Web.Visibility})">Style(Style, String, String, String, Nullable&lt;FontFamily&gt;, Nullable&lt;Color&gt;, Nullable&lt;Color&gt;, Nullable&lt;Int32&gt;, Nullable&lt;Int32&gt;, Nullable&lt;Boolean&gt;, Nullable&lt;Boolean&gt;, Nullable&lt;Boolean&gt;, Nullable&lt;TextDecoration&gt;, Nullable&lt;Position&gt;, Margin, Margin, Margin, Nullable&lt;Cursor&gt;, Nullable&lt;TextAlign&gt;, Nullable&lt;VerticalAlign&gt;, Length, Length, Nullable&lt;Int32&gt;, Border, Border, Border, Border, Border, Nullable&lt;Overflow&gt;, Nullable&lt;Overflow&gt;, Nullable&lt;Overflow&gt;, Nullable&lt;WhiteSpace&gt;, Nullable&lt;Display&gt;, Nullable&lt;Double&gt;, Length, Length, Shadow, Transition, Nullable&lt;TextOverflow&gt;, Nullable&lt;Resize&gt;, Length, Length, Length, Length, Background, Nullable&lt;Float&gt;, Border, Nullable&lt;ListStyleType&gt;, Nullable&lt;BoxSizing&gt;, Nullable&lt;WordBreak&gt;, Nullable&lt;TableLayout&gt;, Nullable&lt;Visibility&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Style(Style baseStyle, string name = null, string targetElement = null, string code = null, FontFamily? fontFamily = default(FontFamily? ), Color? color = default(Color? ), Color? backgroundColor = default(Color? ), int? fontSize = default(int? ), int? fontWeight = default(int? ), bool? fontBold = default(bool? ), bool? fontItalic = default(bool? ), bool? borderCollapse = default(bool? ), TextDecoration? textDecoration = default(TextDecoration? ), Position? position = default(Position? ), Margin location = null, Margin padding = null, Margin margin = null, Cursor? cursor = default(Cursor? ), TextAlign? textAlign = default(TextAlign? ), VerticalAlign? verticalAlign = default(VerticalAlign? ), Length width = null, Length height = null, int? zIndex = default(int? ), Border border = null, Border borderLeft = null, Border borderTop = null, Border borderRight = null, Border borderBottom = null, Overflow? overflow = default(Overflow? ), Overflow? overflowX = default(Overflow? ), Overflow? overflowY = default(Overflow? ), WhiteSpace? whiteSpace = default(WhiteSpace? ), Display? display = default(Display? ), double? opacity = default(double? ), Length lineHeight = null, Length borderRadius = null, Shadow shadow = null, Transition transition = null, TextOverflow? textOverflow = default(TextOverflow? ), Resize? resize = default(Resize? ), Length minWidth = null, Length maxWidth = null, Length maxHeight = null, Length minHeight = null, Background background = null, Float? float = default(Float? ), Border outline = null, ListStyleType? listStyleType = default(ListStyleType? ), BoxSizing? boxSizing = default(BoxSizing? ), WordBreak? wordBreak = default(WordBreak? ), TableLayout? tableLayout = default(TableLayout? ), Visibility? visibility = default(Visibility? ))</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UvA.Web.Style.html">Style</a></td>
+        <td><span class="parametername">baseStyle</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">targetElement</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">code</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="UvA.Web.FontFamily.html">FontFamily</a>&gt;</td>
+        <td><span class="parametername">fontFamily</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Drawing.Color</span>&gt;</td>
+        <td><span class="parametername">color</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Drawing.Color</span>&gt;</td>
+        <td><span class="parametername">backgroundColor</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td><span class="parametername">fontSize</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td><span class="parametername">fontWeight</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
+        <td><span class="parametername">fontBold</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
+        <td><span class="parametername">fontItalic</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
+        <td><span class="parametername">borderCollapse</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="UvA.Web.TextDecoration.html">TextDecoration</a>&gt;</td>
+        <td><span class="parametername">textDecoration</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="UvA.Web.Position.html">Position</a>&gt;</td>
+        <td><span class="parametername">position</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UvA.Web.Margin.html">Margin</a></td>
+        <td><span class="parametername">location</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UvA.Web.Margin.html">Margin</a></td>
+        <td><span class="parametername">padding</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UvA.Web.Margin.html">Margin</a></td>
+        <td><span class="parametername">margin</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="UvA.Web.Cursor.html">Cursor</a>&gt;</td>
+        <td><span class="parametername">cursor</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="UvA.Web.TextAlign.html">TextAlign</a>&gt;</td>
+        <td><span class="parametername">textAlign</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="UvA.Web.VerticalAlign.html">VerticalAlign</a>&gt;</td>
+        <td><span class="parametername">verticalAlign</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UvA.Web.Length.html">Length</a></td>
+        <td><span class="parametername">width</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UvA.Web.Length.html">Length</a></td>
+        <td><span class="parametername">height</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td><span class="parametername">zIndex</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UvA.Web.Border.html">Border</a></td>
+        <td><span class="parametername">border</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UvA.Web.Border.html">Border</a></td>
+        <td><span class="parametername">borderLeft</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UvA.Web.Border.html">Border</a></td>
+        <td><span class="parametername">borderTop</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UvA.Web.Border.html">Border</a></td>
+        <td><span class="parametername">borderRight</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UvA.Web.Border.html">Border</a></td>
+        <td><span class="parametername">borderBottom</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="UvA.Web.Overflow.html">Overflow</a>&gt;</td>
+        <td><span class="parametername">overflow</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="UvA.Web.Overflow.html">Overflow</a>&gt;</td>
+        <td><span class="parametername">overflowX</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="UvA.Web.Overflow.html">Overflow</a>&gt;</td>
+        <td><span class="parametername">overflowY</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="UvA.Web.WhiteSpace.html">WhiteSpace</a>&gt;</td>
+        <td><span class="parametername">whiteSpace</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="UvA.Web.Display.html">Display</a>&gt;</td>
+        <td><span class="parametername">display</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Double</span>&gt;</td>
+        <td><span class="parametername">opacity</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UvA.Web.Length.html">Length</a></td>
+        <td><span class="parametername">lineHeight</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UvA.Web.Length.html">Length</a></td>
+        <td><span class="parametername">borderRadius</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UvA.Web.Shadow.html">Shadow</a></td>
+        <td><span class="parametername">shadow</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UvA.Web.Transition.html">Transition</a></td>
+        <td><span class="parametername">transition</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="UvA.Web.TextOverflow.html">TextOverflow</a>&gt;</td>
+        <td><span class="parametername">textOverflow</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="UvA.Web.Resize.html">Resize</a>&gt;</td>
+        <td><span class="parametername">resize</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UvA.Web.Length.html">Length</a></td>
+        <td><span class="parametername">minWidth</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UvA.Web.Length.html">Length</a></td>
+        <td><span class="parametername">maxWidth</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UvA.Web.Length.html">Length</a></td>
+        <td><span class="parametername">maxHeight</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UvA.Web.Length.html">Length</a></td>
+        <td><span class="parametername">minHeight</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UvA.Web.Background.html">Background</a></td>
+        <td><span class="parametername">background</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="UvA.Web.Float.html">Float</a>&gt;</td>
+        <td><span class="parametername">float</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UvA.Web.Border.html">Border</a></td>
+        <td><span class="parametername">outline</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="UvA.Web.ListStyleType.html">ListStyleType</a>&gt;</td>
+        <td><span class="parametername">listStyleType</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="UvA.Web.BoxSizing.html">BoxSizing</a>&gt;</td>
+        <td><span class="parametername">boxSizing</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="UvA.Web.WordBreak.html">WordBreak</a>&gt;</td>
+        <td><span class="parametername">wordBreak</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="UvA.Web.TableLayout.html">TableLayout</a>&gt;</td>
+        <td><span class="parametername">tableLayout</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="UvA.Web.Visibility.html">Visibility</a>&gt;</td>
+        <td><span class="parametername">visibility</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UvA-FNWI/DataNose/new/master/apiSpec/new?filename=UvA_Web_Style__ctor_UvA_Web_Style_UvA_Web_Style_.md&amp;value=---%0Auid%3A%20UvA.Web.Style.%23ctor(UvA.Web.Style%2CUvA.Web.Style)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UvA-FNWI/DataNose/blob/master/UvA.Web/Style/Style.cs/#L197">View Source</a>
+  </span>
+  <a id="UvA_Web_Style__ctor_" data-uid="UvA.Web.Style.#ctor*"></a>
+  <h4 id="UvA_Web_Style__ctor_UvA_Web_Style_UvA_Web_Style_" data-uid="UvA.Web.Style.#ctor(UvA.Web.Style,UvA.Web.Style)">Style(Style, Style)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Style(Style baseStyle, Style overrideStyle)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UvA.Web.Style.html">Style</a></td>
+        <td><span class="parametername">baseStyle</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UvA.Web.Style.html">Style</a></td>
+        <td><span class="parametername">overrideStyle</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UvA-FNWI/DataNose/new/master/apiSpec/new?filename=UvA_Web_Style_Background.md&amp;value=---%0Auid%3A%20UvA.Web.Style.Background%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UvA-FNWI/DataNose/blob/master/UvA.Web/Style/Style.cs/#L82">View Source</a>
+  </span>
+  <a id="UvA_Web_Style_Background_" data-uid="UvA.Web.Style.Background*"></a>
+  <h4 id="UvA_Web_Style_Background" data-uid="UvA.Web.Style.Background">Background</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Background Background { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UvA.Web.Background.html">Background</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UvA-FNWI/DataNose/new/master/apiSpec/new?filename=UvA_Web_Style_BackgroundColor.md&amp;value=---%0Auid%3A%20UvA.Web.Style.BackgroundColor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UvA-FNWI/DataNose/blob/master/UvA.Web/Style/Style.cs/#L42">View Source</a>
+  </span>
+  <a id="UvA_Web_Style_BackgroundColor_" data-uid="UvA.Web.Style.BackgroundColor*"></a>
+  <h4 id="UvA_Web_Style_BackgroundColor" data-uid="UvA.Web.Style.BackgroundColor">BackgroundColor</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Color? BackgroundColor { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Drawing.Color</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UvA-FNWI/DataNose/new/master/apiSpec/new?filename=UvA_Web_Style_Border.md&amp;value=---%0Auid%3A%20UvA.Web.Style.Border%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UvA-FNWI/DataNose/blob/master/UvA.Web/Style/Style.cs/#L61">View Source</a>
+  </span>
+  <a id="UvA_Web_Style_Border_" data-uid="UvA.Web.Style.Border*"></a>
+  <h4 id="UvA_Web_Style_Border" data-uid="UvA.Web.Style.Border">Border</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Border Border { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UvA.Web.Border.html">Border</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UvA-FNWI/DataNose/new/master/apiSpec/new?filename=UvA_Web_Style_BorderBottom.md&amp;value=---%0Auid%3A%20UvA.Web.Style.BorderBottom%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UvA-FNWI/DataNose/blob/master/UvA.Web/Style/Style.cs/#L65">View Source</a>
+  </span>
+  <a id="UvA_Web_Style_BorderBottom_" data-uid="UvA.Web.Style.BorderBottom*"></a>
+  <h4 id="UvA_Web_Style_BorderBottom" data-uid="UvA.Web.Style.BorderBottom">BorderBottom</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Border BorderBottom { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UvA.Web.Border.html">Border</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UvA-FNWI/DataNose/new/master/apiSpec/new?filename=UvA_Web_Style_BorderCollapse.md&amp;value=---%0Auid%3A%20UvA.Web.Style.BorderCollapse%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UvA-FNWI/DataNose/blob/master/UvA.Web/Style/Style.cs/#L49">View Source</a>
+  </span>
+  <a id="UvA_Web_Style_BorderCollapse_" data-uid="UvA.Web.Style.BorderCollapse*"></a>
+  <h4 id="UvA_Web_Style_BorderCollapse" data-uid="UvA.Web.Style.BorderCollapse">BorderCollapse</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool BorderCollapse { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UvA-FNWI/DataNose/new/master/apiSpec/new?filename=UvA_Web_Style_BorderLeft.md&amp;value=---%0Auid%3A%20UvA.Web.Style.BorderLeft%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UvA-FNWI/DataNose/blob/master/UvA.Web/Style/Style.cs/#L62">View Source</a>
+  </span>
+  <a id="UvA_Web_Style_BorderLeft_" data-uid="UvA.Web.Style.BorderLeft*"></a>
+  <h4 id="UvA_Web_Style_BorderLeft" data-uid="UvA.Web.Style.BorderLeft">BorderLeft</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Border BorderLeft { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UvA.Web.Border.html">Border</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UvA-FNWI/DataNose/new/master/apiSpec/new?filename=UvA_Web_Style_BorderRadius.md&amp;value=---%0Auid%3A%20UvA.Web.Style.BorderRadius%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UvA-FNWI/DataNose/blob/master/UvA.Web/Style/Style.cs/#L73">View Source</a>
+  </span>
+  <a id="UvA_Web_Style_BorderRadius_" data-uid="UvA.Web.Style.BorderRadius*"></a>
+  <h4 id="UvA_Web_Style_BorderRadius" data-uid="UvA.Web.Style.BorderRadius">BorderRadius</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Length BorderRadius { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UvA.Web.Length.html">Length</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UvA-FNWI/DataNose/new/master/apiSpec/new?filename=UvA_Web_Style_BorderRight.md&amp;value=---%0Auid%3A%20UvA.Web.Style.BorderRight%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UvA-FNWI/DataNose/blob/master/UvA.Web/Style/Style.cs/#L64">View Source</a>
+  </span>
+  <a id="UvA_Web_Style_BorderRight_" data-uid="UvA.Web.Style.BorderRight*"></a>
+  <h4 id="UvA_Web_Style_BorderRight" data-uid="UvA.Web.Style.BorderRight">BorderRight</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Border BorderRight { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UvA.Web.Border.html">Border</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UvA-FNWI/DataNose/new/master/apiSpec/new?filename=UvA_Web_Style_BorderTop.md&amp;value=---%0Auid%3A%20UvA.Web.Style.BorderTop%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UvA-FNWI/DataNose/blob/master/UvA.Web/Style/Style.cs/#L63">View Source</a>
+  </span>
+  <a id="UvA_Web_Style_BorderTop_" data-uid="UvA.Web.Style.BorderTop*"></a>
+  <h4 id="UvA_Web_Style_BorderTop" data-uid="UvA.Web.Style.BorderTop">BorderTop</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Border BorderTop { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UvA.Web.Border.html">Border</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UvA-FNWI/DataNose/new/master/apiSpec/new?filename=UvA_Web_Style_BoxSizing.md&amp;value=---%0Auid%3A%20UvA.Web.Style.BoxSizing%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UvA-FNWI/DataNose/blob/master/UvA.Web/Style/Style.cs/#L86">View Source</a>
+  </span>
+  <a id="UvA_Web_Style_BoxSizing_" data-uid="UvA.Web.Style.BoxSizing*"></a>
+  <h4 id="UvA_Web_Style_BoxSizing" data-uid="UvA.Web.Style.BoxSizing">BoxSizing</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BoxSizing? BoxSizing { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="UvA.Web.BoxSizing.html">BoxSizing</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UvA-FNWI/DataNose/new/master/apiSpec/new?filename=UvA_Web_Style_Code.md&amp;value=---%0Auid%3A%20UvA.Web.Style.Code%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UvA-FNWI/DataNose/blob/master/UvA.Web/Style/Style.cs/#L37">View Source</a>
+  </span>
+  <a id="UvA_Web_Style_Code_" data-uid="UvA.Web.Style.Code*"></a>
+  <h4 id="UvA_Web_Style_Code" data-uid="UvA.Web.Style.Code">Code</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Code { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UvA-FNWI/DataNose/new/master/apiSpec/new?filename=UvA_Web_Style_Color.md&amp;value=---%0Auid%3A%20UvA.Web.Style.Color%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UvA-FNWI/DataNose/blob/master/UvA.Web/Style/Style.cs/#L40">View Source</a>
+  </span>
+  <a id="UvA_Web_Style_Color_" data-uid="UvA.Web.Style.Color*"></a>
+  <h4 id="UvA_Web_Style_Color" data-uid="UvA.Web.Style.Color">Color</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Color? Color { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Drawing.Color</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UvA-FNWI/DataNose/new/master/apiSpec/new?filename=UvA_Web_Style_Cursor.md&amp;value=---%0Auid%3A%20UvA.Web.Style.Cursor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UvA-FNWI/DataNose/blob/master/UvA.Web/Style/Style.cs/#L55">View Source</a>
+  </span>
+  <a id="UvA_Web_Style_Cursor_" data-uid="UvA.Web.Style.Cursor*"></a>
+  <h4 id="UvA_Web_Style_Cursor" data-uid="UvA.Web.Style.Cursor">Cursor</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Cursor? Cursor { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="UvA.Web.Cursor.html">Cursor</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UvA-FNWI/DataNose/new/master/apiSpec/new?filename=UvA_Web_Style_Display.md&amp;value=---%0Auid%3A%20UvA.Web.Style.Display%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UvA-FNWI/DataNose/blob/master/UvA.Web/Style/Style.cs/#L70">View Source</a>
+  </span>
+  <a id="UvA_Web_Style_Display_" data-uid="UvA.Web.Style.Display*"></a>
+  <h4 id="UvA_Web_Style_Display" data-uid="UvA.Web.Style.Display">Display</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Display? Display { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="UvA.Web.Display.html">Display</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UvA-FNWI/DataNose/new/master/apiSpec/new?filename=UvA_Web_Style_Float.md&amp;value=---%0Auid%3A%20UvA.Web.Style.Float%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UvA-FNWI/DataNose/blob/master/UvA.Web/Style/Style.cs/#L83">View Source</a>
+  </span>
+  <a id="UvA_Web_Style_Float_" data-uid="UvA.Web.Style.Float*"></a>
+  <h4 id="UvA_Web_Style_Float" data-uid="UvA.Web.Style.Float">Float</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Float? Float { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="UvA.Web.Float.html">Float</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UvA-FNWI/DataNose/new/master/apiSpec/new?filename=UvA_Web_Style_FontBold.md&amp;value=---%0Auid%3A%20UvA.Web.Style.FontBold%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UvA-FNWI/DataNose/blob/master/UvA.Web/Style/Style.cs/#L47">View Source</a>
+  </span>
+  <a id="UvA_Web_Style_FontBold_" data-uid="UvA.Web.Style.FontBold*"></a>
+  <h4 id="UvA_Web_Style_FontBold" data-uid="UvA.Web.Style.FontBold">FontBold</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool? FontBold { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UvA-FNWI/DataNose/new/master/apiSpec/new?filename=UvA_Web_Style_FontFamily.md&amp;value=---%0Auid%3A%20UvA.Web.Style.FontFamily%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UvA-FNWI/DataNose/blob/master/UvA.Web/Style/Style.cs/#L39">View Source</a>
+  </span>
+  <a id="UvA_Web_Style_FontFamily_" data-uid="UvA.Web.Style.FontFamily*"></a>
+  <h4 id="UvA_Web_Style_FontFamily" data-uid="UvA.Web.Style.FontFamily">FontFamily</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FontFamily? FontFamily { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="UvA.Web.FontFamily.html">FontFamily</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UvA-FNWI/DataNose/new/master/apiSpec/new?filename=UvA_Web_Style_FontItalic.md&amp;value=---%0Auid%3A%20UvA.Web.Style.FontItalic%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UvA-FNWI/DataNose/blob/master/UvA.Web/Style/Style.cs/#L48">View Source</a>
+  </span>
+  <a id="UvA_Web_Style_FontItalic_" data-uid="UvA.Web.Style.FontItalic*"></a>
+  <h4 id="UvA_Web_Style_FontItalic" data-uid="UvA.Web.Style.FontItalic">FontItalic</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool? FontItalic { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UvA-FNWI/DataNose/new/master/apiSpec/new?filename=UvA_Web_Style_FontSize.md&amp;value=---%0Auid%3A%20UvA.Web.Style.FontSize%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UvA-FNWI/DataNose/blob/master/UvA.Web/Style/Style.cs/#L45">View Source</a>
+  </span>
+  <a id="UvA_Web_Style_FontSize_" data-uid="UvA.Web.Style.FontSize*"></a>
+  <h4 id="UvA_Web_Style_FontSize" data-uid="UvA.Web.Style.FontSize">FontSize</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int? FontSize { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UvA-FNWI/DataNose/new/master/apiSpec/new?filename=UvA_Web_Style_FontWeight.md&amp;value=---%0Auid%3A%20UvA.Web.Style.FontWeight%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UvA-FNWI/DataNose/blob/master/UvA.Web/Style/Style.cs/#L46">View Source</a>
+  </span>
+  <a id="UvA_Web_Style_FontWeight_" data-uid="UvA.Web.Style.FontWeight*"></a>
+  <h4 id="UvA_Web_Style_FontWeight" data-uid="UvA.Web.Style.FontWeight">FontWeight</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int? FontWeight { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UvA-FNWI/DataNose/new/master/apiSpec/new?filename=UvA_Web_Style_Height.md&amp;value=---%0Auid%3A%20UvA.Web.Style.Height%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UvA-FNWI/DataNose/blob/master/UvA.Web/Style/Style.cs/#L59">View Source</a>
+  </span>
+  <a id="UvA_Web_Style_Height_" data-uid="UvA.Web.Style.Height*"></a>
+  <h4 id="UvA_Web_Style_Height" data-uid="UvA.Web.Style.Height">Height</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Length Height { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UvA.Web.Length.html">Length</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UvA-FNWI/DataNose/new/master/apiSpec/new?filename=UvA_Web_Style_HSLBackgroundColor.md&amp;value=---%0Auid%3A%20UvA.Web.Style.HSLBackgroundColor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UvA-FNWI/DataNose/blob/master/UvA.Web/Style/Style.cs/#L43">View Source</a>
+  </span>
+  <a id="UvA_Web_Style_HSLBackgroundColor_" data-uid="UvA.Web.Style.HSLBackgroundColor*"></a>
+  <h4 id="UvA_Web_Style_HSLBackgroundColor" data-uid="UvA.Web.Style.HSLBackgroundColor">HSLBackgroundColor</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public HSLColor? HSLBackgroundColor { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="UvA.Web.HSLColor.html">HSLColor</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UvA-FNWI/DataNose/new/master/apiSpec/new?filename=UvA_Web_Style_LineHeight.md&amp;value=---%0Auid%3A%20UvA.Web.Style.LineHeight%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UvA-FNWI/DataNose/blob/master/UvA.Web/Style/Style.cs/#L72">View Source</a>
+  </span>
+  <a id="UvA_Web_Style_LineHeight_" data-uid="UvA.Web.Style.LineHeight*"></a>
+  <h4 id="UvA_Web_Style_LineHeight" data-uid="UvA.Web.Style.LineHeight">LineHeight</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Length LineHeight { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UvA.Web.Length.html">Length</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UvA-FNWI/DataNose/new/master/apiSpec/new?filename=UvA_Web_Style_ListStyleType.md&amp;value=---%0Auid%3A%20UvA.Web.Style.ListStyleType%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UvA-FNWI/DataNose/blob/master/UvA.Web/Style/Style.cs/#L85">View Source</a>
+  </span>
+  <a id="UvA_Web_Style_ListStyleType_" data-uid="UvA.Web.Style.ListStyleType*"></a>
+  <h4 id="UvA_Web_Style_ListStyleType" data-uid="UvA.Web.Style.ListStyleType">ListStyleType</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ListStyleType? ListStyleType { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="UvA.Web.ListStyleType.html">ListStyleType</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UvA-FNWI/DataNose/new/master/apiSpec/new?filename=UvA_Web_Style_Location.md&amp;value=---%0Auid%3A%20UvA.Web.Style.Location%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UvA-FNWI/DataNose/blob/master/UvA.Web/Style/Style.cs/#L52">View Source</a>
+  </span>
+  <a id="UvA_Web_Style_Location_" data-uid="UvA.Web.Style.Location*"></a>
+  <h4 id="UvA_Web_Style_Location" data-uid="UvA.Web.Style.Location">Location</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Margin Location { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UvA.Web.Margin.html">Margin</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UvA-FNWI/DataNose/new/master/apiSpec/new?filename=UvA_Web_Style_Margin.md&amp;value=---%0Auid%3A%20UvA.Web.Style.Margin%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UvA-FNWI/DataNose/blob/master/UvA.Web/Style/Style.cs/#L54">View Source</a>
+  </span>
+  <a id="UvA_Web_Style_Margin_" data-uid="UvA.Web.Style.Margin*"></a>
+  <h4 id="UvA_Web_Style_Margin" data-uid="UvA.Web.Style.Margin">Margin</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Margin Margin { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UvA.Web.Margin.html">Margin</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UvA-FNWI/DataNose/new/master/apiSpec/new?filename=UvA_Web_Style_MaxHeight.md&amp;value=---%0Auid%3A%20UvA.Web.Style.MaxHeight%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UvA-FNWI/DataNose/blob/master/UvA.Web/Style/Style.cs/#L80">View Source</a>
+  </span>
+  <a id="UvA_Web_Style_MaxHeight_" data-uid="UvA.Web.Style.MaxHeight*"></a>
+  <h4 id="UvA_Web_Style_MaxHeight" data-uid="UvA.Web.Style.MaxHeight">MaxHeight</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Length MaxHeight { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UvA.Web.Length.html">Length</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UvA-FNWI/DataNose/new/master/apiSpec/new?filename=UvA_Web_Style_MaxWidth.md&amp;value=---%0Auid%3A%20UvA.Web.Style.MaxWidth%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UvA-FNWI/DataNose/blob/master/UvA.Web/Style/Style.cs/#L79">View Source</a>
+  </span>
+  <a id="UvA_Web_Style_MaxWidth_" data-uid="UvA.Web.Style.MaxWidth*"></a>
+  <h4 id="UvA_Web_Style_MaxWidth" data-uid="UvA.Web.Style.MaxWidth">MaxWidth</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Length MaxWidth { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UvA.Web.Length.html">Length</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UvA-FNWI/DataNose/new/master/apiSpec/new?filename=UvA_Web_Style_MinHeight.md&amp;value=---%0Auid%3A%20UvA.Web.Style.MinHeight%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UvA-FNWI/DataNose/blob/master/UvA.Web/Style/Style.cs/#L81">View Source</a>
+  </span>
+  <a id="UvA_Web_Style_MinHeight_" data-uid="UvA.Web.Style.MinHeight*"></a>
+  <h4 id="UvA_Web_Style_MinHeight" data-uid="UvA.Web.Style.MinHeight">MinHeight</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Length MinHeight { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UvA.Web.Length.html">Length</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UvA-FNWI/DataNose/new/master/apiSpec/new?filename=UvA_Web_Style_MinWidth.md&amp;value=---%0Auid%3A%20UvA.Web.Style.MinWidth%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UvA-FNWI/DataNose/blob/master/UvA.Web/Style/Style.cs/#L78">View Source</a>
+  </span>
+  <a id="UvA_Web_Style_MinWidth_" data-uid="UvA.Web.Style.MinWidth*"></a>
+  <h4 id="UvA_Web_Style_MinWidth" data-uid="UvA.Web.Style.MinWidth">MinWidth</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Length MinWidth { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UvA.Web.Length.html">Length</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UvA-FNWI/DataNose/new/master/apiSpec/new?filename=UvA_Web_Style_Name.md&amp;value=---%0Auid%3A%20UvA.Web.Style.Name%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UvA-FNWI/DataNose/blob/master/UvA.Web/Style/Style.cs/#L35">View Source</a>
+  </span>
+  <a id="UvA_Web_Style_Name_" data-uid="UvA.Web.Style.Name*"></a>
+  <h4 id="UvA_Web_Style_Name" data-uid="UvA.Web.Style.Name">Name</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Name { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UvA-FNWI/DataNose/new/master/apiSpec/new?filename=UvA_Web_Style_Opacity.md&amp;value=---%0Auid%3A%20UvA.Web.Style.Opacity%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UvA-FNWI/DataNose/blob/master/UvA.Web/Style/Style.cs/#L71">View Source</a>
+  </span>
+  <a id="UvA_Web_Style_Opacity_" data-uid="UvA.Web.Style.Opacity*"></a>
+  <h4 id="UvA_Web_Style_Opacity" data-uid="UvA.Web.Style.Opacity">Opacity</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double? Opacity { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Double</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UvA-FNWI/DataNose/new/master/apiSpec/new?filename=UvA_Web_Style_Outline.md&amp;value=---%0Auid%3A%20UvA.Web.Style.Outline%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UvA-FNWI/DataNose/blob/master/UvA.Web/Style/Style.cs/#L84">View Source</a>
+  </span>
+  <a id="UvA_Web_Style_Outline_" data-uid="UvA.Web.Style.Outline*"></a>
+  <h4 id="UvA_Web_Style_Outline" data-uid="UvA.Web.Style.Outline">Outline</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Border Outline { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UvA.Web.Border.html">Border</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UvA-FNWI/DataNose/new/master/apiSpec/new?filename=UvA_Web_Style_Overflow.md&amp;value=---%0Auid%3A%20UvA.Web.Style.Overflow%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UvA-FNWI/DataNose/blob/master/UvA.Web/Style/Style.cs/#L66">View Source</a>
+  </span>
+  <a id="UvA_Web_Style_Overflow_" data-uid="UvA.Web.Style.Overflow*"></a>
+  <h4 id="UvA_Web_Style_Overflow" data-uid="UvA.Web.Style.Overflow">Overflow</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Overflow? Overflow { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="UvA.Web.Overflow.html">Overflow</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UvA-FNWI/DataNose/new/master/apiSpec/new?filename=UvA_Web_Style_OverflowX.md&amp;value=---%0Auid%3A%20UvA.Web.Style.OverflowX%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UvA-FNWI/DataNose/blob/master/UvA.Web/Style/Style.cs/#L67">View Source</a>
+  </span>
+  <a id="UvA_Web_Style_OverflowX_" data-uid="UvA.Web.Style.OverflowX*"></a>
+  <h4 id="UvA_Web_Style_OverflowX" data-uid="UvA.Web.Style.OverflowX">OverflowX</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Overflow? OverflowX { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="UvA.Web.Overflow.html">Overflow</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UvA-FNWI/DataNose/new/master/apiSpec/new?filename=UvA_Web_Style_OverflowY.md&amp;value=---%0Auid%3A%20UvA.Web.Style.OverflowY%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UvA-FNWI/DataNose/blob/master/UvA.Web/Style/Style.cs/#L68">View Source</a>
+  </span>
+  <a id="UvA_Web_Style_OverflowY_" data-uid="UvA.Web.Style.OverflowY*"></a>
+  <h4 id="UvA_Web_Style_OverflowY" data-uid="UvA.Web.Style.OverflowY">OverflowY</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Overflow? OverflowY { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="UvA.Web.Overflow.html">Overflow</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UvA-FNWI/DataNose/new/master/apiSpec/new?filename=UvA_Web_Style_Padding.md&amp;value=---%0Auid%3A%20UvA.Web.Style.Padding%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UvA-FNWI/DataNose/blob/master/UvA.Web/Style/Style.cs/#L53">View Source</a>
+  </span>
+  <a id="UvA_Web_Style_Padding_" data-uid="UvA.Web.Style.Padding*"></a>
+  <h4 id="UvA_Web_Style_Padding" data-uid="UvA.Web.Style.Padding">Padding</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Margin Padding { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UvA.Web.Margin.html">Margin</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UvA-FNWI/DataNose/new/master/apiSpec/new?filename=UvA_Web_Style_Position.md&amp;value=---%0Auid%3A%20UvA.Web.Style.Position%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UvA-FNWI/DataNose/blob/master/UvA.Web/Style/Style.cs/#L51">View Source</a>
+  </span>
+  <a id="UvA_Web_Style_Position_" data-uid="UvA.Web.Style.Position*"></a>
+  <h4 id="UvA_Web_Style_Position" data-uid="UvA.Web.Style.Position">Position</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Position? Position { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="UvA.Web.Position.html">Position</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UvA-FNWI/DataNose/new/master/apiSpec/new?filename=UvA_Web_Style_Resize.md&amp;value=---%0Auid%3A%20UvA.Web.Style.Resize%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UvA-FNWI/DataNose/blob/master/UvA.Web/Style/Style.cs/#L77">View Source</a>
+  </span>
+  <a id="UvA_Web_Style_Resize_" data-uid="UvA.Web.Style.Resize*"></a>
+  <h4 id="UvA_Web_Style_Resize" data-uid="UvA.Web.Style.Resize">Resize</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Resize? Resize { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="UvA.Web.Resize.html">Resize</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UvA-FNWI/DataNose/new/master/apiSpec/new?filename=UvA_Web_Style_Shadow.md&amp;value=---%0Auid%3A%20UvA.Web.Style.Shadow%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UvA-FNWI/DataNose/blob/master/UvA.Web/Style/Style.cs/#L74">View Source</a>
+  </span>
+  <a id="UvA_Web_Style_Shadow_" data-uid="UvA.Web.Style.Shadow*"></a>
+  <h4 id="UvA_Web_Style_Shadow" data-uid="UvA.Web.Style.Shadow">Shadow</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Shadow Shadow { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UvA.Web.Shadow.html">Shadow</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UvA-FNWI/DataNose/new/master/apiSpec/new?filename=UvA_Web_Style_TableLayout.md&amp;value=---%0Auid%3A%20UvA.Web.Style.TableLayout%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UvA-FNWI/DataNose/blob/master/UvA.Web/Style/Style.cs/#L88">View Source</a>
+  </span>
+  <a id="UvA_Web_Style_TableLayout_" data-uid="UvA.Web.Style.TableLayout*"></a>
+  <h4 id="UvA_Web_Style_TableLayout" data-uid="UvA.Web.Style.TableLayout">TableLayout</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TableLayout? TableLayout { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="UvA.Web.TableLayout.html">TableLayout</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UvA-FNWI/DataNose/new/master/apiSpec/new?filename=UvA_Web_Style_TargetElement.md&amp;value=---%0Auid%3A%20UvA.Web.Style.TargetElement%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UvA-FNWI/DataNose/blob/master/UvA.Web/Style/Style.cs/#L36">View Source</a>
+  </span>
+  <a id="UvA_Web_Style_TargetElement_" data-uid="UvA.Web.Style.TargetElement*"></a>
+  <h4 id="UvA_Web_Style_TargetElement" data-uid="UvA.Web.Style.TargetElement">TargetElement</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string TargetElement { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UvA-FNWI/DataNose/new/master/apiSpec/new?filename=UvA_Web_Style_TextAlign.md&amp;value=---%0Auid%3A%20UvA.Web.Style.TextAlign%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UvA-FNWI/DataNose/blob/master/UvA.Web/Style/Style.cs/#L56">View Source</a>
+  </span>
+  <a id="UvA_Web_Style_TextAlign_" data-uid="UvA.Web.Style.TextAlign*"></a>
+  <h4 id="UvA_Web_Style_TextAlign" data-uid="UvA.Web.Style.TextAlign">TextAlign</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TextAlign? TextAlign { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="UvA.Web.TextAlign.html">TextAlign</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UvA-FNWI/DataNose/new/master/apiSpec/new?filename=UvA_Web_Style_TextDecoration.md&amp;value=---%0Auid%3A%20UvA.Web.Style.TextDecoration%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UvA-FNWI/DataNose/blob/master/UvA.Web/Style/Style.cs/#L50">View Source</a>
+  </span>
+  <a id="UvA_Web_Style_TextDecoration_" data-uid="UvA.Web.Style.TextDecoration*"></a>
+  <h4 id="UvA_Web_Style_TextDecoration" data-uid="UvA.Web.Style.TextDecoration">TextDecoration</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TextDecoration? TextDecoration { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="UvA.Web.TextDecoration.html">TextDecoration</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UvA-FNWI/DataNose/new/master/apiSpec/new?filename=UvA_Web_Style_TextOverflow.md&amp;value=---%0Auid%3A%20UvA.Web.Style.TextOverflow%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UvA-FNWI/DataNose/blob/master/UvA.Web/Style/Style.cs/#L76">View Source</a>
+  </span>
+  <a id="UvA_Web_Style_TextOverflow_" data-uid="UvA.Web.Style.TextOverflow*"></a>
+  <h4 id="UvA_Web_Style_TextOverflow" data-uid="UvA.Web.Style.TextOverflow">TextOverflow</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TextOverflow? TextOverflow { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="UvA.Web.TextOverflow.html">TextOverflow</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UvA-FNWI/DataNose/new/master/apiSpec/new?filename=UvA_Web_Style_Transition.md&amp;value=---%0Auid%3A%20UvA.Web.Style.Transition%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UvA-FNWI/DataNose/blob/master/UvA.Web/Style/Style.cs/#L75">View Source</a>
+  </span>
+  <a id="UvA_Web_Style_Transition_" data-uid="UvA.Web.Style.Transition*"></a>
+  <h4 id="UvA_Web_Style_Transition" data-uid="UvA.Web.Style.Transition">Transition</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Transition Transition { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UvA.Web.Transition.html">Transition</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UvA-FNWI/DataNose/new/master/apiSpec/new?filename=UvA_Web_Style_VerticalAlign.md&amp;value=---%0Auid%3A%20UvA.Web.Style.VerticalAlign%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UvA-FNWI/DataNose/blob/master/UvA.Web/Style/Style.cs/#L57">View Source</a>
+  </span>
+  <a id="UvA_Web_Style_VerticalAlign_" data-uid="UvA.Web.Style.VerticalAlign*"></a>
+  <h4 id="UvA_Web_Style_VerticalAlign" data-uid="UvA.Web.Style.VerticalAlign">VerticalAlign</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public VerticalAlign? VerticalAlign { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="UvA.Web.VerticalAlign.html">VerticalAlign</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UvA-FNWI/DataNose/new/master/apiSpec/new?filename=UvA_Web_Style_Visibility.md&amp;value=---%0Auid%3A%20UvA.Web.Style.Visibility%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UvA-FNWI/DataNose/blob/master/UvA.Web/Style/Style.cs/#L89">View Source</a>
+  </span>
+  <a id="UvA_Web_Style_Visibility_" data-uid="UvA.Web.Style.Visibility*"></a>
+  <h4 id="UvA_Web_Style_Visibility" data-uid="UvA.Web.Style.Visibility">Visibility</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Visibility? Visibility { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="UvA.Web.Visibility.html">Visibility</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UvA-FNWI/DataNose/new/master/apiSpec/new?filename=UvA_Web_Style_WhiteSpace.md&amp;value=---%0Auid%3A%20UvA.Web.Style.WhiteSpace%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UvA-FNWI/DataNose/blob/master/UvA.Web/Style/Style.cs/#L69">View Source</a>
+  </span>
+  <a id="UvA_Web_Style_WhiteSpace_" data-uid="UvA.Web.Style.WhiteSpace*"></a>
+  <h4 id="UvA_Web_Style_WhiteSpace" data-uid="UvA.Web.Style.WhiteSpace">WhiteSpace</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public WhiteSpace? WhiteSpace { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="UvA.Web.WhiteSpace.html">WhiteSpace</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UvA-FNWI/DataNose/new/master/apiSpec/new?filename=UvA_Web_Style_Width.md&amp;value=---%0Auid%3A%20UvA.Web.Style.Width%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UvA-FNWI/DataNose/blob/master/UvA.Web/Style/Style.cs/#L58">View Source</a>
+  </span>
+  <a id="UvA_Web_Style_Width_" data-uid="UvA.Web.Style.Width*"></a>
+  <h4 id="UvA_Web_Style_Width" data-uid="UvA.Web.Style.Width">Width</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Length Width { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UvA.Web.Length.html">Length</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UvA-FNWI/DataNose/new/master/apiSpec/new?filename=UvA_Web_Style_WordBreak.md&amp;value=---%0Auid%3A%20UvA.Web.Style.WordBreak%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UvA-FNWI/DataNose/blob/master/UvA.Web/Style/Style.cs/#L87">View Source</a>
+  </span>
+  <a id="UvA_Web_Style_WordBreak_" data-uid="UvA.Web.Style.WordBreak*"></a>
+  <h4 id="UvA_Web_Style_WordBreak" data-uid="UvA.Web.Style.WordBreak">WordBreak</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public WordBreak? WordBreak { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="UvA.Web.WordBreak.html">WordBreak</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UvA-FNWI/DataNose/new/master/apiSpec/new?filename=UvA_Web_Style_ZIndex.md&amp;value=---%0Auid%3A%20UvA.Web.Style.ZIndex%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UvA-FNWI/DataNose/blob/master/UvA.Web/Style/Style.cs/#L60">View Source</a>
+  </span>
+  <a id="UvA_Web_Style_ZIndex_" data-uid="UvA.Web.Style.ZIndex*"></a>
+  <h4 id="UvA_Web_Style_ZIndex" data-uid="UvA.Web.Style.ZIndex">ZIndex</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int? ZIndex { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UvA-FNWI/DataNose/new/master/apiSpec/new?filename=UvA_Web_Style_Clone.md&amp;value=---%0Auid%3A%20UvA.Web.Style.Clone%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UvA-FNWI/DataNose/blob/master/UvA.Web/Style/Style.cs/#L523">View Source</a>
+  </span>
+  <a id="UvA_Web_Style_Clone_" data-uid="UvA.Web.Style.Clone*"></a>
+  <h4 id="UvA_Web_Style_Clone" data-uid="UvA.Web.Style.Clone">Clone()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public object Clone()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UvA-FNWI/DataNose/new/master/apiSpec/new?filename=UvA_Web_Style_GetMarkup.md&amp;value=---%0Auid%3A%20UvA.Web.Style.GetMarkup%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UvA-FNWI/DataNose/blob/master/UvA.Web/Style/Style.cs/#L506">View Source</a>
+  </span>
+  <a id="UvA_Web_Style_GetMarkup_" data-uid="UvA.Web.Style.GetMarkup*"></a>
+  <h4 id="UvA_Web_Style_GetMarkup" data-uid="UvA.Web.Style.GetMarkup">GetMarkup()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GetMarkup()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UvA-FNWI/DataNose/new/master/apiSpec/new?filename=UvA_Web_Style_Override_UvA_Web_Style_.md&amp;value=---%0Auid%3A%20UvA.Web.Style.Override(UvA.Web.Style)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UvA-FNWI/DataNose/blob/master/UvA.Web/Style/Style.cs/#L359">View Source</a>
+  </span>
+  <a id="UvA_Web_Style_Override_" data-uid="UvA.Web.Style.Override*"></a>
+  <h4 id="UvA_Web_Style_Override_UvA_Web_Style_" data-uid="UvA.Web.Style.Override(UvA.Web.Style)">Override(Style)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Style Override(Style overrides)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UvA.Web.Style.html">Style</a></td>
+        <td><span class="parametername">overrides</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UvA.Web.Style.html">Style</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UvA-FNWI/DataNose/new/master/apiSpec/new?filename=UvA_Web_Style_Set_System_String_System_Object_.md&amp;value=---%0Auid%3A%20UvA.Web.Style.Set(System.String%2CSystem.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UvA-FNWI/DataNose/blob/master/UvA.Web/Style/Style.cs/#L518">View Source</a>
+  </span>
+  <a id="UvA_Web_Style_Set_" data-uid="UvA.Web.Style.Set*"></a>
+  <h4 id="UvA_Web_Style_Set_System_String_System_Object_" data-uid="UvA.Web.Style.Set(System.String,System.Object)">Set(String, Object)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Set(string property, object value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">property</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UvA-FNWI/DataNose/new/master/apiSpec/new?filename=UvA_Web_Style_ToString.md&amp;value=---%0Auid%3A%20UvA.Web.Style.ToString%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UvA-FNWI/DataNose/blob/master/UvA.Web/Style/Style.cs/#L388">View Source</a>
+  </span>
+  <a id="UvA_Web_Style_ToString_" data-uid="UvA.Web.Style.ToString*"></a>
+  <h4 id="UvA_Web_Style_ToString" data-uid="UvA.Web.Style.ToString">ToString()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string ToString()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">System.Object.ToString()</span></div>
+  <h3 id="operators">Operators
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UvA-FNWI/DataNose/new/master/apiSpec/new?filename=UvA_Web_Style_op_Addition_UvA_Web_IStyle_UvA_Web_Style_.md&amp;value=---%0Auid%3A%20UvA.Web.Style.op_Addition(UvA.Web.IStyle%2CUvA.Web.Style)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UvA-FNWI/DataNose/blob/master/UvA.Web/Style/Style.cs/#L511">View Source</a>
+  </span>
+  <a id="UvA_Web_Style_op_Addition_" data-uid="UvA.Web.Style.op_Addition*"></a>
+  <h4 id="UvA_Web_Style_op_Addition_UvA_Web_IStyle_UvA_Web_Style_" data-uid="UvA.Web.Style.op_Addition(UvA.Web.IStyle,UvA.Web.Style)">Addition(IStyle, Style)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IStyle operator +(IStyle s1, Style s2)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UvA.Web.IStyle.html">IStyle</a></td>
+        <td><span class="parametername">s1</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UvA.Web.Style.html">Style</a></td>
+        <td><span class="parametername">s2</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UvA.Web.IStyle.html">IStyle</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="UvA.Web.IStyle.html">IStyle</a>
+  </div>
+  <div>
+      <span class="xref">System.ICloneable</span>
+  </div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="UvA.Utilities.DataExtensions.html#UvA_Utilities_DataExtensions_IsIn__1___0___0_">DataExtensions.IsIn&lt;T&gt;(T, T)</a>
+  </div>
+  <div>
+      <a class="xref" href="UvA.Utilities.DataExtensions.html#UvA_Utilities_DataExtensions_IsIn__1___0___0___0_">DataExtensions.IsIn&lt;T&gt;(T, T, T)</a>
+  </div>
+  <div>
+      <a class="xref" href="UvA.Utilities.DataExtensions.html#UvA_Utilities_DataExtensions_IsIn__1___0___0___0___0_">DataExtensions.IsIn&lt;T&gt;(T, T, T, T)</a>
+  </div>
+  <div>
+      <a class="xref" href="UvA.Utilities.DataExtensions.html#UvA_Utilities_DataExtensions_IsIn__1___0___0___0___0___0_">DataExtensions.IsIn&lt;T&gt;(T, T, T, T, T)</a>
+  </div>
+  <div>
+      <a class="xref" href="UvA.Utilities.DataExtensions.html#UvA_Utilities_DataExtensions_IsIn__1___0___0___0___0___0___0_">DataExtensions.IsIn&lt;T&gt;(T, T, T, T, T, T)</a>
+  </div>
+  <div>
+      <a class="xref" href="UvA.Utilities.DataExtensions.html#UvA_Utilities_DataExtensions_IsIn__1___0___0___">DataExtensions.IsIn&lt;T&gt;(T, T[])</a>
+  </div>
+  <div>
+      <a class="xref" href="UvA.Utilities.DataExtensions.html#UvA_Utilities_DataExtensions_IsNotIn__1___0___0_">DataExtensions.IsNotIn&lt;T&gt;(T, T)</a>
+  </div>
+  <div>
+      <a class="xref" href="UvA.Utilities.DataExtensions.html#UvA_Utilities_DataExtensions_IsNotIn__1___0___0___0_">DataExtensions.IsNotIn&lt;T&gt;(T, T, T)</a>
+  </div>
+  <div>
+      <a class="xref" href="UvA.Utilities.DataExtensions.html#UvA_Utilities_DataExtensions_IsNotIn__1___0___0___0___0_">DataExtensions.IsNotIn&lt;T&gt;(T, T, T, T)</a>
+  </div>
+  <div>
+      <a class="xref" href="UvA.Utilities.DataExtensions.html#UvA_Utilities_DataExtensions_IsNotIn__1___0___0___0___0___0_">DataExtensions.IsNotIn&lt;T&gt;(T, T, T, T, T)</a>
+  </div>
+  <div>
+      <a class="xref" href="UvA.Utilities.DataExtensions.html#UvA_Utilities_DataExtensions_IsNotIn__1___0___0___0___0___0___0_">DataExtensions.IsNotIn&lt;T&gt;(T, T, T, T, T, T)</a>
+  </div>
+  <div>
+      <a class="xref" href="UvA.Utilities.DataExtensions.html#UvA_Utilities_DataExtensions_IsNotIn__1___0___0___">DataExtensions.IsNotIn&lt;T&gt;(T, T[])</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/UvA-FNWI/DataNose/new/master/apiSpec/new?filename=UvA_Web_Style.md&amp;value=---%0Auid%3A%20UvA.Web.Style%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/UvA-FNWI/DataNose/blob/master/UvA.Web/Style/Style.cs/#L33" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

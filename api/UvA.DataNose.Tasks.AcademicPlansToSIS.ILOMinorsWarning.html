@@ -1,0 +1,406 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class ILOMinorsWarning
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class ILOMinorsWarning
+   ">
+    <meta name="generator" content="docfx 2.40.12.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="UvA.DataNose.Tasks.AcademicPlansToSIS.ILOMinorsWarning">
+  
+  
+  <h1 id="UvA_DataNose_Tasks_AcademicPlansToSIS_ILOMinorsWarning" data-uid="UvA.DataNose.Tasks.AcademicPlansToSIS.ILOMinorsWarning" class="text-break">Class ILOMinorsWarning
+  </h1>
+  <div class="markdown level0 summary"><p>This class knows - by hardcoded configuration - a short list of ILO minors that need to be mentioned on the diploma itself,
+because it results in a teaching license at VWO level.
+It occurs a few times a year that an FNWI student completes such a minor. The servicedesk needs to be alerted when this happens
+because they have to (i) ask the ILO to attach the subplan (ii) alert bureau examens.</p>
+<p>At the moment this class just logs warnings to a TaskRunner.
+...(Further possibilities: send a mail somewhere? Add a special &quot;ILO Minor&quot; checklist item to the Graduation Checklists?)
+Separate warnings are logged for:</p>
+<ul>
+<li>ILO minor is in current students plan</li>
+<li>Current Student has enrolment for ILO minor but it is not in this plan (reasons can be good or bad)</li>
+</ul>
+<p>This class works in three phases:</p>
+<ol>
+<li>Start work on a new student-plan combination</li>
+<li>Repeated: Check a minor found in the plan, log a warning if it's an ILO minor</li>
+<li>Finish work on this student-plan: log warnings for any remaining ILO minors for this student (he enrolled but didn't plan)</li>
+</ol>
+<p>Steps 1-3 are typically repeated for each student-plan to check.
+The class is initialized by loading all known ILO minor enrolments for FNWI students in memory for quick lookup. It is therefore
+best used in a batch process where many plans are checked.</p>
+<p>A summary of the issued ILO-minor warnings (including a count) will be kept, you can ask to add it to the log (e.g. at the end).</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">ILOMinorsWarning</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="UvA.DataNose.Tasks.AcademicPlansToSIS.html">UvA.DataNose.Tasks.AcademicPlansToSIS</a></h6>
+  <h6><strong>Assembly</strong>: UvA.DataNose.Tasks.dll</h6>
+  <h5 id="UvA_DataNose_Tasks_AcademicPlansToSIS_ILOMinorsWarning_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class ILOMinorsWarning</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UvA-FNWI/DataNose/new/master/apiSpec/new?filename=UvA_DataNose_Tasks_AcademicPlansToSIS_ILOMinorsWarning__ctor_UvA_DataNose_Tasks_Engine_TaskRunner_UvA_Info_Entities_UvAInfo_.md&amp;value=---%0Auid%3A%20UvA.DataNose.Tasks.AcademicPlansToSIS.ILOMinorsWarning.%23ctor(UvA.DataNose.Tasks.Engine.TaskRunner%2CUvA.Info.Entities.UvAInfo)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UvA-FNWI/DataNose/blob/master/UvA.DataNose.Tasks/AcademicPlansToSIS/ILOMinorsWarning.cs/#L57">View Source</a>
+  </span>
+  <a id="UvA_DataNose_Tasks_AcademicPlansToSIS_ILOMinorsWarning__ctor_" data-uid="UvA.DataNose.Tasks.AcademicPlansToSIS.ILOMinorsWarning.#ctor*"></a>
+  <h4 id="UvA_DataNose_Tasks_AcademicPlansToSIS_ILOMinorsWarning__ctor_UvA_DataNose_Tasks_Engine_TaskRunner_UvA_Info_Entities_UvAInfo_" data-uid="UvA.DataNose.Tasks.AcademicPlansToSIS.ILOMinorsWarning.#ctor(UvA.DataNose.Tasks.Engine.TaskRunner,UvA.Info.Entities.UvAInfo)">ILOMinorsWarning(TaskRunner, UvAInfo)</h4>
+  <div class="markdown level1 summary"><p>Constructor</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ILOMinorsWarning(TaskRunner runner, UvAInfo info)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UvA.DataNose.Tasks.Engine.TaskRunner.html">TaskRunner</a></td>
+        <td><span class="parametername">runner</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">UvA.Info.Entities.UvAInfo</span></td>
+        <td><span class="parametername">info</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UvA-FNWI/DataNose/new/master/apiSpec/new?filename=UvA_DataNose_Tasks_AcademicPlansToSIS_ILOMinorsWarning_CheckPlannedMinor_UvA_AcademicPlan_Data_Entities_Minor_.md&amp;value=---%0Auid%3A%20UvA.DataNose.Tasks.AcademicPlansToSIS.ILOMinorsWarning.CheckPlannedMinor(UvA.AcademicPlan.Data.Entities.Minor)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UvA-FNWI/DataNose/blob/master/UvA.DataNose.Tasks/AcademicPlansToSIS/ILOMinorsWarning.cs/#L77">View Source</a>
+  </span>
+  <a id="UvA_DataNose_Tasks_AcademicPlansToSIS_ILOMinorsWarning_CheckPlannedMinor_" data-uid="UvA.DataNose.Tasks.AcademicPlansToSIS.ILOMinorsWarning.CheckPlannedMinor*"></a>
+  <h4 id="UvA_DataNose_Tasks_AcademicPlansToSIS_ILOMinorsWarning_CheckPlannedMinor_UvA_AcademicPlan_Data_Entities_Minor_" data-uid="UvA.DataNose.Tasks.AcademicPlansToSIS.ILOMinorsWarning.CheckPlannedMinor(UvA.AcademicPlan.Data.Entities.Minor)">CheckPlannedMinor(Minor)</h4>
+  <div class="markdown level1 summary"><p>Check a minor that's part of (not deleted) the Current Student Plan
+Log a warning if it is one of the license enabled ILO minors, and cache the MCourseID</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool CheckPlannedMinor(Minor minor)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UvA.AcademicPlan.Data.Entities.Minor</span></td>
+        <td><span class="parametername">minor</span></td>
+        <td><p>the minor to check</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>did we log a warning?</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UvA-FNWI/DataNose/new/master/apiSpec/new?filename=UvA_DataNose_Tasks_AcademicPlansToSIS_ILOMinorsWarning_FinishStudentPlan_System_Int32_.md&amp;value=---%0Auid%3A%20UvA.DataNose.Tasks.AcademicPlansToSIS.ILOMinorsWarning.FinishStudentPlan(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UvA-FNWI/DataNose/blob/master/UvA.DataNose.Tasks/AcademicPlansToSIS/ILOMinorsWarning.cs/#L96">View Source</a>
+  </span>
+  <a id="UvA_DataNose_Tasks_AcademicPlansToSIS_ILOMinorsWarning_FinishStudentPlan_" data-uid="UvA.DataNose.Tasks.AcademicPlansToSIS.ILOMinorsWarning.FinishStudentPlan*"></a>
+  <h4 id="UvA_DataNose_Tasks_AcademicPlansToSIS_ILOMinorsWarning_FinishStudentPlan_System_Int32_" data-uid="UvA.DataNose.Tasks.AcademicPlansToSIS.ILOMinorsWarning.FinishStudentPlan(System.Int32)">FinishStudentPlan(Int32)</h4>
+  <div class="markdown level1 summary"><p>Finish processing a students plan
+Log additional warnings if the student has enrolments for ILO minors that are not in this plan.
+(If the student has multiple plans than the minor might be in one of the other plans...)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool FinishStudentPlan(int StudentID)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">StudentID</span></td>
+        <td><p>ID of Student for whom to finish processing</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>did we log a warning?</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UvA-FNWI/DataNose/new/master/apiSpec/new?filename=UvA_DataNose_Tasks_AcademicPlansToSIS_ILOMinorsWarning_PrintSummaryToLog_System_Boolean_.md&amp;value=---%0Auid%3A%20UvA.DataNose.Tasks.AcademicPlansToSIS.ILOMinorsWarning.PrintSummaryToLog(System.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UvA-FNWI/DataNose/blob/master/UvA.DataNose.Tasks/AcademicPlansToSIS/ILOMinorsWarning.cs/#L119">View Source</a>
+  </span>
+  <a id="UvA_DataNose_Tasks_AcademicPlansToSIS_ILOMinorsWarning_PrintSummaryToLog_" data-uid="UvA.DataNose.Tasks.AcademicPlansToSIS.ILOMinorsWarning.PrintSummaryToLog*"></a>
+  <h4 id="UvA_DataNose_Tasks_AcademicPlansToSIS_ILOMinorsWarning_PrintSummaryToLog_System_Boolean_" data-uid="UvA.DataNose.Tasks.AcademicPlansToSIS.ILOMinorsWarning.PrintSummaryToLog(System.Boolean)">PrintSummaryToLog(Boolean)</h4>
+  <div class="markdown level1 summary"><p>Summarize the warnings, e.g. at the end of your log, to attract more attention.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void PrintSummaryToLog(bool verbose)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">verbose</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UvA-FNWI/DataNose/new/master/apiSpec/new?filename=UvA_DataNose_Tasks_AcademicPlansToSIS_ILOMinorsWarning_StartNewStudentPlan.md&amp;value=---%0Auid%3A%20UvA.DataNose.Tasks.AcademicPlansToSIS.ILOMinorsWarning.StartNewStudentPlan%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UvA-FNWI/DataNose/blob/master/UvA.DataNose.Tasks/AcademicPlansToSIS/ILOMinorsWarning.cs/#L66">View Source</a>
+  </span>
+  <a id="UvA_DataNose_Tasks_AcademicPlansToSIS_ILOMinorsWarning_StartNewStudentPlan_" data-uid="UvA.DataNose.Tasks.AcademicPlansToSIS.ILOMinorsWarning.StartNewStudentPlan*"></a>
+  <h4 id="UvA_DataNose_Tasks_AcademicPlansToSIS_ILOMinorsWarning_StartNewStudentPlan" data-uid="UvA.DataNose.Tasks.AcademicPlansToSIS.ILOMinorsWarning.StartNewStudentPlan">StartNewStudentPlan()</h4>
+  <div class="markdown level1 summary"><p>Signal that we start checking a new student-plan</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void StartNewStudentPlan()</code></pre>
+  </div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="UvA.Utilities.DataExtensions.html#UvA_Utilities_DataExtensions_IsIn__1___0___0_">DataExtensions.IsIn&lt;T&gt;(T, T)</a>
+  </div>
+  <div>
+      <a class="xref" href="UvA.Utilities.DataExtensions.html#UvA_Utilities_DataExtensions_IsIn__1___0___0___0_">DataExtensions.IsIn&lt;T&gt;(T, T, T)</a>
+  </div>
+  <div>
+      <a class="xref" href="UvA.Utilities.DataExtensions.html#UvA_Utilities_DataExtensions_IsIn__1___0___0___0___0_">DataExtensions.IsIn&lt;T&gt;(T, T, T, T)</a>
+  </div>
+  <div>
+      <a class="xref" href="UvA.Utilities.DataExtensions.html#UvA_Utilities_DataExtensions_IsIn__1___0___0___0___0___0_">DataExtensions.IsIn&lt;T&gt;(T, T, T, T, T)</a>
+  </div>
+  <div>
+      <a class="xref" href="UvA.Utilities.DataExtensions.html#UvA_Utilities_DataExtensions_IsIn__1___0___0___0___0___0___0_">DataExtensions.IsIn&lt;T&gt;(T, T, T, T, T, T)</a>
+  </div>
+  <div>
+      <a class="xref" href="UvA.Utilities.DataExtensions.html#UvA_Utilities_DataExtensions_IsIn__1___0___0___">DataExtensions.IsIn&lt;T&gt;(T, T[])</a>
+  </div>
+  <div>
+      <a class="xref" href="UvA.Utilities.DataExtensions.html#UvA_Utilities_DataExtensions_IsNotIn__1___0___0_">DataExtensions.IsNotIn&lt;T&gt;(T, T)</a>
+  </div>
+  <div>
+      <a class="xref" href="UvA.Utilities.DataExtensions.html#UvA_Utilities_DataExtensions_IsNotIn__1___0___0___0_">DataExtensions.IsNotIn&lt;T&gt;(T, T, T)</a>
+  </div>
+  <div>
+      <a class="xref" href="UvA.Utilities.DataExtensions.html#UvA_Utilities_DataExtensions_IsNotIn__1___0___0___0___0_">DataExtensions.IsNotIn&lt;T&gt;(T, T, T, T)</a>
+  </div>
+  <div>
+      <a class="xref" href="UvA.Utilities.DataExtensions.html#UvA_Utilities_DataExtensions_IsNotIn__1___0___0___0___0___0_">DataExtensions.IsNotIn&lt;T&gt;(T, T, T, T, T)</a>
+  </div>
+  <div>
+      <a class="xref" href="UvA.Utilities.DataExtensions.html#UvA_Utilities_DataExtensions_IsNotIn__1___0___0___0___0___0___0_">DataExtensions.IsNotIn&lt;T&gt;(T, T, T, T, T, T)</a>
+  </div>
+  <div>
+      <a class="xref" href="UvA.Utilities.DataExtensions.html#UvA_Utilities_DataExtensions_IsNotIn__1___0___0___">DataExtensions.IsNotIn&lt;T&gt;(T, T[])</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/UvA-FNWI/DataNose/new/master/apiSpec/new?filename=UvA_DataNose_Tasks_AcademicPlansToSIS_ILOMinorsWarning.md&amp;value=---%0Auid%3A%20UvA.DataNose.Tasks.AcademicPlansToSIS.ILOMinorsWarning%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/UvA-FNWI/DataNose/blob/master/UvA.DataNose.Tasks/AcademicPlansToSIS/ILOMinorsWarning.cs/#L33" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

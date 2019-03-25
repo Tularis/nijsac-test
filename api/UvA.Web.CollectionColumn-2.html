@@ -1,0 +1,417 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class CollectionColumn&lt;T, S&gt;
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class CollectionColumn&lt;T, S&gt;
+   ">
+    <meta name="generator" content="docfx 2.40.12.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="UvA.Web.CollectionColumn`2">
+  
+  
+  <h1 id="UvA_Web_CollectionColumn_2" data-uid="UvA.Web.CollectionColumn`2" class="text-break">Class CollectionColumn&lt;T, S&gt;
+  </h1>
+  <div class="markdown level0 summary"><p>Represents a column that allows the user to edit a collection</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="UvA.Web.Column-1.html">Column</a>&lt;T&gt;</div>
+    <div class="level2"><span class="xref">CollectionColumn&lt;T, S&gt;</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="UvA.Web.Column-1.html#UvA_Web_Column_1_IsExcelNumeric">Column&lt;T&gt;.IsExcelNumeric</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Column-1.html#UvA_Web_Column_1_IgnoreWhenExporting">Column&lt;T&gt;.IgnoreWhenExporting</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Column-1.html#UvA_Web_Column_1_Parent">Column&lt;T&gt;.Parent</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Column-1.html#UvA_Web_Column_1_Width">Column&lt;T&gt;.Width</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Column-1.html#UvA_Web_Column_1__Width">Column&lt;T&gt;._Width</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Column-1.html#UvA_Web_Column_1_FilterWidth">Column&lt;T&gt;.FilterWidth</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Column-1.html#UvA_Web_Column_1_HeaderText">Column&lt;T&gt;.HeaderText</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Column-1.html#UvA_Web_Column_1_ShowLoadingScreenWhenSorting">Column&lt;T&gt;.ShowLoadingScreenWhenSorting</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Column-1.html#UvA_Web_Column_1_NoPadding">Column&lt;T&gt;.NoPadding</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Column-1.html#UvA_Web_Column_1_ForceWidth">Column&lt;T&gt;.ForceWidth</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Column-1.html#UvA_Web_Column_1_AllowRemove">Column&lt;T&gt;.AllowRemove</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Column-1.html#UvA_Web_Column_1_HideFunction">Column&lt;T&gt;.HideFunction</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Column-1.html#UvA_Web_Column_1_FilterBox">Column&lt;T&gt;.FilterBox</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Column-1.html#UvA_Web_Column_1_Align">Column&lt;T&gt;.Align</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Column-1.html#UvA_Web_Column_1_HeaderAlign">Column&lt;T&gt;.HeaderAlign</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Column-1.html#UvA_Web_Column_1_HeaderVerticalAlign">Column&lt;T&gt;.HeaderVerticalAlign</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Column-1.html#UvA_Web_Column_1_HeaderRightClickAction">Column&lt;T&gt;.HeaderRightClickAction</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Column-1.html#UvA_Web_Column_1_HeaderStyle">Column&lt;T&gt;.HeaderStyle</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Column-1.html#UvA_Web_Column_1_HeaderLinkStyle">Column&lt;T&gt;.HeaderLinkStyle</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Column-1.html#UvA_Web_Column_1_HeaderTooltip">Column&lt;T&gt;.HeaderTooltip</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Column-1.html#UvA_Web_Column_1_DisableSort">Column&lt;T&gt;.DisableSort</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Column-1.html#UvA_Web_Column_1_Header">Column&lt;T&gt;.Header</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Column-1.html#UvA_Web_Column_1_SkipBefore">Column&lt;T&gt;.SkipBefore</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Column-1.html#UvA_Web_Column_1_FooterFunction">Column&lt;T&gt;.FooterFunction</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Column-1.html#UvA_Web_Column_1_TextFunction">Column&lt;T&gt;.TextFunction</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Column-1.html#UvA_Web_Column_1_DisplayFunction">Column&lt;T&gt;.DisplayFunction</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Column-1.html#UvA_Web_Column_1_SortFunction">Column&lt;T&gt;.SortFunction</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Column-1.html#UvA_Web_Column_1_FilterFunction">Column&lt;T&gt;.FilterFunction</a>
+    </div>
+    <div>
+      <a class="xref" href="UvA.Web.Column-1.html#UvA_Web_Column_1_DisableFilter">Column&lt;T&gt;.DisableFilter</a>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="UvA.Web.html">UvA.Web</a></h6>
+  <h6><strong>Assembly</strong>: UvA.Web.dll</h6>
+  <h5 id="UvA_Web_CollectionColumn_2_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class CollectionColumn&lt;T, S&gt; : Column&lt;T&gt;</code></pre>
+  </div>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>Type of TableView objects</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">S</span></td>
+        <td><p>Type of objects in the collection</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UvA-FNWI/DataNose/new/master/apiSpec/new?filename=UvA_Web_CollectionColumn_2__ctor_System_Func__0_System_Collections_Generic_ICollection__1___System_Func__0_UvA_Web_ModalObjectPicker__1___System_Action__0__System_Boolean_System_Func__0_System_Boolean__.md&amp;value=---%0Auid%3A%20UvA.Web.CollectionColumn%602.%23ctor(System.Func%7B%600%2CSystem.Collections.Generic.ICollection%7B%601%7D%7D%2CSystem.Func%7B%600%2CUvA.Web.ModalObjectPicker%7B%601%7D%7D%2CSystem.Action%7B%600%7D%2CSystem.Boolean%2CSystem.Func%7B%600%2CSystem.Boolean%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UvA-FNWI/DataNose/blob/master/UvA.Web/Controls/Data/CollectionColumn.cs/#L36">View Source</a>
+  </span>
+  <a id="UvA_Web_CollectionColumn_2__ctor_" data-uid="UvA.Web.CollectionColumn`2.#ctor*"></a>
+  <h4 id="UvA_Web_CollectionColumn_2__ctor_System_Func__0_System_Collections_Generic_ICollection__1___System_Func__0_UvA_Web_ModalObjectPicker__1___System_Action__0__System_Boolean_System_Func__0_System_Boolean__" data-uid="UvA.Web.CollectionColumn`2.#ctor(System.Func{`0,System.Collections.Generic.ICollection{`1}},System.Func{`0,UvA.Web.ModalObjectPicker{`1}},System.Action{`0},System.Boolean,System.Func{`0,System.Boolean})">CollectionColumn(Func&lt;T, ICollection&lt;S&gt;&gt;, Func&lt;T, ModalObjectPicker&lt;S&gt;&gt;, Action&lt;T&gt;, Boolean, Func&lt;T, Boolean&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CollectionColumn(Func&lt;T, ICollection&lt;S&gt;&gt; getFunction, Func&lt;T, ModalObjectPicker&lt;S&gt;&gt; pickerFunction, Action&lt;T&gt; changeAction, bool confirmDelete = true, Func&lt;T, bool&gt; enableFunction = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Func</span>&lt;T, <span class="xref">System.Collections.Generic.ICollection</span>&lt;S&gt;&gt;</td>
+        <td><span class="parametername">getFunction</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Func</span>&lt;T, <a class="xref" href="UvA.Web.ModalObjectPicker-1.html">ModalObjectPicker</a>&lt;S&gt;&gt;</td>
+        <td><span class="parametername">pickerFunction</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Action</span>&lt;T&gt;</td>
+        <td><span class="parametername">changeAction</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">confirmDelete</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Func</span>&lt;T, <span class="xref">System.Boolean</span>&gt;</td>
+        <td><span class="parametername">enableFunction</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UvA-FNWI/DataNose/new/master/apiSpec/new?filename=UvA_Web_CollectionColumn_2__ctor_System_Func__0_System_Collections_Generic_ICollection__1___UvA_Web_ModalObjectPicker__1__System_Action__0__System_Boolean_System_Func__1_System_String__System_Func__0_System_Boolean__.md&amp;value=---%0Auid%3A%20UvA.Web.CollectionColumn%602.%23ctor(System.Func%7B%600%2CSystem.Collections.Generic.ICollection%7B%601%7D%7D%2CUvA.Web.ModalObjectPicker%7B%601%7D%2CSystem.Action%7B%600%7D%2CSystem.Boolean%2CSystem.Func%7B%601%2CSystem.String%7D%2CSystem.Func%7B%600%2CSystem.Boolean%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UvA-FNWI/DataNose/blob/master/UvA.Web/Controls/Data/CollectionColumn.cs/#L24">View Source</a>
+  </span>
+  <a id="UvA_Web_CollectionColumn_2__ctor_" data-uid="UvA.Web.CollectionColumn`2.#ctor*"></a>
+  <h4 id="UvA_Web_CollectionColumn_2__ctor_System_Func__0_System_Collections_Generic_ICollection__1___UvA_Web_ModalObjectPicker__1__System_Action__0__System_Boolean_System_Func__1_System_String__System_Func__0_System_Boolean__" data-uid="UvA.Web.CollectionColumn`2.#ctor(System.Func{`0,System.Collections.Generic.ICollection{`1}},UvA.Web.ModalObjectPicker{`1},System.Action{`0},System.Boolean,System.Func{`1,System.String},System.Func{`0,System.Boolean})">CollectionColumn(Func&lt;T, ICollection&lt;S&gt;&gt;, ModalObjectPicker&lt;S&gt;, Action&lt;T&gt;, Boolean, Func&lt;S, String&gt;, Func&lt;T, Boolean&gt;)</h4>
+  <div class="markdown level1 summary"><p>Creates a new CollectionColumn</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CollectionColumn(Func&lt;T, ICollection&lt;S&gt;&gt; getFunction, ModalObjectPicker&lt;S&gt; picker, Action&lt;T&gt; changeAction, bool confirmDelete = true, Func&lt;S, string&gt; displayFunction = null, Func&lt;T, bool&gt; enableFunction = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Func</span>&lt;T, <span class="xref">System.Collections.Generic.ICollection</span>&lt;S&gt;&gt;</td>
+        <td><span class="parametername">getFunction</span></td>
+        <td><p>Function that gets the collection to edit from each object</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UvA.Web.ModalObjectPicker-1.html">ModalObjectPicker</a>&lt;S&gt;</td>
+        <td><span class="parametername">picker</span></td>
+        <td><p>ObjectPicker to display to the user for picking objects</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Action</span>&lt;T&gt;</td>
+        <td><span class="parametername">changeAction</span></td>
+        <td><p>Action to be executed whenever the collection is changed</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">confirmDelete</span></td>
+        <td><p>If true, display a confirmation dialog when the user tries to delete an object</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Func</span>&lt;S, <span class="xref">System.String</span>&gt;</td>
+        <td><span class="parametername">displayFunction</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Func</span>&lt;T, <span class="xref">System.Boolean</span>&gt;</td>
+        <td><span class="parametername">enableFunction</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="UvA.Utilities.DataExtensions.html#UvA_Utilities_DataExtensions_IsIn__1___0___0_">DataExtensions.IsIn&lt;T&gt;(T, T)</a>
+  </div>
+  <div>
+      <a class="xref" href="UvA.Utilities.DataExtensions.html#UvA_Utilities_DataExtensions_IsIn__1___0___0___0_">DataExtensions.IsIn&lt;T&gt;(T, T, T)</a>
+  </div>
+  <div>
+      <a class="xref" href="UvA.Utilities.DataExtensions.html#UvA_Utilities_DataExtensions_IsIn__1___0___0___0___0_">DataExtensions.IsIn&lt;T&gt;(T, T, T, T)</a>
+  </div>
+  <div>
+      <a class="xref" href="UvA.Utilities.DataExtensions.html#UvA_Utilities_DataExtensions_IsIn__1___0___0___0___0___0_">DataExtensions.IsIn&lt;T&gt;(T, T, T, T, T)</a>
+  </div>
+  <div>
+      <a class="xref" href="UvA.Utilities.DataExtensions.html#UvA_Utilities_DataExtensions_IsIn__1___0___0___0___0___0___0_">DataExtensions.IsIn&lt;T&gt;(T, T, T, T, T, T)</a>
+  </div>
+  <div>
+      <a class="xref" href="UvA.Utilities.DataExtensions.html#UvA_Utilities_DataExtensions_IsIn__1___0___0___">DataExtensions.IsIn&lt;T&gt;(T, T[])</a>
+  </div>
+  <div>
+      <a class="xref" href="UvA.Utilities.DataExtensions.html#UvA_Utilities_DataExtensions_IsNotIn__1___0___0_">DataExtensions.IsNotIn&lt;T&gt;(T, T)</a>
+  </div>
+  <div>
+      <a class="xref" href="UvA.Utilities.DataExtensions.html#UvA_Utilities_DataExtensions_IsNotIn__1___0___0___0_">DataExtensions.IsNotIn&lt;T&gt;(T, T, T)</a>
+  </div>
+  <div>
+      <a class="xref" href="UvA.Utilities.DataExtensions.html#UvA_Utilities_DataExtensions_IsNotIn__1___0___0___0___0_">DataExtensions.IsNotIn&lt;T&gt;(T, T, T, T)</a>
+  </div>
+  <div>
+      <a class="xref" href="UvA.Utilities.DataExtensions.html#UvA_Utilities_DataExtensions_IsNotIn__1___0___0___0___0___0_">DataExtensions.IsNotIn&lt;T&gt;(T, T, T, T, T)</a>
+  </div>
+  <div>
+      <a class="xref" href="UvA.Utilities.DataExtensions.html#UvA_Utilities_DataExtensions_IsNotIn__1___0___0___0___0___0___0_">DataExtensions.IsNotIn&lt;T&gt;(T, T, T, T, T, T)</a>
+  </div>
+  <div>
+      <a class="xref" href="UvA.Utilities.DataExtensions.html#UvA_Utilities_DataExtensions_IsNotIn__1___0___0___">DataExtensions.IsNotIn&lt;T&gt;(T, T[])</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/UvA-FNWI/DataNose/new/master/apiSpec/new?filename=UvA_Web_CollectionColumn_2.md&amp;value=---%0Auid%3A%20UvA.Web.CollectionColumn%602%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/UvA-FNWI/DataNose/blob/master/UvA.Web/Controls/Data/CollectionColumn.cs/#L14" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
